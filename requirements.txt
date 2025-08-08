@@ -1,0 +1,14 @@
+pip install streamlit
+pip install langchain==0.1.17
+pip install langchain-community==0.0.27
+pip install langchain-openai
+pip install python-dotenv
+
+Sample .env:
+OPENAI_API_KEY=your_groq_api_key_here
+OPENAI_API_BASE=https://api.groq.com/openai/v1
+
+model used:"llama3-70b-8192"
+
+To run the app.py:
+streamlit run app.py
