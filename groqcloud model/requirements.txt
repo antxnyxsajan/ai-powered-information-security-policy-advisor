@@ -1,8 +1,7 @@
 pip install streamlit
 pip install langchain==0.1.17
 pip install langchain-community==0.0.27
-pip install langchain-google-genai
-pip install google-generativeai
+pip install langchain-openai
 pip install python-dotenv
 
 Sample .env:
