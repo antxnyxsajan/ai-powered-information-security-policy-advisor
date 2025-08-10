@@ -1,19 +1,14 @@
-# backend/index_documents.py
 import os
 from dotenv import load_dotenv
 from langchain_cohere import CohereEmbeddings
 from langchain_pinecone import PineconeVectorStore
 from langchain_core.documents import Document
 
-# Load API keys from your .env file located in the parent directory
-load_dotenv(dotenv_path='../.env')
+load_dotenv(dotenv_path='../key.env')
 
-# --- Configuration ---
 PINECONE_INDEX_NAME = "security-advisor-index"
 STANDARDS_NAMESPACE = "iso-nist-standards"
 COMPANY_POLICY_NAMESPACE = "company-xyz-policy"
-
-# --- Our Sample Data (Instead of PDFs) ---
 
 # Sample Company Policies
 company_policy_texts = [
@@ -29,19 +24,12 @@ standards_texts = [
     "Regular security awareness training for all employees is a key component of a robust security posture."
 ]
 
-# --- Convert text strings to LangChain Document objects ---
 company_documents = [Document(page_content=text) for text in company_policy_texts]
 standards_documents = [Document(page_content=text) for text in standards_texts]
 
-
-# --- Main Indexing Logic ---
 def index_documents(docs_to_index, namespace):
     print(f"Indexing {len(docs_to_index)} documents into namespace '{namespace}'...")
-    
-    # Initialize Cohere embeddings
     embeddings = CohereEmbeddings(model="embed-english-v3.0")
-    
-    # Upload to Pinecone
     PineconeVectorStore.from_documents(
         documents=docs_to_index,
         embedding=embeddings,
@@ -50,15 +38,11 @@ def index_documents(docs_to_index, namespace):
     )
     print("Done.")
 
-# --- Run the indexing process ---
 if __name__ == '__main__':
-    # Index the company-specific documents
     index_documents(
         docs_to_index=company_documents,
         namespace=COMPANY_POLICY_NAMESPACE
     )
-    
-    # Index the standard documents
     index_documents(
         docs_to_index=standards_documents,
         namespace=STANDARDS_NAMESPACE
