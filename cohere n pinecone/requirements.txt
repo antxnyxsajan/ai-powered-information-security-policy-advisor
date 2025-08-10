@@ -4,10 +4,10 @@ Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope Process
 
 #Run in cmd:
 python -m venv venv
-pip install fastapi "uvicorn[standard]" python-dotenv langchain langchain-cohere langchain-pinecone langchain_community pypdf
 .\venv\Scripts\activate
+pip install fastapi "uvicorn[standard]" python-dotenv langchain langchain-cohere langchain-pinecone langchain_community pypdf
 
-#Next time onwards:
+#Next time onwards, in project directory before running:
 .\venv\Scripts\activate
 
 
@@ -15,5 +15,7 @@ pip install fastapi "uvicorn[standard]" python-dotenv langchain langchain-cohere
 COHERE_API_KEY="your_cohere_api_here"
 PINECONE_API_KEY="your_pinecone_api_here"
 
-#Run backend: 
+#Run backend(from backend directory): 
 uvicorn main:app --reload
+
+#After backend is online open frontend/index.htmnl in a browser
