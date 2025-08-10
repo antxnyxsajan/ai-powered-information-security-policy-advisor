@@ -15,7 +15,10 @@ pip install fastapi "uvicorn[standard]" python-dotenv langchain langchain-cohere
 COHERE_API_KEY="your_cohere_api_here"
 PINECONE_API_KEY="your_pinecone_api_here"
 
-#Run backend(from backend directory): 
+#If documents are not indexed, run backend/index_documents
+
+#Run backend/main.py
+#Bring backend online(from backend directory): 
 uvicorn main:app --reload
 
 #After backend is online open frontend/index.htmnl in a browser
