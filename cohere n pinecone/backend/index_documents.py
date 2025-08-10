@@ -1,10 +1,15 @@
 import os 
+from langchain.schema import Document
+from langchain_cohere import CohereEmbeddings
+from langchain_pinecone import PineconeVectorStore
+from dotenv import load_dotenv
+
 
 load_dotenv(dotenv_path='../.env')
 
 #for testing 
-#os.environ["COHERE_API_KEY"] = "your_cohere_api_key_goes_here"
-#os.environ["PINECONE_API_KEY"] = "your_pinecone_api_key_goes_here"
+#os.environ["COHERE_API_KEY"] = "cohere api here"
+#os.environ["PINECONE_API_KEY"] = "pinecone api here"
 
 PINECONE_INDEX_NAME = "security-advisor-index"
 STANDARDS_NAMESPACE = "iso-nist-standards"

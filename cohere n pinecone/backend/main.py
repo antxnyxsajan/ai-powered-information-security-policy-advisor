@@ -10,8 +10,11 @@ from langchain_pinecone import PineconeVectorStore
 from langchain_cohere import CohereEmbeddings
 from langchain.prompts import ChatPromptTemplate
 
-# Load API keys from your .env file located in the parent directory
 load_dotenv(dotenv_path='../.env')
+
+#for testing
+#os.environ["COHERE_API_KEY"] = "cohere api here"
+#os.environ["PINECONE_API_KEY"] = "pinecone api here"
 
 # --- Initialize Models and Retrievers (at startup) ---
 llm = ChatCohere(model="command-r")
