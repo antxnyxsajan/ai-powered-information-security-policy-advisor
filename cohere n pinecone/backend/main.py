@@ -10,13 +10,12 @@ from langchain_pinecone import PineconeVectorStore
 from langchain_cohere import CohereEmbeddings
 from langchain.prompts import ChatPromptTemplate
 
-load_dotenv(dotenv_path='../.env')
+#load_dotenv(dotenv_path='../.env')
 
 #for testing
 #os.environ["COHERE_API_KEY"] = "cohere api here"
 #os.environ["PINECONE_API_KEY"] = "pinecone api here"
 
-# --- Initialize Models and Retrievers (at startup) ---
 llm = ChatCohere(model="command-r")
 embeddings = CohereEmbeddings(model="embed-english-v3.0")
 vectorstore = PineconeVectorStore(index_name="security-advisor-index", embedding=embeddings)
@@ -24,7 +23,7 @@ vectorstore = PineconeVectorStore(index_name="security-advisor-index", embedding
 company_retriever = vectorstore.as_retriever(search_kwargs={'namespace': 'company-xyz-policy'})
 standards_retriever = vectorstore.as_retriever(search_kwargs={'namespace': 'iso-nist-standards'})
 
-# --- Prompts ---
+#Prompts
 company_prompt = ChatPromptTemplate.from_template(
     "Answer based on this specific Company Policy:\n\n{context}\n\nQuestion: {question}"
 )
@@ -32,10 +31,7 @@ standards_prompt = ChatPromptTemplate.from_template(
     "A specific company policy was not found. Answer based on these general standards:\n\n{context}\n\nQuestion: {question}"
 )
 
-# --- FastAPI App ---
 app = FastAPI()
-
-# Add CORS middleware to allow a frontend to call this API
 app.add_middleware(
     CORSMiddleware,
     allow_origins=["*"],
@@ -49,7 +45,7 @@ class ChatRequest(BaseModel):
 
 @app.post("/chat")
 def chat_handler(request: ChatRequest):
-    # This is our conditional retrieval logic
+    #This is our conditional retrieval logic
     print(f"Received question: {request.question}")
     company_docs = company_retriever.get_relevant_documents(request.question)
     
