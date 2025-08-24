@@ -13,8 +13,6 @@ from langchain.prompts import ChatPromptTemplate
 #load_dotenv(dotenv_path='../.env')
 
 #for testing
-#os.environ["COHERE_API_KEY"] = "cohere api here"
-#os.environ["PINECONE_API_KEY"] = "pinecone api here"
 
 llm = ChatCohere(model="command-r")
 embeddings = CohereEmbeddings(model="embed-english-v3.0")
