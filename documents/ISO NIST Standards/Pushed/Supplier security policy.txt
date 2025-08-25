@@ -1,0 +1,38 @@
+purpose
+
+supplier security policy describes the conditions of how to maintain the security of information when third parties are involved in the company’s internal operations
+
+scope
+
+this policy applies to all suppliers who access the information or suppliers hosting the company’s information assets
+responsibilities
+isms manager
+manage supplier security process
+identify all thirdparties in the company with coo
+monitor thirdparties
+coo
+keep track of all contractual agreements and nda with all third parties with isms manager
+
+policy
+
+supplier risk assessment
+the risks associated with supplier management are described in the risk assessment information security requirements for mitigating the risks associated with suppliers’ access to the information assets must be agreed upon with the supplier and documented
+screening
+precise due diligence must be done before selecting a supplier using the riskbased approach
+supplier agreements
+all contracts with suppliers shall be monitored and reviewed contracts shall include appropriate provisions to ensure the security of information and systems
+relevant information security requirements must be established with each supplier
+requirements include specifying if applicable
+what company data is to be processed by the supplier
+where and how the supplier stores data
+the process of sanitization of storage media that is applied during the contract and will be applied at contract termination
+access method
+who within the supplier will be managing the risks for the delivery of the contract
+nda
+all third parties are required to sign an nda before accessing the company’s internalconfidential information
+supplier management
+the suppliers must be divided into 3 groups due to their access to critical information and assets and their criticality to the business
+monitoring
+the third parties are annually monitored if they meet security service level agreements
+termination of agreements
+after the termination of the agreement all assets must be returned and access rights are removed

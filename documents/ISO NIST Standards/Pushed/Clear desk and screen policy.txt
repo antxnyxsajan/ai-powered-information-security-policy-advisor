@@ -1,0 +1,29 @@
+purpose
+
+the purpose of this policy is to establish the minimum requirements for maintaining clean desks and clear screens and to ensure that where there is any confidential restricted or sensitive information that is locked away and is out of sight
+
+scope
+
+this policy applies to all employees contractors subcontractors consultants temporaries guests and any third party that uses information assets or information resources and services
+
+policy
+
+clear desk policy
+hard copy documents containing any personal data or confidential restricted or sensitive information should only be stored safely examples are contracts with clients contractors employees and nda
+prefer to use digital versions of documents instead of printed copies
+any confidential restricted or sensitive information must be removed from desks and locked in a drawer when a desk is left unoccupied at any time
+keys for the server room must not be left in or on an unattended desk the keys’ owner is responsible for keeping them safe
+no confidential information must be left in meeting rooms either on the table slides or on whiteboards
+passwords must not be left on sticky notes posted on or under a computer or written down and left in an accessible location
+any information sent to printers should be retrieved as soon as practicable
+clear screen policy
+when leaving their desks for any period staff must ensure that they lock their computer to prevent unauthorized access to information or systems
+lock your screen when you leave your computer unattended
+for windows devices press ctrl alt and delete keys simultaneously and then enter or press the windows button between the ctrl and alt keys on your keyboard and l simultaneously
+for macos running macos mojave go to the apple menu and choose lock screen or press commandcontrolq this will lock your mac and return you to the login screen
+for macos running an earlier operating system press the controlshiftpower button or controlshifteject if your mac has an optical drive it will lock the screen
+for linux ctrlaltl or superl ie holding down the windows key and pressing l should work once your screen is locked you will have to enter your password to log back in
+computer workstations must be logged off at the end of the working day to install security updates during the evening
+screensavers and computer timeouts must be password protected
+all computer screensavers should be set for a maximum of five 5 minutes to lock requiring a password to reenter the computer
+keeping 4 and 5 items above of security configuration on the user workstation is the contractor and employees responsibility

@@ -1,0 +1,61 @@
+purpose
+
+the purpose is to create effective asset management essential to the continuity development and growth of to confirm that capital expenditure by the is planned evaluated authorized implemented monitored and reported systematically to meet the objective of best practice
+
+scope
+
+this policy applies to all employees contractors subcontractors consultants temporaries guests and any third party that uses information assets or information resources and services
+
+policy
+
+all critical assets used for are reviewed annually in the critical asset registry
+asset types
+devices assigned to employees
+hhd
+ssd
+laptop
+monitor
+office devices
+network adapter
+network attached storage
+powerline adapter
+printer
+router
+firewall
+single board computer
+server
+speaker
+switch
+tv
+headphones
+asset tracking requirements
+the current state of corporate assets is tracked in the assets are assigned directly to the employee the description of the asset varies according to the value of the asset and its usage history
+asset name
+asset id
+asset type labeling
+model
+assignee
+more detailed characteristics ram ssd processor for laptops only
+purchasing cost
+asset fixing
+in case of any device laptop printer smartphone etc malfunctions immediately report to both your asset manager andor office manager if applicable and your direct manager the asset manager will investigate and determine the appropriate action to rectify the issue while the direct manager will ensure minimal disruption to work prompt reporting of issues will minimize potential productivity impact
+the asset manager is accountable for fixing assets in the company it can be performed at the employee’s request or during regular asset reviews when the broken asset is found the asset manager approves this matter with the coo and brings it to the service center for repair
+acquiringtermination of corporate assets
+acquiring process
+the head of hr or pm creates an issue in the hr system indicating that new hires require a laptop and assigns this request to the coo the coo determines the necessary characteristics for the laptop such as ssd preferred operating system and ram based on the new employees role
+asset manager prepares the laptop for a new hire
+performs formatting for a chosen laptop if not done before
+checks the general state and enables full disk encryption
+installs the security package
+assigns this appliance to the new hire in the
+depending on the location of the employee requesting the asset the shipment is directed to the office or directly to the employee’s workplace
+asset manager confirms that the new employee has changed username to firstname lastname and the unique passwords for the disk encryption and screen lock
+termination process
+the head of hr or pm creates an issue in the ticket system assigns this request to the asset manager and marks the last working day
+the employee brings the laptop and any other appliance to the office on the last working day and checks it with the asset manager
+the asset manager claims that the laptop and other assets are returned and confirms that in the asset management board
+asset manager performs formatting for the returned laptop
+asset return
+all employees are financially accountable for assigned assets in case of unacceptable use of assets or other disciplinary violations the employee must take responsibility for compensation
+asset disposal and reuse
+when disposing of any asset sensitive data must be removed before disposal the asset manager will determine what type of data destruction protocol should be used for the appropriate erasure

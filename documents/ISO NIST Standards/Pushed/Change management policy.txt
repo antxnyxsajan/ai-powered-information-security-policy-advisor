@@ -1,0 +1,84 @@
+purpose
+
+the purpose of the change management policy is to manage changes to information systems assets and resources rationally and predictably so that all related stakeholders can plan accordingly applying a repeatable process to control change will improve changes effectiveness and crossfunctional communication
+
+scope
+
+this policy applies to all employees contractors and third parties who access internal information and business processes
+
+policy
+
+configuration changes will be reviewed and approval of changes will be considered based on an analysis performed for any security and privacy impacts only approved changes will be implemented in the system configuration changes will be documented and system changes will be communicated to authorized internal users changes will be monitored and reviewed
+definitions
+an “it change” is a planned or unplanned action taken to build design modify improve fix and reconfigure network devices and systems
+two types of change management requests are to be used emergency and standard an emergency change occurs when an immediate change to systems is necessary due to operational issues or critical security issues a standard change occurs as a part of normal maintenance operations
+the change request must be created only for changes that are conducted on or influence on critical assets listed in the critical asset registry
+the “change request scope” is each critical information system component subject to change this component must be defined in the critical asset registry or must influence any system components in the critical asset registry
+the “impact assessment” is a process to analyze the impact of a proposed organizational change on the company processes
+the “rollback plan” is a plan that lets get back to the exact state that was in before the change implementation started
+change process
+standard change management procedure
+what is scope change
+develop a request in the mail for testing
+identify the authorized party or parties to approve the request
+obtain approval or disapproval from the authorized party for investigation and testing
+changes shall be tested in an isolated controlled and representative environment where such an environment is possible to minimize the effect on the relevant business process and assess its impact on operations and security
+determine the impact of incorporating the change if implementing this change has a big impact low and higher use appendix 12 to define the impact on infrastructure or employees rollback plans must be developed
+in the reply to the request for testing develop a change request and attach an implantation change plan and potential impact of incorporating the change how will the change impact the company budget what about the timeline how many departments and team members will be touched by the change request how did the change impact security you need to use appendix 11 as a change request template
+71 the individual in charge of the change must provide easytounderstand links or other methods that allow overseeing the process should any issues arise short guidance on where to direct attention and what measures to take in case of any complications following the implementation of the modification
+obtain approval or disapproval from the authorized party for implementation
+implement the change
+develop documentation and guidelines if needed
+communicate the change to the necessary stakeholders management employees or clients all users significantly affected by a change shall be notified of the change
+the flow of the change management process
+change request
+change request shall contain the next information
+new system components configuration
+the following actions should be performed by asset owner it director system administrators devops or developers once a new active device was added or a new resource was created
+physical servers or virtual resources
+update critical asset registry
+update network diagram
+install and chef agents
+security groupnetwork acl must be developed and applied to the new serverservice
+storage encryption must be enabled where applicable
+configure a critical asset to send logs to
+automated or manual backup should be configured according to critical assets
+administrative access to the system should be provided according to the access control policy
+new systems should be configured with the latest updates
+vulnerability scanning must be performed according to the vulnerability management policy
+network equipment
+update critical asset registry
+update network diagram
+update ip table
+security groupnetwork acl must be developed and applied to the new device
+configure a critical asset to send logs to the siem system
+automated or manual backup should be configured for critical assets
+administrative access to the device should be provided according to the access control policy
+new systems should be configured with the latest updates
+vulnerability scanning must be performed according to the vulnerability management policy
+the following actions should be performed by asset owner it director system administrators devops or developers once a device or resource should be removed
+physical servers or virtual resources
+update assets inventory
+update network diagram
+asset should be removed from the system
+asset should be removed from the system
+administrative access to the system should be revoked according to the access control policy
+network equipment
+update assets inventory
+update network diagram
+update ip table
+device should be removed from the siem system
+administrative access to the system should be revoked according to the access control policy
+emergency change management procedure
+in certain situations changes may need to be made faster than the change management process would allow in these situations an alternative path to change can be used
+identify and define the situation that requires the emergency change
+determine the impact of incorporating the change if implementing this change has a big impact low and higher use appendix 12 to define the impact on infrastructure or employees rollback plans must be developed
+escalate concern to management and security
+use change form to define the change request
+send it to security for review
+implement the change in test
+provide emergency access to production if necessary
+promote the change to production
+update change management request
+develop documentation and guidelines if necessary
+communicate the change to the necessary stakeholders management employees or clients all users significantly affected by a change shall be notified of the change

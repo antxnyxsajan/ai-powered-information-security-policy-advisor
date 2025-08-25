@@ -1,0 +1,60 @@
+purpose
+
+the purpose of this policy is to address the regulatory requirements for auditing logging and monitoring activities
+
+scope
+
+this policy applies to all employees users and third parties who access or use information assets regardless of physical location
+it resources include all companyowned licensed leased or managed hardware and software and use the network via a physical or wireless connection regardless of the ownership of the computing device connected to the network
+responsibilities
+isms manager
+manage logging and monitoring process
+create documentation
+soc analyst
+analyze and proceed with alerts events and vulnerabilities mentioned in security systems
+prepare a report on critical information security incidents
+escalate true positive events to the incident management team
+incident management team
+respond to the security incidents in time
+security engineer
+set up security configurations on the network equipment
+connect log sources with and confirm the existence of alerts
+continuously improve the security system
+asset manager
+install all necessary logging software on all company laptops and periodically review if it is in place
+
+policy
+
+event logging
+logging and monitoring are enabled on all systems and devices which are listed as log source access to information systems and data as well as significant system events must be logged
+employees must not be assigned to be the only reviewers of their activity
+the information in logs includes
+event source
+event id
+event body
+event timestamp
+event body with enough fields to understand the action for example
+source and target users
+source and destination ips
+file owner path and content hash
+process execution parameters
+all logs across the system and resources are gathered in siem for log correlation further analysis and reactions
+all logged sources are described in this spreadsheet
+when using the outsourced cloud environment aws logs must be kept on cloud environment access and use resource allocation and utilization these logs are sent to siem
+dns query logging must be enabled to detect requests to the known malicious domains
+the availability of critical resources has to be monitored too
+during remote working and connecting to the office network all vpn activity inside the corporate environment must be gathered and monitored
+administrator and operator logs
+these actions including but not limited to taken by accounts with root or administrative privileges must be logged
+system administrator commands
+login attempts successful and unsuccessful
+system logoffs
+account lockouts
+system configuration changes
+system errors and corrective actions taken
+log retention period and storage
+all audit logs must be retained for the defined time the retention time for log storage is 90 days but logs are also deleted when there are 512 gigabytes for the particular index log source
+protection of log information
+logs must be readonly by authorized people the logs are stored in our siem onpremise
+clock synchronization
+all information systems synchronize their clocks by implementing network time protocol ntp or a similar capability all information systems must synchronize with the same primary time source

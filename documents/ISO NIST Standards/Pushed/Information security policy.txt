@@ -1,0 +1,49 @@
+purpose
+
+this document defines the technical controls and security configurations required to ensure the integrity and availability of the data environment at it serves as a central policy document with which all employees and contractors must be familiar and defines actions that all users must follow
+the purpose of this information security policy is to provide a comprehensive framework for
+protecting the confidentiality integrity and availability of assets
+protecting its employees and clients from the illicit use of information assets and information resources
+ensuring the effectiveness of information security controls over information assets and information resources that support operations
+ensuring that regular review of this manual is conducted at a minimum annually or more frequently as needed
+
+scope
+
+this policy applies to all employees users and third parties who access or use information assets regardless of physical location
+it resources include all companyowned licensed leased or managed hardware and software and use the network via a physical or wireless connection regardless of the ownership of the computing device connected to the network
+
+policy
+
+the information security policy is a master document for all policies and procedures established in the company
+all other policies aim to support this policy in describing requirements and processes and setting definite rules for supporting a strong level of information security
+each policy has an owner who is responsible for
+ensuring that it is kept uptodate
+ensuring that it is understandable and reflects the current state of information security
+ensuring that it is communicated to all employees
+policies and procedures are reviewed annually or in case of change and approved by the isms committee
+all isms documentation is stored in the isms folder and people responsible for isms implementation maintain this folder uptodate
+all isms documentation is shared with employees on
+communication security
+employees must use only approved ways for communication corporate google workspace email google chat or other for corporate use only
+employees are not allowed to use corporate email for personal communication
+employees should not open any attachments from the unknown senders or when received unexpectedly
+for more information on this topic refer to acceptable use policy
+data classification
+here are some recommendations for securing confidential information
+do not disclose the confidential data without proper authorization and ensure that person has the nda signed with
+do not download any company’s data on your personal device
+lock or secure confidential paper documents at all times
+destroy confidential documents when they’re no longer needed
+encrypt electronic data
+make sure employees view confidential data on secure devices
+avoid transferring sensitive data to other devices or accounts unless necessary
+ensure that the recipients of transferred sensitive data are properly authorized people and respective organizations have adequate security policies
+return any confidential data and delete it from personal devices where applicable when employees stop working for our company
+employees should not
+use confidential information for any personal benefit or profit
+replicate confidential data and store it on insecure devices
+for more information on data classification refer to data classification policy
+security awareness
+employees are obligated to participate in the securing awareness training sessions before employment and annually after that the training material is selected by the isms manager and approved by the isms committee the understanding of given material is checked in the form of a questionnaire
+prohibited activities
+personnel is prohibited from the activities that are referenced in all other subpolicies isms policies

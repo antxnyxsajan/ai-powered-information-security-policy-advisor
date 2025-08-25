@@ -1,0 +1,40 @@
+purpose
+
+the purpose of this policy is to outline the standards for the use of encryption technology so that it is used securely and managed appropriately
+
+scope
+
+this policy covers all data stored on or transmitted across corporate systems
+
+policy
+
+encryption strategy
+the following represents the encryption strategy
+if disk encryption is used logical access should be managed independently of native operating system access control mechanisms
+all information must be encrypted by communication protocols such as httpstls12 or higher when transmitted outside of our company
+using only laptops and desktops that have encrypted hard drives
+decryption keys should not be tied to user accounts
+protect cryptographic keys used for encryption of confidential data against disclosure and misuse
+restrict access to cryptographic keys to the fewest number of custodians necessary
+store cryptographic keys securely in the fewest possible locations and forms
+generate strong cryptographic keys to protect confidential data
+secure cryptographic key distribution
+secure cryptographic key storage
+perform cryptographic key rotation periodically
+encryption of data at rest
+encryption of data at rest is required to store confidential data such as any data located on companyowned or companyprovided systems devices media etc this includes the following options for stored data
+whole disk encryption
+encryption of partitionsfiles
+encryption of disk drives
+encryption of backups
+database encryption
+encryption key management
+the following recommendations apply to the company private ssh keys
+management of keys must ensure that data is available for decryption when needed
+keys must be backed up
+keys must be securely stored
+keys must be protected through their whole life cycle against modification loss unauthorized accessuse or disclosure
+keys must never be transmitted in cleartext
+keys are to be treated as confidential data
+keys must not be shared
+keys must be used and changed at a minimum annually

@@ -1,0 +1,40 @@
+purpose
+
+this policy is provided to define the requirements for identifying acquiring installing and verifying patches for products and systems patches correct security and functionality problems in software and firmware
+
+scope
+
+this policy applies to all employees contractors subcontractors consultants temporaries guests and any third party that uses information assets or information resources and services
+responsibilities
+asset owners​
+responsible for implementing patch management controls in the company
+isms manager
+create documentation
+monitor the quality of the procedures’ execution
+
+policy
+
+a patch is a software update comprising code inserted ie patched into an executable program code typically a patch is installed into an existing software program patches are often temporary fixes between full releases of a software package patches include but are not limited to the following
+updating software
+fixing a software bug
+installing new drivers
+addressing new security vulnerabilities
+addressing software stability issues
+laptops
+every employee’s responsibility is to monitor notifications about new updates available for their os and install them on their laptops
+automated updates should be enabled on each employee’s laptop
+servers
+the patch management is established based on the vulnerability management process described within vulnerability management policy after conducting the vulnerabilitydefining process vulnerability scanning and penetration testing the asset owners must be notified about current vulnerabilities on their assets
+asset owners are responsible for timely patching every vulnerability according to instructions from the performer of the vulnerability scanning or penetration testing
+any upgrade must be tested before deployment if it is related to critical assets or if it can influence any of the critical assets
+the suggested action items for patch management are
+keep the inventory of the critical systems including the operating systems and software versions physical location ip addresses etc up to date
+assess the vulnerability and risk and classify the risk accordingly find servers and systems which are vulnerable and companycritical
+evaluate all missing software updates according to the risk they pose missing software updates that pose an unacceptable risk to the company’s resources must be implemented within a commensurate time with the risk
+possible not to apply every patch immediately due to unexpected results within its business operations even though the patch is deemed critical by the vendor patches may be considered to have an adverse impact and disrupt business operations in this case the decision must be justified and documented and all delays regarding patch management must be authorized by the relevant stakeholders
+compensating controls must be in place within the company if awareness through media eg online reports vendors etc about vulnerabilities that are identified but do not have an available security patch
+compensating controls include but are not limited to
+raising awareness about the vulnerability within
+turning off services or capabilities related to the vulnerability
+adapting or adding access controls or
+increased monitoring to detect or prevent actual attacks

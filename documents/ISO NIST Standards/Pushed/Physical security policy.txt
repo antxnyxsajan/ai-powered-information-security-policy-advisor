@@ -1,0 +1,65 @@
+purpose
+
+this policy aims to establish the rules for granting control monitoring and removing physical access to office premises to identify sensitive areas within the organization
+
+scope
+
+this policy applies to all employees contractors subcontractors consultants temporaries guests and any third party that uses information assets or information resources and services
+
+policy
+
+physical data security
+certain physical precautions must be taken to ensure the integrity of the company’s data at a minimum the following guidelines must be followed
+users must follow clear desk and clear screen policy
+network cabling should not run through unsecured areas
+information systems and their components shall be positioned within the facility to minimize risks from physical and environmental hazards and opportunities for unauthorized access
+physical security policy
+a responsible person coo controls physical security in
+access cards shall be issued and fingerprints shall be registered in the door lock system to all employees
+access cards and fingerprints for the door lock system to every employee shall be revoked in case of dismissal
+any equipmentit assets considered “critical” shall be protected from environmental threats hazards and unauthorized access
+any incidents related to physical security breaches resulting in unauthorized access shall be reported to the responsible person coo
+in the case of a power outage the automatic door system will continue working from a reserve power source for at least 12 hours after discharge of the reserve battery door should be closed manually by a responsible person coo
+the power telecommunication and data cabling shall be protected wherever possible from interceptions and damages
+the equipment shall be maintained at least annually to ensure its continuous availability and integrity
+all the equipment to be taken offsite needs written permission from the management
+any storage device usbsticks cds hdd ssd drives etc shall be checked to ensure that any company data and licensed software on it are securely purged before disposal
+all critical documentation must be destroyed through a shredder before being thrown into the general trash
+cctv is present near the office entrance
+critical backup media shall be kept in a fireproof offsite location in a vault
+information systems and their components shall be positioned within the facility to minimize risks from physical and environmental hazards and opportunities for unauthorized access
+physical protection against damage from fire flood civil unrest and other forms of natural and manmade disasters shall be designed and applied
+all statements stated above shall be monitored for any changes at least annually
+physical system security
+in addition to protecting the data on the company’s information technology assets this policy provides the guidelines below on keeping the systems themselves secure from damage
+systems that store company data are often sensitive electronic devices that are susceptible to being inadvertently damaged to minimize the risk of damage the following guidelines must be followed
+minimizing risk of damage
+environmental controls should keep the operating environment of company systems within standards specified by the manufacturer
+proper grounding procedures must be followed
+strong magnets must not be used in proximity to company systems or media
+except in a fire suppression system open liquids must not be located above company systems technicians working on or near company systems should never use the systems as tables for beverages
+ups is required for important systems and encouraged for all systems
+fire prevention
+it is the company’s policy to provide a safe workplace that minimizes the risk of fire
+fire smoke alarms and suppression systems must be used and conform to local fire codes and applicable ordinances
+electrical outlets must not be overloaded users must not chain multiple power strips extension cords or surge protectors together
+if possible unused electrical equipment should be turned off when not in use for extended periods ie during nonbusiness hours
+if overly worn equipment is found the equipment must be replaced or taken out of service immediately depending on the degree of wear
+a smoke alarm monitoring system is our office landlord’s responsibility
+in case of evacuation follow the office evacuation plan
+trashwaste is properly stowed in trashrecycling bins not piled up in any area especially doorways
+access to the office
+all employees’ entries are recorded on the cctv and data is gathered from the door lock system
+all employees are required to use their cards orand fingerprints when entering the office
+employees are forbidden from leaving their access cards unattended
+employees must inform the hr generalist in the event of an access card loss
+all new hires are required to wear a badge for the first month of their employment
+outside visitors must be accompanied by someone from the only this person is responsible for visitors’ abidance with the company’s rules
+each visitor is recorded in the visitor log spreadsheet by the person who accompanies the visitor
+the coo hr generalist and office manager are fully responsible for managing access to the office office manager is responsible for maintaining the visitor log spreadsheet
+once a month the visitor activity is reviewed by the office manager
+office is a private place and each visitor must follow the photo and videography restrictions policies
+do not take photos or videos of an employee’s workplace
+do not take photos or videos of employees without their agreement
+do not take photos or videos of any confidential information
+visitors can take pictures with the consent of the management

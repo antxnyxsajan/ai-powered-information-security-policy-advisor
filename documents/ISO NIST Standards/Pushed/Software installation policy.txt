@@ -1,0 +1,45 @@
+purpose
+
+the purpose of this policy is to identify all issues of the software installation processes it is also created to minimize the risk of the exposure of sensitive information unlicensed software exposure and malware distribution
+
+scope
+
+this policy applies to all employees contractors third parties who access internal information and business processes
+responsibilities
+isms manager
+manage software installation process
+create a list of all current software used in the company with soc analyst
+create the software blacklist with soc analyst
+soc analyst
+create a list of all current software used in the company with isms manager
+create the software blacklist with isms manager
+monitor the suspicious activity associated with the software installation
+prepare a report on critical information security incidents
+escalate actual true positive events to the incident management team
+incident management team
+respond to the security incidents in time
+security engineer
+set up security configurations on the network equipment
+connect log sources with and confirm the existence of alerts
+continuously improve the security system
+
+policy
+
+employees have to refer to the software blocklist
+installation and support of software
+the asset manager is exclusively responsible for installing and supporting all initial software on the corporate equipment the asset manager relies on installation and support to provide software and hardware in good operating conditions to employees so they can best accomplish their tasks
+licensed software
+it is the responsibility of the asset manager to ensure all licensing is accurate and up to date to address this problem asset manager is responsible for purchasing software licenses for the following software categories
+desktop operating system software windows mac os
+productivity tools package
+the other software categories are the purchasing responsibility of the workgroup in which they serve however the applications are still installed and supported
+unlicensed software
+keep track of that if the software needs a license many applications can be installed only in case of paying the initialmonthlyannual fee the exception is of course the “freeware” or “public domain software”
+shareware or trial packages must be deleted or licensed by the end of the permitted free trial period
+some software is limited to free use by private individuals whereas commercial use requires a license payment so do not risk bringing into disrepute by breaking the law
+unauthorized software
+employees can install software on corporate equipment only for professional usage
+it is restricted to downloading installing or using unauthorized software because it can cause severe hardware and network security vulnerabilities
+software packages that permit the computer to be ‘remotecontrolled’ eg pc anywhere ‘hacking tools’ eg network sniffers and password crackers and any kind of not corporate vpn are explicitly forbidden on equipment unless they have been preauthorized expressly by management for legitimate business purposes
+exception
+pentester team is allowed to install malicious or any type of software or files as a part of their work only on virtual machines or using an isolated network provided by

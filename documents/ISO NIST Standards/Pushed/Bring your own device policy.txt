@@ -1,0 +1,34 @@
+purpose
+
+this document defines the security rules and controls required when working with not organizationowned devices inside the officenetwork infrastructure it serves as a central policy document with which all employees and contractors must be familiar and defines actions that all users must follow
+the purpose of this bring your own device policy is to provide a comprehensive framework for
+ensuring the confidentiality integrity and availability of employees’ pii information
+ensuring the confidentiality integrity and availability of trusted parties’ information
+ensuring security and integrity of internal infrastructure
+protection from unintentional sensitive data leakage
+
+scope
+
+this policy applies to all employees users and third parties who access or use internal infrastructure
+resources under the scope of this policy include all not companyowned devices entering the territory of the office or connecting to the internal network infrastructure
+
+policy
+
+laptops
+guest’s network is provided for connections from noncompanyowned devices
+noncompanyowned laptops are prohibited from being used inside the office but in case if a the companyowned device was not assigned to an employee or contractor due to security reasons b the companyowned device was not assigned to an employee or contractor due to a temporary contract bearing in mind a shortterm task without further cooperation c the companyowned device was not assigned to an employee or contractor due to complications by unexpected troubles in transportation or assignment circumstances
+noncompanyowned device that meets requirements described below can be used for business purposes
+full corporate security package must be installed on a device
+edr agents
+mdm agents
+disk encryption linux full disk encryption while os installation macos filevault windows bitlocker
+siem forwarder
+strong device authentication is implemented according to the password management policy
+corporate environment must be properly separated from the personal one
+a noncompanyowned device can be used but only while connected to the guest network
+it is prohibited to connect to the internal infosec network infrastructure from a noncompanyowned device
+it is prohibited to keep any company and clientrelated documentation on a noncompanyowned device these documents and information must be stored on corporate google drive or other approved cloud storages
+it is prohibited to install on laptop software from the software blocklist except for licensed games and messengers from trusted sources
+mobile devices
+personal mobile devices are not prohibited from using inside the office while connected to the guest network
+it is prohibited to download any company’s or clientrelated data on personal mobile devices

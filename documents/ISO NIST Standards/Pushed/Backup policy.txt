@@ -1,0 +1,39 @@
+purpose
+
+the purpose of this policy is to ensure that critical data and systems are backed up on a regular basis and that the backup copies are stored securely and can be easily restored in the event of a data loss or system failure
+
+scope
+
+this policy applies to all employees contractors third parties who access internal information and business processes
+responsibilities
+isms manager
+the information security manager is responsible for developing and maintaining the backup policy ensuring compliance with the policy and conducting regular reviews of the policy
+backup administrator
+the backup administrator is responsible for ensuring that backup operations are carried out in accordance with the backup policy monitoring backup operations and maintaining backup logs
+asset owners
+system owners are responsible for identifying critical and sensitive data and ensuring that it is backed up regularly
+
+policy
+
+information backup
+the backup must be done of selected critical assets in the first place all company key systems must be backed up as a complete system with imaging processes to enable the quick recovery of the entire system
+the company must back up the data in case of data changes so a continuous backup approach is the best
+the backups must be stored with retention copies at least 3 copies
+the considerations must be in place to define the importance of having backups of backups so there will be a redundancy to ensure that another can take its place if one backup fails
+backups will be stored both onsite and offsite
+any vendors providing offsite backup storage must be cleared to handle the highest level of information stored
+backups must have at a minimum the following identifying criteria that labels can readily identify
+system name
+creation date
+timing
+the information’s importance must determine the frequency and extent of backups and the acceptable risk determined by the data owner
+the backups should be taken on a regular basis for some systems or before and after system updates in case these updates are done rarely frequency of taking backups already defined within critical assets
+testing
+backups’ integrity is periodically tested by performing a data restoration process to ensure that the backup is appropriately working at least yearly the it team selects and evaluates a random sample of system backups by restoring it in the test environment the fixed systems are then verified to ensure that the backup data is functional
+backup verification should be performed regularly
+storage
+backup copies of operating systems and other critical information system software shall not be stored in the exact location as the operational software
+the access to backups is controlled and prohibited from unauthorized access the cryptography controls must be in place to ensure the security of backup storage
+backup should be compressed to minimize storage requirements
+retention period
+the retention period for backups must be determined based on business needs and regulatory requirements

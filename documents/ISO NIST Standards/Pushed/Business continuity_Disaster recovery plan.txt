@@ -1,0 +1,271 @@
+purpose
+
+this document provides a framework to counteract interruptions to critical business activities and protect essential processes of business from the adverse effects of business disruptions
+
+scope
+
+the scope of this document includes all users who have access to companyowned or companyprovided computers or require access to the corporate network and systems
+this policy and plan applies to employees and guests contractors and anyone needing access to the corporate systems to continuously serve our customers the scope of this plan includes business continuity disaster recovery escalation of war employee safety and its potential impact on business operations
+roles and responsibilities
+in case of a disaster the committee is gathered to discuss the future actions needed for the system recovery all key stakeholders are informed about the systems’ current state during the recovery from a disaster
+the business continuity committee includes key members from departments across the organization the backup personnel are defined in the table below to cope with the responsibilities of the business continuity committee if for any reason the key member is not able to represent the bc committees interests
+the personnel contacts phone number corporate email personal email can be found within bcp teams and contacts
+
+the actual location address phone number and email can be found on the platform
+
+insurance provider is with policy number
+approved claims panel providers
+
+unique market reference no
+layers
+
+claims manager
+
+
+the disaster recovery committee is responsible for
+developing and implementing strategies for recovering it systems and data after various types of disasters or technology failures
+identifying critical it assets data repositories and applications that need to be restored quickly
+planning resources and people allocation load distribution to continue uninterrupted service delivery to our customers
+creating and maintaining disaster recovery plans that outline procedures for recovering technology systems and data
+the disaster recovery committee comprises at least the same individuals as the disaster recovery committee however if required specialists will be added whose expert opinions and responsibilities within the company are deemed necessary for achieving the committees aims
+the it security team is composed of employees from soc devops devsecops and it who provide support for the companys current infrastructure it includes at least but not limited to
+asset manager
+system administrators
+network administrator
+backup administrators
+cloud devops
+however this list can be augmented if deemed necessary
+
+policy
+
+the strategy of business continuity plan
+to develop implement and manage a robust and effective business continuity plan bcp to
+protect operations including its customers employees contractors subcontractors and interested third parties
+there are three primary aspects that takes into account for its business continuity plan concerning key applications and processes
+high availability providing the capability and processes so that a business has access to web applications regardless of local failures these failures might be in the business processes physical facilities or it hardware or software
+continuous operations safeguard the ability to keep things running during a disruption as well as during planned outages such as scheduled backups power outages or planned maintenance
+disaster recovery establishing a way to recover data processing facilities at a different site if a disaster destroys the primary site
+
+plan objectives
+serves as a guide for and its recovery teams
+reference any relevant data that resides outside this document
+provide procedures and resources needed to assist in recovery
+identify notification procedures in the event of a disaster
+identify assess and minimize risks
+assist in avoiding confusion experienced during a disaster by documenting testing and reviewing recovery procedures
+document storage safeguarding and retrieval procedures for vital information and data
+the it security team has created a business continuity plan in conjunction with the disaster recovery committee the disaster recovery committee and business continuity committee are responsible for maintaining the bcp
+the bcp will be implemented to maintain or restore critical operations within agreed timescales
+the bcp will include a reference to
+critical systems
+critical employees and stakeholders
+business continuity roles and responsibilities
+performed risk assessments
+compliance with customers’ security requirements and contractual agreements
+compliance with information security management system isms
+operational procedures that will ensure recovery and restoration of business operations and availability of information within agreed timescales
+education of relevant staff on predefined procedures
+testing and updating of plans and procedures
+identification and management of risks and business impact analysis bia
+the it security team will perform annual risk assessments and business impact analysis to identify issues that will affect the ability to provide services to its customers additional information relating to business continuity planning bcp can be found within this document section scenarios section and business impact analysis results also the set of important risk mitigation measures is highlighted in section risk mitigation measures
+risk mitigation measures
+this chapter delineates the proactive measures undertaken by to identify minimize the likelihood and mitigate the potential impact of risks on our global business operations
+in response to the dynamic risks of todays landscape we continuously refine our processes and bolster our business resilience
+over the past two years aligning with global events we have adopted a strategy of global business diversification resulting in the following key advantages
+global team distribution
+team is strategically distributed across various locations
+in the us
+in western europe
+of employees can be relocated to the eu within 16 hours
+in other countries canada germany spain etc
+each team has representatives in different countries to minimize locationspecific risks
+cloudbased infrastructure
+the entire infrastructure including infrastructure as a service iaas and software as a service saas is cloudbased enhancing flexibility and resilience no client data is stored or processed in internal dc customer data is processed or stored only in tenant in geo location of country to compliance with eg canadian customers have aws instances in canada
+sitetosite virtual private networks s2s vpn
+secure and available s2s vpns are established to facilitate remote work 2fa is enabled on all clientside connections pki is in use for s2s with customers who enabled these connections keys rotation is performed every 1y
+secure offices
+we have biggest human hubs with offices in
+
+
+
+we have followedthesun 24x7 team on duty distributed globally the absence of service capability at one location is immediately compensated by seamless delivery from other locations enabling uninterrupted service to our clients we test and balance load every 6 months
+alternative business operation locations
+we have created and maintained alternative locations in the eu usa etc to ensure continuity of business operations
+uninterrupted power and energy sources
+in the locations with some risk factor we equipped the uninterrupted power sources alternative energy supplies and fuel generators for electricity
+redundant communication channels
+each location is furnished with alternative communication sources 2 internet providers in the locations with some risk factor we equipped 3rd satellite internet channel based on starlink
+regular training and testing
+conducts regular training sessions every 6 months and tests for emergency situations and tools to minimize potential consequences
+crisis committee for each risk factor
+a dedicated crisis committee is organized for each identified risk equipped with detailed action plans for various scenarios
+communication of bcdr plan
+the business continuitydisaster recovery bcdr plan has been communicated to all employees ensuring preparedness for emergency situations
+by implementing these comprehensive risk mitigation measures fortifies its global operations against potential disruptions exemplifying a proactive approach
+through effective implementation of measures has not yet experienced any business interruption incidents since company establishment
+business continuity and disaster recovery needs
+our business continuity strategies includes
+preescalation
+employee communication and training
+remote work policies and infrastructure
+data backup and cybersecurity measures
+insurance coverage review
+supply chain contingency plans
+in case of escalation
+evacuation procedures and safe havens
+shelterinplace protocols and emergency supplies
+communication protocols and reporting mechanisms
+financial and mental health support for employees
+postescalation
+damage assessment and recovery strategies
+employee wellbeing and support programs
+business resumption planning remote work relocation office repairs
+our bcp objectives
+there should be the capability to ensure business continuity for 72 hours following any critical situation
+the technical environment should be recovered within the specified timelines up to 8h
+the business process should be fully recovered within specified timelines up to 4h
+general business continuity prerequisites
+internet access should be provided by several separate isps at least two with a main and a backup internet connection failover and load balancing with automated switching should be available ip addresses should be whitelisted on customer side
+encrypted data backups should be stored onsite and offsite
+key employees should have corporate laptops configured adequately with a sufficient level of security
+all employees should be able to work outside of the company office in case of a critical situation
+disaster recovery activities
+employees and clients should be notified as soon as possible via email and phone call
+employees and clients should be provided with periodic updates during the critical situation and its recovery performed via
+notification should be done via an email message following a phone call to appropriate stakeholders
+the recovery efforts should be coordinated with the key stakeholders
+the most recent verified backup should be used to restore data and files
+the document recovery efforts should be appropriate to the value of the losses
+the integrity of restoring systems and data should be verified before rereleasing into production
+all the other necessary recovery activities should be taken according to the circumstances
+disasters scenarios risks
+we have developed and implemented a business continuity plan bcp for where the most risky scenarios were taken into consideration in order to keep up and running our critical business processes functions and activities
+natural disaster major fire major flood earthquake regardless of source
+upon discovery of a disaster the following procedures should be followed
+local hr or teams that are located in impacted geographic areas should immediately inform all employees and contractors of the danger
+order everyone to leave the danger zone head of hr should and pm team coordinate employees relocation to the safe location
+local managersemployees should immediately report to local emergency services about the situation
+employeescontractors should leave the danger zone as soon as possible
+employeescontractors must assist other team mates customers and guests during the evacuation
+if you are not near the workplace it is forbidden to return to it and try to take away any material resources everyone must immediately go to the safety zone
+if an employee or contractor is in the workplace near valuable resources such as money important documents laptops and others in his area of ​​responsibility he can take them out of the area of ​​danger only if it does not require additional time does not interfere with evacuation and does not endanger people
+project and team leaders need to make sure during the evacuation process that none of their teams remain in danger
+provide the arriving rescue services with the necessary information about possible victims and people they cannot find
+provide primary care to victims while in the safety zone
+once people are safe start implementing disaster recovery and business continuity plans
+head of hr should take care of employees affected and their families from the “emergency budget”
+inform customers if the situation has affected them or could potentially affect them in the future and indicate the approximate time of resumption of services
+epidemic health situations
+will advise each contributoremployeecontractor to work from their homes to minimize the risk in case of epidemic health developments
+the additional measures to mitigate the issue are the following ones
+follow the instructions of the world health organization who and other government institutions
+disinfects are installed along with a thermometer to check each person that enters office
+remote shifts are enforced full remote is initiated in case more than 6 people are impacted
+office presence is analyzed to track infection chains
+monitor the situation and government enforcement regarding the matter
+head of hr is in charge of monitoring employees health issues and helping them to recover quickly guiding and consulting them and their relatives
+it is expected that in such a distributed environment no more than 30 of staff should be impacted timing is everything
+each employeecontractor with symptoms must inform their teammates pm and head of hr about the disease
+in case of a contagious infection a quarantine is required and the employee should be provided with all necessities to work remotely from home
+strongly recommends their employees get vaccinated from covid 2019
+it incident data breach penetration ransomware virus equipment failure communication theft robbery of work equipment
+in the event of loss of control over the workstation hardware because of but not limited to theft or virus infection the following actions should be taken to ensure the safest path to resolve this incident
+it incident response team and employee manager must be informed immediately via email or direct call to emergency support
+the incident response team investigates the situation and assigns a severity to the threat and ir team would start investigation immediately
+any credentials to the systems which could be stored on the workstation or mobile device must be revoked
+in the case of a virus infection any infected device must be shut down as soon as possible employees who were impacted should take additional training on knowbe4 platform manager should be notified soc validates if this is part of targeted campaign or accidental
+impact assessment should be done by ciso
+until the incident response team clears a device following a reported incident its use is prohibited
+analysis of the causes and consequences of the incident implementation of changes training of employees
+detailed information on the management of security incidents involving and its clients information and information technology resources can be found in the incident response plan
+activate our professional liability cyber insurance by
+cyber incident helpline
+
+it incident network outage power outage
+unavailability of primary internet provider
+in this scenario if the primary internet provider becomes unavailable an automatic switch to the secondary network provider is configured failover no delays are expected and there is no need for additional communication regarding this incident with the asset manager
+unavailability of both network providers
+if both network providers are unable to provide their services any employeecontractor who discovers this issue must notify the asset manager immediately if the asset manager is unavailable the chief operating officer coo should be notified this notification should be made through any accessible means such as a phone call internet call message on instant messengers eg google chat slack or email
+the local it administrator is responsible for activating and enabling employees to connect the 3rd alternative internet channel and involving anyone necessary to address this task guiding the team how
+upon connection is established and local team is back online notification to bcdr committee should be done via email with details about incident recovery time in the following emails it should provide also lessons learned and proposals for improvement if recovery wasn’t smooth
+unavailability of central power supply
+in the event of an unanticipated central power supply outage the main fuel generator automatically starts supplying power to the local office
+if the main generator is not working the following steps should be taken
+notification any employee or contractor who identifies the central power supply issue must promptly inform the asset manager if the asset manager is unavailable immediate notification should be directed to the chief operating officer coo
+power restoration the asset manager is responsible for initiating power restoration by activating the generator this process should be executed in accordance with the instructions outlined in the how to turn on electricity from the generator manual
+maintenance coordination to ensure timely maintenance the asset manager is required to communicate the generator start time to the office support team
+in the event that the central power supply is restored the subsequent steps are as follows
+generator deactivation upon confirmation of central power supply recovery the asset manager should follow the prescribed steps detailed in the how to switch from a generator to power from the city network manual to deactivate the generator
+maintenance notification similar to generator activation the asset manager must inform the office support team about the generator deactivation time for maintenance scheduling
+by adhering to these procedures the continuity of power supply can be effectively managed during periods of central power supply unavailability
+in the event that centralized power supply is not restored within 24 hours we anticipate relocating teams to prearranged alternative locations where both centralized power supply and communication are ensured as well as locations equipped with backup power systems and internet connectivity
+terrorism attack or increased military aggression
+possible scenarios
+missile attacks sudden highimpact events causing casualties and infrastructure damage
+ground engagement prolonged conflict with potential for collateral damage and movement restrictions
+cyberattacks disruption of critical infrastructure and data breaches
+civil unrest protests demonstrations and potential violence
+only two main requirements are needed for the continuous provision of services to our customers stable access to the internet and employees hosted in a safe place
+technical preparedness
+uses a cloudbased approach to keep up and running services and processes needed for software development and internal operations of a company no customer data is stored or processed in ukraine or any other country with high or critical risk
+most of engineering and delivery team is diversified and located in usa canada poland spain franceuk austria germany
+any office separately doesn’t impact the situation as we host all data in the aws cloud or other cloud solutions and don’t store or process any customer data locally
+all company’s cloudhosted resources are available via secure encrypted vpn tunnels
+the redundant vpn connections are built using at least two isp providers and an internal bgp routing protocol between the diversified delivery locations and aws account or other cloud to grant secure encrypted access via vpn site to site tunnels access to internal company resources is also available from outside of the office network via corporate ssl vpn connections
+organizational preparedness
+all employees and contractors can work effectively from home or any other location after covid19 is a remotefirst company
+all our global offices in different locations are on rent and have enough capacity to host people from or any other location
+we prepared detailed instructions for employees and contractors with considering factors that depend on the scale and impact of this issue and of course it also depends on the restrictionsinstructions that can be applied by the government
+on the other hand committed to help employeescontractors and their families in case of dangerous scenarios like this
+we continuous monitoring of the situation and notify our stakeholders and customers on any major events or changes in situations or risks escalations
+crisis communication plan and list of responsibilities will be provided in case of this scenario
+the plans of actions for every team described within the business impact analysis results
+
+crisis communication plan and responsibilities for scenario «manmade disaster including radiation leakage accident at a nuclear power plant»
+in case of receiving information about any type of manmade disaster including radiation leakage accident at a nuclear power plant engineer is obliged to immediately notify his pm by phone and the duty officer in the by email and incident commander by phone backup channel corporate mail or chat
+the duty officer in the must notify all members of the crisis management team about the occurrence of a dangerous event according to the contact table crisis management team should perform further actions according to this plan
+incident commander sends out email communication templates to all employees stating they will receive instructions in the course of the next few hours it can be duplicated in the newly created google chat channel
+crisis management team members should get in contact immediately via online conference meetings phone calls messenger applications to analyze the information and select a scenario according to the situation the meeting is organized and managed by the incident commander
+incident commander takes control of all other involved teams actions and launches approved response scenarios with clear instructions on the initial actions
+the hr team keeps track of all contractors that might be affected making sure everyone receives the instructions and understands what needs to be done in the course of this disaster updates crisis management team on the overall situation every two hours creates the list of those immediately affected by disaster potentially affected by disaster and not affected
+pms and team leads additionally communicate with all members of their teams to confirm their receipt of the action plan verify their availability limitations and readiness to follow the plan tasks and duties are distributed among those employees who are not affected by the disaster
+the coo is preparing to use funding reserves to cover urgent expenses
+crisis management team appoints responsible persons monitoring team for continuous monitoring of available information on current changes of the situation
+risk monitoring team submits a report on the current situation at least three times per day or immediately upon receiving an important update
+it recovery team tests the availability of the primary and backup communication channels to provide continuous customer service
+prerelocated team remote team takes responsibility for the provision of critical services to customers and communication with clients if necessary
+the marketing team and sales team informs the companys customers about the current situation possible risks and restrictions in providing services approximate recovery time according to the prepared communication map and the current situation keeps in touch with customers continuously informs them about changes in the situation
+crisis management team is responsible for
+analysis of the need to protect contractors and their families and the procedure for providing such assistance
+reestablishing communication with outofcontact contractors
+analysis of available options for transporting people if necessary
+assist the families of contractors in ensuring their safety and allocating the necessary resources
+assess the existence of restrictions on crossing the borders of countries planned for relocation
+drawing up relocation plans for groups of contractors and family members appointing the leader of each group
+organization of the teams work that remains at the primary location if available
+coordination of work of all other teams change of action plans according to the development of the situation
+the finance team if necessary and agreed is responsible for
+providing the necessary financial resources to other teams to carry out their tasks
+providing financial assistance to contractors and their families as needed
+organization of alternative payment options for contractors
+monthly cash payment in the amount of monthly compensation to the families of contractors involved
+hr team is responsible for
+preparing contacts with contractors and their families liaising with them and identifying needs that the business can help
+organization of purchase and lease of necessary resources tickets documents vehicles fuel food water communications maps and schedule etc
+assistance in solving current problems during a crisis or business trip
+testing of the business continuity plan
+the reason for testing business continuity plan is to simulate situations to find out the gaps during real problems
+the business continuity plan bcp is tested once a year but can occur more frequently in the case of significant changes
+once the exercising and testing are performed the person who coordinates business continuity reviews the result compares them with the objectives set and reports them to top management
+communication channels
+the primary corporate communication channel for calls and chats is google mailchat
+the alternative of communication is by telephone for critical and high severity incidents phone is the primary communication channel
+for any crisis event as described throughout this continuity plan the following order of communication should be applied
+make a call and key stakeholders notification for any critical or high severity events
+use google chat common channels to inform all team members of the situation and advise on actions all to trigger notifications
+use email to duplicate communication messages
+hr manager is assigned the role of incident commander and coordinates pointtopoint communication across the team
+the “i’mok” procedure is established in case of significant disaster situations such as natural disasters each team member informs the head of hr regarding their whereabouts and wellbeing
+the company’s team list is used to mark off safe team members
+customer notification templates are available in our for all members of bcdr committee
+

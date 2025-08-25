@@ -5,7 +5,7 @@ Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope Process
 #Run in cmd:
 python -m venv venv
 .\venv\Scripts\activate
-pip install fastapi "uvicorn[standard]" python-dotenv langchain langchain-cohere langchain-pinecone langchain_community pypdf
+pip install fastapi "uvicorn[standard]" python-dotenv langchain langchain-cohere langchain-pinecone langchain_community pypdf TextLoader
 
 #Next time onwards, in project directory before running:
 .\venv\Scripts\activate

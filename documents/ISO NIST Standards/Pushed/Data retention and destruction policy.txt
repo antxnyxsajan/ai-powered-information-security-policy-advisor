@@ -1,0 +1,39 @@
+purpose
+
+the purpose of this document is to ensure the company’s guidelines for retaining different types of data
+
+scope
+
+this policy applies to all employees contractors subcontractors consultants temporaries guests and any third party that uses information assets or information resources and services
+
+policy
+
+reasons for data retention
+litigation
+regulatory compliance requirements
+data owner requirement
+security incident investigation
+retention requirements
+operational data can be retained for 1 year
+confidential data must be retained as long as the information is needed its purpose defines the period of retention for this type of data
+critical data including tax and vat critical data must be retained permanently
+recruitment details interview notes of unsuccessful applicants will be held for 3 years after the interview this personal data will then be destroyed
+personal employee data general employee data will be held for the duration of employment and then for 3 years after the last day of contractual employment employee contracts candidate cv job offer letter and onboarding lists will be held for 3 years after the last day of contractual employment
+contracts with the clients nda msa sow must be retained permanently
+bank account documentation must be retained permanently
+payrolls must be retained for 10 years
+visitor logs and cctv footage are retained for 6 months
+electronic systems logs are retained for 90 days
+data destruction
+responsibility is to perform proper data destruction techniques upon the expiration of the time frame specified above
+disposal of information technology assets
+it assets such as network servers and routers often contain sensitive data about the company’s network communications when such assets are decommissioned the following guidelines must be followed
+any asset tags or stickers that identify the company must be removed before disposal
+any configuration information must be removed by deletion or if applicable resetting the device to factory defaults
+at a minimum data wiping must be used simply reformatting a drive or deleting data does not make methods for data wiping alternatively the company has the option of physically deleting the data unrecoverable
+explicitly directs users not to destroy data in violation of this policy particularly forbidden is destroying data that a user may feel is harmful to themself or destroying data to cover up a breach of law or company policy
+data retention and data destruction procedure
+the review of terminated contracts for ensuring that all client data was securely purged conducted once a year
+the review of client information for identifying any information that has exceeded its retention period conducted once a year there are two types of data retention review procedures
+customer data retention review the project manager can agree on what customer’s data should be destroyed due to the terminated contract then the security engineer is responsible for assigning the task to purge all related data when it operations are accountable for executing the request and engaging other departments if needed
+employee data retention review hr is responsible for the procedure implementation

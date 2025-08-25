@@ -1,0 +1,25 @@
+purpose
+
+this policy is provided to define standards for accessing corporate information technology resources from outside the network this includes access for any reason from the employees home remote working locations while traveling etc
+
+scope
+
+this policy applies to all employees contractors subcontractors consultants temporaries guests and any third party that uses information assets or information resources and services
+
+policy
+
+prohibited actions
+remote access to corporate systems is only to be offered through a companyprovided means of remote access in a secure fashion the following are specifically prohibited
+installing any remote access devices on a company system without approval
+remotely accessing corporate systems with the remote desktop tools without approval
+use of noncompanyprovided remote access software
+network access
+there are no restrictions on what information or network segments users can access when working remotely however the level of access should not exceed the access a user receives when working in the office
+working with clients information should be performed through vpn only in order to protect the data from malicious scenarios
+currently uses to provide employees remote network access the vpn relies on the tls protocol and is segregated into several purpose subconnections
+engineers and developers
+sales and marketing
+management
+soc analytics
+in order to add an additional layer of security mfa is configured for accessing vpn profiles
+the usage instruction is available for all employees and contractors of

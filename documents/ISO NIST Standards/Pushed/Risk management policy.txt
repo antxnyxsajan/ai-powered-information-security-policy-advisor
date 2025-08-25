@@ -1,0 +1,127 @@
+purpose
+
+the purpose of this policy is to establish a formalized procedure for risk assessment process in terms of information assets and information resources
+
+scope
+
+this policy applies to all employees contractors subcontractors consultants temporaries guests and any third party that uses information assets or information resources and services
+responsibilities
+this risk assessment provides provisions for all service activities and the information technology system required to operate those activities responsible persons for this procedure are
+ceo
+lead the reviewing of the risk assessment spreadsheet at a minimum annually
+maintain copies of annual risk assessment documents for 3 years
+isms manager
+сollect all information related to critical assets and company processes
+perform the risk assessment at a minimum annually
+risk owners
+maintain the critical assets or company processes
+approve the risks and risk scores associated with their processes and assets with isms manager
+carry out the risk treatment process associated with their asset or process with isms manager
+
+policy
+
+annual review of risk assessment
+should conduct an annual formal risk assessment that identifies current and possible risks and vulnerabilities also should review its policies procedures standards and guidelines following the updated risk assessment and make any applicable modifications to counter evolving threats
+risk assessment procedure
+risk assessment is a proactive process by which
+hazards are identified
+the risks associated with the hazard are evaluated
+appropriate methods to eliminate or control the hazard evaluated
+step 1 – identify the hazard
+look at your critical infrastructure and systems that you use critical asset registry
+talk with responsible persons across the company
+analyze recent accidentsincidents
+step 2 – decide who may be harmed and how
+include the employees contractors customers new and expectant ones
+step 3 – evaluate the risks
+check what controls are in place
+decide if the risk is acceptableavoidableneeds to be transferred or mitigated
+are further precautions required to eliminate or reduce the risk further
+prioritize the actions by their risk score
+step 4 – record your findings and implement them
+record assessment in risk assessment
+risk assessment structure
+general risk information
+risk no risk number
+type of risk
+operational risk occurs in case of inadequate or failed procedures systems or policies
+documentation risk occurs in case of unforeseen events with legalfinancialcontractual documentation
+compliance risk occurs when the company fails to comply with industry laws and regulations internal policies or prescribed best practices
+reporting risk occurs when fails to correctly report statements
+legal risk occurs when there are some sort of internal problems that lead to legal problems
+general risk category general description of risks
+detailed risk scenarios description of possible risk events that will have an uncertain negative impact on achieving business and isms goals
+risk owner is an accountable person who coordinates efforts to manage the risk
+assets associated with risks asset name
+type of asset the category of our assets
+people
+documentation
+equipment for physical security
+software
+hardware
+virtual machine data storage
+network infrastructure
+operational data
+communication
+office
+aws service
+asset owner is the person responsible for the daytoday management of assets
+risk management
+existing controls policies procedures or processes description of all actions that already exist in
+likelihood the probability of the risk occurring
+1 rare
+2 unlikely
+3 moderate
+4 likely
+5 almost certain
+impact the estimate of the potential losses associated with an identified risk
+1 very low
+2 low
+3 medium
+4 high
+5 very high
+existing risk rating done by multiplying impact score and likelihood an estimate of the potential losses associated with an identified risk
+1 very low
+2 low
+3 medium
+4 high
+5 very high
+further risk treatment yesno the decision if the risk should be treated
+approval tab the tab where the risk owner puts “approved” if heshe acknowledges the importance and the relevance of this risk and agrees with the given risk score
+risk treatment
+vulnerabilities associated with risk gaps or weaknesses that create risks
+proposed mitigation actions specific actions taken to reduce or eliminate risk or to exclude weaknesses
+mapped isoiec 27001 annex a сontrols isoiec 27001 list of controls that a business is expected to review for applicability and implementation
+actual likelihood the probability of the risk occurring
+1 rare
+2 unlikely
+3 moderate
+4 likely
+5 almost certain
+actual impact the estimate of the potential losses associated with an identified risk
+1 very low
+2 low
+3 medium
+4 high
+5 very high
+actual risk rating done by multiplying impact score and likelihood an estimate of the potential losses associated with an identified risk
+1 very low
+2 low
+3 medium
+4 high
+5 very high
+current control effectiveness a relative assessment of the actual level of control that is currently present and effective compared with that which is reasonably achievable for a particular risk
+nonexistent
+poor
+fair
+good
+very good
+status
+to do
+in progress
+done
+responsibility who is responsible for this risk and all actions related to that and will perform a risk treatment plan
+step 5 – review assessment
+assessments should be reviewed every year or earlier if it is suspected that the assessment is no longer valid
+risk assessment procedure before a new project
+all risks for current services are evaluated in the risk assessment so most of the risks regarding these projects are covered there but still the assessment should take place to find the particular risks

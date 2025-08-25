@@ -1,0 +1,46 @@
+purpose
+
+is committed to the correct use and management of access controls throughout the organization the purpose of this policy is to define the steps that must be taken to ensure that users connecting to resources are authenticated appropriately in compliance with company standards and are given the least amount of access required to perform their job function
+
+scope
+
+the scope of this policy includes all users who have access to companyowned or companyprovided computers or require access to the corporate network and systems this policy applies to employees and guests contractors and anyone needing access to the corporate systems
+
+policy
+
+general rules for access management
+all information systems must be password protected
+all information systems must be mfa protected where possible
+all information systems must be accessible only through corporate vpn when protection by mfa is impossible
+all information systems must have a designated information owner responsible for managing and controlling access to the system
+all information systems must have a designated system administrator for some systems it can be its owner as well
+access to all information systems and networks must be strictly controlled by formal registration and deregistration processes
+access to all information systems must be controlled by using unique user accounts
+regular access review process is performed to the critical systems only
+access to network and network services
+only authorized personnel have access to the network services where they will manage other necessary accesses create review backup and change network services configurations
+user registration and deregistration
+all company employees must have their unique user account to serve as an identifier for their different systems including the information that can identify them
+usage of an outdated user account is prohibited
+usage of one user account by different employees is unacceptable
+sharing the credentials with another employee or person not working in is prohibited
+security engineer creates new user accounts only after receiving the official requests
+security engineer creates a new user or role using the user account as a name
+when an employee leaves all their information systems network and projectbased accesses must be revoked as soon as possible the access revoking is approved by the pm and done by a security engineer
+user access provisioning
+requests from users for password resets must only be performed when the security engineer has verified the employee’s identity
+existing users who require additional access privileges must make the official written request
+accesses for users who change their work responsibilities must be reviewed to ensure that the new role will not require those accesses if the access is not needed it will be revoked
+management of privileged access rights
+access rights and privileges to information systems must be allocated based on the user’s functions
+the principles of zerotrust least privilege and needtoknow must be followed
+access privileges granted to users must not undermine essential segregation of duties
+the creation of user access accounts with special privileges such as administrators must be controlled and restricted to only those responsible for managing or maintaining the information systems
+review of user access rights
+system administrators owners must conduct a quarterly review of the access rights for critical systems
+workstation lockout
+employees must lock their workstations in case of inactivity and reenter the password
+for more information refer to the clear desk and clear screen policy
+password management
+the employees are required to follow the rules for maintaining passwords securely
+for more information refer to the password management policy

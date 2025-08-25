@@ -1,0 +1,15 @@
+purpose
+
+this policy describes the way we see using any type of removable media in our company the purpose is to minimize the risk of loss or exposure of the company’s information maintained by
+
+scope
+
+this policy applies to all employees users and third parties who access or use information assets regardless of physical location
+it resources include all companyowned licensed leased or managed hardware and software used by the infosec network via a physical or wireless connection regardless of the ownership of the computing device connected to the network
+
+policy
+
+removable media usage is strictly prohibited except if it is explicitly allowed by the management as it poses a high risk of malware infections or corporate data loss
+the only way of the applied data transfer is employees cannot download any type of received data on the usb drive or any other removable media
+the exception is asset manager who can sometimes use the approved usb drive for installation purposes
+employees can ask for individual exceptions from the management

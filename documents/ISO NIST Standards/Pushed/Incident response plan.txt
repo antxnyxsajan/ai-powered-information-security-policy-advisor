@@ -1,0 +1,167 @@
+purpose
+
+the purpose of this plan is to ensure effective and consistent management of security incidents involving and its clients’ information and information technology resources
+
+scope
+
+this plan applies to all company employees responsible for security incident response
+definitions
+incident a security event that has the potential to impact the confidentiality integrity or availability of an organizations assets or operations
+incident response ir the steps used to prepare for detect contain and recover from an incident aimed to quickly minimize incident impact contain damage and remediate the cause to reduce the risk of future incidents
+incident response plan a documented set of procedures to be followed in the event of a security incident
+incident response team a team of professionals responsible for responding to security incidents
+incident severity a measure of the impact and urgency of a security incident used to determine the appropriate response actions
+containment the process of partial or complete isolation of affected systems users or applications to prevent further damage
+remediation the process of minimizing the impact of a security incident by applying precise technical measures
+eradication the process of removing malware traces and improving security posture to avoid reinfection or similar incidents
+recovery the process of restoring affected systems data operations and workflows to their normal working state
+postincident review an analysis of the effectiveness of the incident response effort conducted after the incident has been resolved
+postincident activities longterm actions to be implemented after the incident has been resolved aimed to improve overall security posture and increase incident readiness
+responsibilities
+incident response team
+incident response officer is the incident response specialist that has ultimate accountability for the actions of the ir team and ir function this person should be an executivelevel employee
+incident response officer is responsible for
+reporting to the ceo and is a peer of other clevel executives
+an annual summary of the incidents for the calendar year
+reviewing any recommendations in the postincident report and determining additional followup actions
+leading incident response activities
+prevention and resolution of security incidents relating to personal data
+procedures of storage processing and auditing personal data
+incident response manager is the employee who leads the ir team’s efforts and coordinates activities between all of its respective groups this individual reports to the incident response officer
+incident response manager is responsible for
+processrelated training material preparation
+activating the ir team and managing all parts of the ir process from discovery assessment remediation and resolution
+prevention and resolution of security incidents relating to information systems
+leading investigations into how breaches happen
+soc analyst is a who detects suspicious activity and determines the nature of a threat and the extent of its penetration into the infrastructure this individual reports to the incident response manager
+soc analyst is responsible for
+monitoring networks and systems for security breaches or intrusions
+helping analysts detect incidents
+helping plan an organization’s information security strategy
+writing correlation rules for monitoring new types of malicious activities
+security incident classification system
+security incidents will be classified according to incident categories and severity of incidents to determine the appropriate response the incident response officer will maintain a security incident classification scheme to describe security events and support incident tracking over time
+four incident severity levels will be used to guide incident response critical high medium and low
+incident handling and response plan
+detection
+soc team is responsible for promptly reporting suspected or known security incidents including an observed or suspected security weakness in systems or services
+if there are suspected incidents including breaches of personal identity information in a hierarchical structure individuals at are required to report to if necessary then escalate issues or reports to after that the incident response team must be gathered as quickly as possible communication is via phone email chats or in person also each employee must be notified in the general chat of the company so employees can provide relevant evidence and additional incident information for the incident response team
+name response time date host ip other criteria depending on the incident
+description of the suspected security incident
+why did the incident escalate
+analysis and containment
+once a potential security incident is reported or anomalous activity detected the analysis must be performed to determine if it is indeed symptomatic of a security incident and to understand the nature of the incident for proper remediation
+incident response team can
+contact other professionals if needed
+analyze and correlate as many indicators as possible such as monitoring network traffic tofrom the host suspected of being compromised network packet captures for more indepth analysis log file analysis interviews with users andor system administrators etc
+determine the incident’s scope how many systems are affected is it actively propagating if so how
+protect other computers and information on the company network and internet
+block malicious ip addresses hosts vlans subnets
+if it is critical then disconnect from the entire network
+determine if any confidential data was or might have been affected
+take action to stop the potential loss of confidential data if needed
+changing file permissions to readonly on servers
+disconnecting servers with backups from the network
+stopping and disabling dbs
+changing passwords for administrators
+blocking the rights of users not involved in responding to incidents
+forced shutdown of workstations using mdm and edr
+disconnection of noncritical services from the internet
+blocking remote vpn connections
+monitoring disk and cpu activity and comparing it with the average
+if it became known about the beginning of the spread of the encryptor the incident response manager must immediately provide a centralized command to shutdown endpoints and then block the network
+identify the location and owner of the computers so they can be engaged in containment eradication and recovery
+research about the specific malware or type of attack also use the internet
+perform additional forensics sufficient to characterize the incident
+inform clients about incidents if needed clients media and official structures should be notified only with the ceo pr teams approval
+eradication and recovery
+once an incident is contained all malware should be securely removed systems should again be hardened and patched and updates should be applied affected systems and devices should be restored and returned to the business environment
+incident response team must
+preserve evidence if it has not already been done
+perform additional analysis as needed to complete the investigation
+remove the components of the incident impacting the affected systems such as deleting the malicious code or disabling a compromised user account
+mitigate the attack vector so a similar incident does not occur for example patch the vulnerability used to compromise the system apply standard system hardening procedures adjust firewall rulesets etc
+restore systems to normal operation using backup
+restore network access if the system was blocked during the containment phase
+return the system to normal operations
+answer the following questions
+when can systems be returned to production
+have systems been patched hardened and tested
+can the system be restored from a trusted backup
+how long will the affected systems be monitored and what will you look for when monitoring
+what tools will ensure similar attacks will not reoccur
+postincident activitiesclosure
+once the investigation is complete hold an afteraction meeting with all incident response team members and relevant stakeholders if needed to discuss what you’ve learned from the data breach
+the following steps should be done
+determine lessons learned and make recommendations to prevent subsequent similar incidents
+determine ways to improve the management of security incidents and help prevent future incidents
+issue final reports
+archive evidence and documentation
+conduct analysis of incident response process to find weaknesses and answer the following questions
+what problems arose during the incident response process what mistakes were made
+what changes need to be made to the security
+what weakness did the breach exploit
+whether to change the content of the incident response plan
+whether to conduct urgent training for incident response team and soc analysts
+how should employees be trained differently
+whether to change or start using new incident detection tools
+how will you ensure a similar breach doesn’t happen again
+close out the incident
+collection and preservation of evidence
+when collecting evidence follow all appropriate company policies and procedures
+document all actions taken in the collection and preservation of the evidence
+for data stored on electronic media make a mirror image or copy depending on applicable requirements of the media
+perform all forensics work on the image or copy not the original additional images or copies of the original can be made if needed
+incident tracking and reports
+the incident response manager will control an incident tracking system and record including but not limited to the following information about all reported security incidents
+date of report
+submitter name
+title
+status
+to do
+in progress
+closed
+date of incident
+insert incident date and time
+notified individuals
+insert notified individuals names
+type of incident
+exposure of information
+alterationdestruction of information
+network
+stolenlost computer equipment
+other use field below or
+insert additional incident type information
+affected systems if applicable
+insert names of systems affected by the incident
+affected records if applicable
+insert names of records affected by the incident
+incident description
+insert incident description
+impact
+insert incident impact
+action description
+insert takenplanned actions with date and time
+resolution
+insert resolutionmitigation steps
+recommendation
+insert recommended actions that should be taken to ensure that the same incident does not happen again
+all security incidents or suspected incidents ie reports of suspicious activity that upon investigation are determined not to be a security incident will be recorded in the incident tracking system
+the incident tracking data is confidential and should be protected when stored or transmitted and disclosed only to authorized individuals
+annual report
+in each year the incident response officer has to summarize the incidents for the previous calendar year and provide a report to the ceo the security incident data may also be used for other reports as needed this report will be marked as confidential
+postincident report
+the incident response officer will review any recommendations in the report and determine additional followup actions
+postincident reports must be submitted to the incident response officer and be marked as confidential
+the postincident report should typically include
+description of the incident its id link to the incident record
+history of incident record processing including timing and actions by responsible people
+impact and loss including financial
+if the resolution was effective
+conclusions and planned changes to the incident
+the postincident report should be attached to the incident records
+preparation for the incident
+annual training
+training must be conducted annually to ensure that all employees have a certain degree of awareness about cybersecurity and a basic level of training in dealing with a cyber crisis everyone also has to be aware of their roles and responsibilities in case of an event
+communication guidelines
+communication templates and guidelines must be created to enable seamless communication during and after an event with the team and the third party that can be affected by the incident

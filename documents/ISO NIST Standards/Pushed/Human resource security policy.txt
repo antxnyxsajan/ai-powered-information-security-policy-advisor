@@ -1,0 +1,50 @@
+purpose
+
+the primary purpose of the human resource security policy is to ensure that employees and contractors understand their responsibilities and are suitable for the roles for which they are considered ensure that employees and contracts are aware of and fulfill their information security responsibilities and protect other interests as part of the process of changing or terminating employment
+
+scope
+
+the policy statements apply to all resources at all levels of sensitivity including
+all fulltime parttime and temporary staff
+contractors subcontractors and consultants are working for or on behalf of
+all other individuals and groups who have been granted access to it systems and information
+this policy covers all information assets defined in risk assessment and will be a foundation for information security management
+
+policy
+
+this policy will help ensure the safety of the public and a safe working environment at
+screening
+as is a company that provides cybersecurity consulting services the candidates should be chosen carefully isms manager with hr generalist must establish formal hiring resigning and termination of all employees
+the hr generalist must carry out appropriate background verification checks for all candidates for employment contractor status or thirdparty user status
+proof of a person’s identity eg passport details
+proof of work experience eg resumecv and references
+social networks verification
+criminal record checks optional
+terms and conditions of employment
+at the beginning of work the employee’s legal responsibilities and rights relevant to employment at must be communicated they shall be clearly stated in the signed agreement
+all employees must sign an appropriate nondisclosure agreement nda at the time of joining this agreement shall require the employee to keep the data they receive strictly confidential and comply with applicable information security policies and procedures
+employees sign nca noncompetition agreement
+the terms and conditions of employment must include all responsibilities of the users towards information security
+management responsibilities
+managers must require all employees who work under their area of concern to apply security by information security policies and procedures
+the management must ensure that employees are
+appropriately brief on their information security roles and responsibilities
+encouraged to fulfill information security policies
+continue to have the appropriate skills and qualifications
+regularly educated
+managers must be aware of the personal circumstances of their employment and must be on the lookout for any behavioral change that may lead to security breach or violation
+employees’ paid time off must not affect the availability and performance of service provision at refer to employee handbook which is stored on our page for further information
+information security awareness education and training
+suitable information security awareness training and education must be provided to employees clarifying their responsibilities relating to information security policies and procedures
+isms manager is responsible for
+preparing an annual information security awareness program and training plan
+issuing awareness material to keep all employees aware of their information security roles and responsibilities
+management must allocate sufficient onthejob time for employees to familiarize themselves with information security policies procedures and the appropriate ways of conducting business
+every newcomer must pass the information security awareness session and have an interview with hr to check the knowledge of isms policies it must be done within the first week of the hiring date
+disciplinary process
+the disciplinary process must provide a gradual response taking into consideration factors
+formal disciplinary actions must be taken based on the disciplinary procedure
+termination or change of employment responsibilities
+responsibilities and practices for performing employment termination or change of employment must be clearly defined and assigned all actions should occur according to the termination procedure
+hr with the project manager must inform an employee about job duty changes and perform all necessary access rights logical and physical to assets
+the list of responsibilities in the hr processes

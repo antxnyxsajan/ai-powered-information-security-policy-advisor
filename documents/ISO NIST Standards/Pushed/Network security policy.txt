@@ -1,0 +1,34 @@
+purpose
+
+the purpose of this policy is to establish the technical guidelines for network security and to communicate the controls necessary for a secure network infrastructure the network security policy will provide the practical mechanisms to support the companys comprehensive set of security policies
+
+scope
+
+this policy applies to all employees contractors subcontractors consultants temporaries guests and any third party that uses information assets or information resources and services
+
+policy
+
+network device configuration
+authentication on network devices must be configured according to password management policy special considerations are to be made due to the nature of the device
+administrative access to systems must be limited to only those with a legitimate business need
+network documentation
+the company requires that network documentation be updated at least quarterly or after big changes at a minimum network documentation should include
+network diagram
+networking devices
+network devices’ configuration checks should be implemented consistently the following requirements apply to the companys implementation of network devices
+network devices must provide secure administrative access through encryption with management access limited to only networks where management connections would be expected to originate
+clocks on all network devices should be synchronized using ntp or other means
+access control lists must be implemented on network devices that prohibit direct connections to the devices connections to the router should be limited to the greatest extent possible
+unused services and ports must be disabled on network devices
+access to administrative ports on the network devices must be restricted to known management hosts and otherwise blocked with a firewall or access control list
+servers
+the following requirements apply to company servers
+unnecessary files services and ports should be removed or blocked
+servers even those meant to accept public connections must be protected by a firewall or access control list
+a standard installation process should be developed for the company’s servers
+management access to servers must be available only to authorized users from a protected network perimeter or a specified list of ip addresses
+security assessments
+security testing be performed on the following recurring schedules
+vulnerability scanning must be performed biweekly
+penetration testing must be performed at least once per year
+system administrators are responsible for the patch management process
