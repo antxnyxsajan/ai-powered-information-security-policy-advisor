@@ -1,0 +1,27 @@
+8.25. POLICY FOR CRYPTOGRAPHIC KEY MANAGEMENT, CONTROL & ENCRYPTION
+8.25.1. PURPOSE
+This policy outlines the framework for the management, control, and encryption of cryptographic keys within RSET. The purpose of this policy is to ensure the secure generation, storage, distribution, and disposal of cryptographic keys to protect sensitive data and maintain the confidentiality, integrity, and availability of information assets.
+8.25.2. SCOPE
+This policy applies to all employees, contractors, and third-party entities who have access to or manage cryptographic keys for RSET or for its clients. It encompasses all systems, applications, and devices that use cryptographic keys for data protection.
+8.25.3. POLICY STATEMENTS
+Clause 1: Key Generation
+(a) Cryptographic keys must be generated using approved cryptographic algorithms and methods.
+(b) Keys must be generated in a secure and controlled environment.
+(c) The generation process must select in such a way to ensure randomness.
+Clause 2: Key Storage
+(a) Cryptographic keys must be stored securely to prevent unauthorized access.
+(b) Keys must be protected against physical and logical threats.
+(c) Storage of keys must comply with industry standards and best practices.
+Clause 3: Key usage
+(a) Keys should be used only for authorized purposes and by authorized individuals.
+(b) Never hardcode cryptographic keys within applications or repositories.
+(c) Proper access controls shall be implemented for key usage.
+Clause 4: Key Rotation
+(a) Define key rotation schedules and procedures shall be defined for all cryptographic keys.
+(b) Ensure key rotation does not disrupt critical operations.
+(c) Old or compromised keys must be securely retired and replaced.
+Clause 5: Key Management
+(a) Maintain an inventory of all keys, their purpose, and their owners.
+(b) Record of all key distribution shall be maintained.
+(c) Store backups securely and separate from primary keys,
+(d) Key backup and recovery procedures shall be established to ensure key availability in case of loss or compromise.

@@ -1,0 +1,18 @@
+8.16. POLICY FOR BUSINESS CONTINUITY AND DISASTER MANAGEMENT
+8.16.1. PURPOSE
+Business Continuity and Disaster recovery policy has defined to meet RSET’s business objectives, respond to a major incident or disaster, and restore RSET’s critical business functions.
+8.16.2. SCOPE
+All RSET employees are covered by the terms of this policy.
+8.16.3. POLICY STATEMENTS
+Clause 1: RSET shall maintain, list of IT services along with resilience requirement to support delivery of critical services.
+Clause 2: Plans for disaster recovery/business resumption/business continuity shall be developed and tested.
+Clause 3: Disaster recovery/business resumption plans shall be updated at least annually or when there are any significant changes to computing or telecommunications environment.
+Clause 4: Contingency plan shall be created with following details:
+* Communication Plan: Who is to be contacted, when, and how? What immediate actions must be taken in the event of certain occurrences?
+* Succession Plan: Describe the flow of responsibility when normal staff is unavailable to perform their duties. 
+* Criticality of Service List: List all the services provided and their order of importance. It also explains the order of recovery in both short-term and long-term timeframes. 
+* Data Backup and Restoration Plan: Detail which data is backed up, the media to which it is saved, where that media is stored, and how often the backup is done. It should also describe how that data could be recovered. 
+Clause 5: RSET shall maintain alternate storage site, in direct guidance and association with Information Asset Owner. Alternate storage site shall be separated from the primary storage site to reduce susceptibility to the same threats.
+Clause 6: RSET shall establish an alternate processing site, including necessary agreements to permit the transfer and resumption of the information system operations for essential missions/business functions within the period consistent with recovery time and recovery point objectives when the primary processing capabilities are unavailable.
+Clause 7: RSET shall establish alternate telecommunications services including necessary agreements to permit the resumption of information system operations for essential missions and business functions within agreed upon recovery timeframes when the primary telecommunications capabilities are unavailable at either the primary or alternate processing or storage sites.
+Clause 8: BCP plan shall be tested once in year to evaluate its effectiveness.

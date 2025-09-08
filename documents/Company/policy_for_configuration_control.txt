@@ -1,0 +1,113 @@
+8.33. POLICY FOR CONFIGURATION CONTROL
+8.33.1. PURPOSE
+The purpose of this policy is to establish framework for the management, documentation, and control of configurations within RSET, ensuring the stability, reliability, and security of all systems and assets.
+8.33.2. SCOPE
+This policy applies to all employees, contractors, and third-party entities who have access to and are responsible for the configuration of any systems, hardware, software, or network infrastructure within the organization.
+
+8.33.3. POLICY STATEMENTS
+Clause 1: All configurations related to hardware, software, network components, and system documentation shall be uniquely identified and documented in a central repository.
+
+Clause 2: Configuration items shall be labelled and tracked throughout their lifecycle, including version numbers, dates, and responsible personnel.
+
+Clause 3: All proposed changes to configurations must undergo a formal change control process.
+
+Clause 4: Change requests shall be documented, reviewed, and approved by designated authorities before implementation.
+
+Clause 5: A rollback plan must be in place for each change to revert to the previous configuration in case of unforeseen issues.
+
+Clause 6: Configuration baselines shall be established and maintained for different stages of the system development or project lifecycle.
+
+Clause 7: Designated personnel shall be responsible for overseeing configuration management activities, including identification, control, status accounting, and audits.
+
+Clause 8: Employees involved in configuration management shall receive appropriate training and guidelines to ensure compliance with this policy.
+
+Clause 9: Regular audits shall be conducted to ensure compliance with this policy and established configuration standards.
+
+
+
+Annexure - 1
+ABBREVIATIONS
+
+CEO
+Chief Executive Office
+CIA
+Confidentiality, Integrity & Availability
+CISO
+Chief Information Security Officer
+DoS
+Denial of Service
+DDoS
+Distributed Denial of Service
+DMS
+Document Management System
+IS Team
+Information Security Team
+IaaS
+Infrastructure as a Service
+IAO
+Information Asset Owner
+ISMS
+Information Security Management System
+IT Team
+Information Technology Team
+KPI
+Key Performance Indicator
+MFA
+Multi Factor Authentication
+NIST
+National Institute of Standards and Technology
+PaaS
+Platform as a Service
+PII
+Personally Identifiable Information
+SaaS
+Software as a Service
+VAPT
+Vulnerability Assessment & Penetration Testing
+VPN
+Virtual Private Network
+
+
+
+
+
+
+
+
+
+Annexure – 2
+DEFENITIONS
+1. Accountability:
+Accountability in information security refers to the concept that individuals or entities are responsible and answerable for their actions within a system. It ensures that actions can be traced back to specific users or entities, promoting transparency and responsibility.
+2. Auditability:
+Auditability is the capability of a system to generate logs, records, or trails of activities and events that occur within it. These logs can be reviewed and analysed to monitor and investigate security incidents, ensuring that security policies are followed, and breaches can be detected and addressed.
+3. Authorization:
+Authorization determines what actions or resources a user or system is permitted to access or perform after successful identification. It specifies the permissions and privileges granted to users based on their roles and responsibilities.
+4. Authenticity:
+Authenticity ensures that the identity of a user or system is genuine and not forged. It verifies the origin and integrity of data or communication, ensuring that it comes from a trusted source and has not been tampered with.
+5. Availability:
+Availability ensures that information and systems are accessible and usable when needed. It involves implementing measures to prevent disruptions or downtime caused by various factors, such as hardware failures, software glitches, or denial-of-service attacks. Availability ensures that authorized users can access information and services without interruption.
+6. Business Continuity Plan
+Business Continuity Plan (BCP) is a comprehensive strategy and set of procedures that is developed to ensure its critical business functions can continue or be rapidly restored in the event of a disruption, disaster, or emergency.
+7. Confidentiality:
+Confidentiality ensures that information is accessible only to those who have the proper authorization. It involves protecting sensitive data from unauthorized access, disclosure, or exposure to individuals or entities who should not have access to it. Confidentiality measures aim to keep data private and secure.
+8. Disaster Recovery
+Disaster Recovery (DR) refers to the systematic processes, policies, and procedures that an organization implements to recover its IT systems, data, and business operations after a disruptive event or disaster.
+9. IaaS (Infrastructure as a Service):
+IaaS is a cloud computing service model that offers virtualized computing resources over the internet. With IaaS, users can provision and manage virtual machines (VMs), storage, and networking infrastructure on-demand. It provides a flexible and scalable infrastructure that allows users to build, run, and manage their own software applications and services. IaaS providers deliver the fundamental building blocks of computing infrastructure, and users are responsible for configuring and managing their operating systems and software. 
+10. Integrity:
+Integrity ensures the accuracy and reliability of data and systems. It involves protecting information from unauthorized alterations, modifications, or tampering. Integrity measures help ensure that data remains uncorrupted and trustworthy throughout its lifecycle.
+11. Identification:
+Identification is the process of establishing the identity of a user, system, or entity in a computer system. It typically involves the use of usernames, passwords, biometrics, or other credentials to confirm the identity of a user.
+12. Non-repudiation:
+Non-repudiation is a security measure that prevents individuals or entities from denying their actions or transactions in a system. It ensures that once a party has taken a specific action, such as sending a message or making a transaction, they cannot later deny their involvement.
+13. PaaS (Platform as a Service):
+PaaS is a cloud computing service model that provides a platform and environment for developers to build, deploy, and manage applications. PaaS offerings include tools, frameworks, and services for application development, testing, and hosting. Developers can focus on coding and application logic while the PaaS provider handles the underlying infrastructure, including servers, storage, and networking. 
+14. Risk
+Risk can be defined as the likelihood or probability of an event or situation occurring that may have both positive and negative consequences or outcomes. In various contexts, risk is often associated with uncertainty and the potential for harm or loss,
+15. SaaS (Software as a Service):
+SaaS is a cloud computing service model where software applications are provided over the internet on a subscription basis. With SaaS, users can access, and use software applications hosted and managed by a third-party provider. These applications are typically delivered through a web browser and do not require users to install or maintain the underlying infrastructure, operating systems, or software. 
+16. Safety
+Safety in information security refers to the protection of data and systems from accidental loss, damage, or destruction. It involves measures to prevent data loss due to events like hardware failures, power outages, and natural disasters.
+17. Threat Intelligence
+Threat Intelligence refers to information that is collected, analysed, and disseminated to help organizations understand and defend against cybersecurity threats. It encompasses a wide range of data and analysis related to potential threats to an organization's information systems, networks, and data.

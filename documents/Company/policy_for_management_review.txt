@@ -1,0 +1,20 @@
+8.24. POLICY FOR MANAGEMENT REVIEW
+8.24.1. PURPOSE
+At RSET, CEO along with his leadership team are accountable to ensure that a robust cyber security risk management policy is established to comprehensively manage cyber and information security risk and vulnerabilities. This policy has defined to ensure that all relevant information regarding the operation of the Information and cyber security is conveyed to CEO and his leadership team, so that appropriate decisions can be made concerning the effectiveness and suitability of the system.
+8.24.2. SCOPE
+The scope of the Management Review covers all the activities, which are concerned with ensuring that the Information and Cyber Security Framework and Management System remains effective and suitable in relation to the business objectives of RSET.
+8.24.3. POLICY STATEMENTS
+Clause 1: Leadership team shall conduct quarterly management review meeting to review information security related activities.
+Clause 2: Information Security team shall submit following information to the Board in periodic basis: 
+o Status of action items from previous meeting.
+o Cyber security issues.
+o Report with relevant KPIs, KRIs, status report on Staff awareness program. 
+o Status on controls maturity levels.
+o Reports of Information security Audits.
+o Non-Conformances and corrective action plan
+o Actions planned/ taken for continual improvement. Improvement received from such actions.
+o Feedback from Interested Parties
+o Results of Risk assessment and Risk treatment plan.
+o Changes in Internal/ external factors that are relevant to information security management.
+o Activities planned for upcoming months which require management approval.
+Clause 3: The progress of actions arising from the review is monitored to ensure effective implementation.

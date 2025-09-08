@@ -1,0 +1,59 @@
+8.17. POLICY FOR PHYSICAL AND ENVIRONMENT SECURITY
+8.17.1. PURPOSE
+The objective of this policy is to protect information assets of from physical threats. The policy covers.
+* the rules for granting control, monitoring, and removal of physical access to office premises.
+* to identify sensitive areas within the organization; and to define and restrict access to the same. 
+8.17.2. SCOPE
+This policy applies to all RSET staffs, including Permanent and Temporary employees, contractors, consultants, suppliers, and other third parties.
+8.17.3. POLICY STATEMENTS
+Clause 1: Physical access to the office premises should be controlled with access management system. 
+Clause 2: Employee Access/ ID Card
+* All the employees shall be issued with a Photo ID-card. 
+* All employees shall wear the ID-card and displayed by while in the Office premises.
+* In case of lost or stolen card the employee needs to inform the administrative department and raise it as incident in form of mail.
+* IT Team shall remove the access of such card immediately.
+* A temporary card shall be issued till the new card is received.
+Clause 3: Security perimeters should be developed to protect areas that contain information systems to prevent unauthorized physical access, damage, and interference.
+Clause 4: RSET shall ensure that sensitive and/or critical information processing facilities are appropriately equipped and maintained with security controls to safeguard the information contained within the facility against manmade or environmental threats.
+
+Clause 5: Publicly accessible areas shall be appropriately isolated from information assets and information processing facilities.
+
+Clause 6: All incoming and outgoing items, packages and/or materials related to information security shall be registered and inspected by Security Staff.
+
+Clause 7: Access rights to different areas within the premises shall be based on the principle of least privilege. Only individuals with a legitimate need shall be granted access.
+Clause 8: Information systems and their components should be positioned within the facility to minimize risks from physical and environmental hazards and opportunities for unauthorized access.
+Clause 9: Physical access to the information systems should be monitored to detect and respond to physical security incidents.
+Clause 10: RSET shall maintain surveillance and monitoring systems in the strategic areas of the office to protect against unauthorized access, theft, and damage to physical assets.
+Clause 11: Surveillance footage shall be retained for a period of 15 days, and access to recorded data will be restricted to authorized personnel.
+Clause 12: Regular physical security audits and reviews shall be conducted to identify vulnerabilities and weaknesses in security measures.
+Clause 13: Clock of Access Control systems, CCTV servers shall be synchronised with approved time sources.
+Clause 14: Building premises is guarded by physical security personnel and is regularly supervised. Unused areas are locked, and still/ mobile photography is not permitted in the work areas by any external personnel unless specifically authorized. Access to restricted areas is granted only for specific individuals.
+Clause 15: Visitor Management
+* All visitors shall be addressed one of the members of Admin team at the reception and shall be escorted by an employee of RSET or by the guard during the official working hours. No visitors are entertained after official hours of RSET. 
+* Visitors shall be provided with temporary access badges or passes and will be escorted as necessary. Visitors to critical facilities must be escorted always.
+* All visitors shall be recorded in the Visitor logbook including their ID number, System details, Purpose of visit and time in / out.
+* All physical access points to the facilities where information systems reside shall be controlled and access shall be granted to individuals after verification of access authorization.
+* External agencies’ access such as courier and delivery services shall be restricted to reception area.
+
+Clause 16: Cabling Security
+* Appropriate cabling standards shall be used for network cables, power cords, patch cables and that these are uniformly marked and labelled (Wherever applicable). 
+* IT team shall also ensure that the cables are appropriately protected from unauthorized access, interception, damage and/or interference. Access to patch panels and cabling rooms/ cabinets shall be controlled.
+Clause 17: Clean Room Security
+* Access to clean room shall be restricted only to the employees working on specific client projects
+* Smart phones and Personal devices should not be allowed inside the clean room
+* CCTV shall be deployed in the clean room
+
+Clause 18: Protecting against external and environmental threats.
+* The building shall be equipped with adequate fire detection and protection mechanism, along with climate controlled environment, both in the work area and in the server room. Employees are trained on fire safety and first aid procedures.
+* As far as possible, the office location shall be selected in areas where no historical natural calamities are reported.
+* Office shall be selected in upper floors of the building to prevent any risk of flood.
+
+Clause 19: Movement of Assets
+* Unless authorized by Admin Head, no information asset is allowed to be taken off premises by any employee or third party.
+* The movement/ removal of RSET property should always be recorded by respective asset owner.  Such removal records should be maintained and periodically reviewed to detect unauthorized removal of property from RSET premises.
+ 
+Clause 20: Alternate power sources like UPS shall be deployed to avoid distruption of service due to power failure.
+
+Clause 21: Physical Equipment Maintenance
+
+* RSET shall follow equipment maintenance standards and procedures, taking into consideration the sensitivity and criticality of the equipment, the vendor specifications/ recommendations, and insurance, warranty and contractual requirements.

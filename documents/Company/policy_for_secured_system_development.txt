@@ -1,0 +1,73 @@
+8.13. POLICY FOR SECURED SYSTEM DEVELOPMENT
+8.13.1. PURPOSE
+The purpose of this policy is to define the practices to be followed at RSET (developed internally or outsourced) during the development of systems, in a way which maximizes its security. Secure development will contribute to availability, integrity and confidentiality of system and information maintained within the system by ensuring that as many vulnerabilities as possible are identified, designed to handle them, and tested before system is deployed in the live environment.
+8.13.2. SCOPE
+This policy is applicable to all software developed by RSET internal IT team or by independent contractors for use by "RSET" and/or its clients.
+8.13.3. POLICY STATEMENTS
+Clause 1: General
+
+Clause 1.1: RSET MUST develop, operate, and maintain its systems following Secured Software Development Policy.
+Clause 1.2: Introducing new systems and major changes to existing systems MUST follow a formal process of security risk assessment that includes analysis of the impacts of the changes to the users and to the environment. System rollback plans shall be in place to bring the system back to its older state. 
+
+Clause 1.3: A system development plan shall be created for each engagement. It shall address the areas of planning, gathering requirements and analysis, design, development and coding, testing, deployment, and maintenance aligned to the selected software development life cycle.
+ 
+Clause 1.4: Third-party vendors MUST meet the policy requirements when developing systems.
+
+Clause 1.5: Threat modelling shall be done to assess the potential threats to the system and design controls to be address it.
+
+Clause 1.6: Release of systems functionalities must be done only after successful testing and approval.
+
+Clause 2.0: Secured System development environment
+Clause 2.1: RSET should evaluate the risks associated with the development of individual systems and establish secure development environments for specific system development efforts.
+Clause 2.2: System source code shall protect from all forms of unauthorized access and tampering by safeguarding the development, build, distribution, and update environments and following the least privilege principle.
+Clause 2.3: All development projects MUST exhibit a separation between production, development, and testing environments. 
+Clause 2.4: Developers MUST not have access to production environments, if required temporary access shall be provided after getting the appropriate approvals from customer or system owner.
+Clause 2.5: Systems accounts and access permissions must be based on the least privileges required to perform the task.  
+Clause 3.0: Software Development Lifecycle requirement
+Clause 3.1: Information security requirements must be identified using various methods such as deriving compliance requirements from policies and regulations, threat modelling, incident reviews, or the use of vulnerability thresholds. Results of the identification should be documented and reviewed by all stakeholders.
+Clause 3.2: Information security requirements and controls should reflect the business value of the information involved and the potential negative business impact, which might result from a lack of adequate security.
+Clause 3.3: Information security requirements should minimum consider:
+a) The level of confidence required towards the claimed identity of users, to derive user authentication requirement.
+b) Access provisioning and authorization processes, for business users as well as for privileged or technical users.
+c) The required protection needs of the assets involved, regarding availability, confidentiality, integrity.
+d) Requirements derived from business processes, such as transaction logging and monitoring, nonrepudiation requirements.
+e) Requirements mandated by other security controls, e.g., interfaces to logging and monitoring or data leakage detection systems.
+Clause 3.4: Solution and infrastructure design shall be developed considering the non-functional requirements like availability, scalability, maintainability, security, performance, fault tolerance etc.
+Clause 3.5: Criteria for accepting products should be defined which covers security requirements as well.
+Clause 3.6: Solution design must ensure integrity of data within the system.
+Clause 3.7: Following factors shall be considered while designing Infrastructure and solution.
+o Secure connection parameters between the user and the system resources shall be established, such as the use of HTTPS where needed such as with login forms, digital signatures, and encryption where sensitive data are in transit.
+o Tested preventive measures shall be in place to protect the system from Denial of Service (DoS) or Distributed Denial of Service (DDoS) attacks.
+o Proper use of authentication mechanisms such as identity management and password policies/ complexities enforcements shall be used. 
+o Secure session establishment and termination between the users and the resources shall be incorporated. 
+o Multi-factor authentication in high-risk systems shall be implemented where possible.
+o Users and system activities in the systems shall be logged and monitored where possible for auditing and reference purposes.
+
+Clause 3.8:  Follow secured coding guidelines and techniques shall be followed throughout the SDLC.
+o Ensure code meets the level of confidence that software is free from exploitable code vulnerabilities, regardless of whether they are already designed into the software or inserted later in its life cycle.
+o Ensure code provides predictable execution or justifiable confidence and that the software, when executed, will provide security functionality as intended.
+o Coding techniques must address injection flaws particularly SQL injection, buffer overflow vulnerabilities, cross-site scripting vulnerabilities, improper access control (insecure direct object reference, failure to restrict URL access, directory traversal etc.,), cross-site request forgery (CSRF), broken authentication and session management.
+o Data validation checks shall be applied in all sources of incoming data. Application must validate input to ensure it is well formed and meaningful.
+o Disable Error messages that return any information to the user.
+o Use environment variables prudently and always check boundaries and buffers.
+
+
+Clause 3.9: Testing
+
+o A thorough test and verification should be done during the development processes. Test plan and test cases MUST be created for ensuring test coverage and test results MUST be documented.
+o While testing the solution, test data shall be prepared in such a way that there is no Personal Identifiable Information or confidential information is used,
+o Identifier that will help to identify personal or any confidential information shall be sanitised.
+
+Clause 3.10: Change Management
+o Changes to information resources shall be managed and executed according to a formal change control process. The process will ensure that changes proposed are reviewed, authorized, tested, implemented, and released in a controlled manner; and that the status of each proposed change is monitored.
+o Production release: Changes should not be implemented directly to the production information systems without impact assessment of such changes and the approval of other authorized personnel.
+o Production Deployment - Implementation must only be undertaken after appropriate testing and approval by the stakeholders. 
+
+Clause 3.11: Handling production data for reproduction of issues
+
+Sensitive production data should not be replicated to testing environment without approval of Information Security team. If data is replicated to test environment to test and reproduce any issues, it shall be deleted as soon as issue is identified and fixed.
+
+Clause 3.12: Security Testing in Production Environment
+
+* Vulnerability Assessment such as penetration testing and web application security testing shall be conducted after approval of CISO and Top Management
+* Scope of such testing should be limited to find out potential vulnerabilities and disruptive testing, Denial of Service etc should not be done during testing,

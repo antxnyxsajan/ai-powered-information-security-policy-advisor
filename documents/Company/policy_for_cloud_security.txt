@@ -1,0 +1,21 @@
+8.15. POLICY FOR CLOUD SECURITY
+8.15.1. PURPOSE
+This policy defines the framework for leveraging any cloud infrastructure, applications or systems managed by a service provider for fulfilling business purpose of RSET.
+8.15.2. SCOPE
+This policy is applicable to all cloud-deployed systems, applications, and infrastructure.
+8.15.3. POLICY STATEMENTS
+Clause 1:  IT team shall develop Business requirements for cloud outsourcing with criteria and processes for identifying critical or important systems.
+Clause 2: Identify risk associated with outsourcing of each cloud service which includes information and communication technology, information security, business continuity, legal and compliance, reputation, operations, and possible oversight limitations for, asses its impact and develop plan to manage it.
+Clause 3: Perform Due diligence of potential Cloud Service Providers (CSPs) for a service before a selection.
+Clause 4: Ensure that the CSP complies with internationally recognized information security standards and has implemented appropriate information security controls.
+Clause 5: Cover following aspects while building contract for cloud service:
+o Location in which data is stored.
+o Situations in which the client has the right to terminate the agreement.
+o Dispute resolution
+o Information security
+o Data confidentiality, ownership, and control in compliance with local Laws.
+o Business continuity management and disaster recovery
+Clause 6: Ensure that the respective rights and obligations of a licensee and the CSP are clearly set out in a legally enforceable written agreement.
+Clause 7: Ensure that information security roles and responsibilities between the licensee and the CSP, including in relation to threat detection, incident management and patch management are clearly defined and agreed contractually.
+Clause 8: Ensure that strong authentication mechanisms and access controls are implemented to prevent unauthorized access to the licensee’s data and back-end cloud resources.
+Clause 9: During the change of CSP or termination of the services, ensure that all data is securely removed from the cloud service provider's infrastructure and that no residual data remains.

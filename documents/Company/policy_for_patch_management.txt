@@ -1,0 +1,18 @@
+8.11. POLICY FOR PATCH MANAGEMENT
+8.11.1. PURPOSE
+This policy provides the processes and guidelines necessary to maintain the security hardening and integrity of network systems at RSET by applying the latest operating system and application-level security updates/patches in a timely manner (provided that underlying applications are certified to run with the updated version of the operating system) and to establish a baseline methodology and timeframe for patching and confirming patch management compliance. 
+Desktops, laptops, servers, applications, and network devices represent access points to sensitive and confidential data, resources, and services of RSET. Ensuring that security updates and patches are distributed and implemented in a timely manner is essential towards mitigating malware, exploitation, and other threats.
+8.11.2. SCOPE
+Any information system, to include desktops, laptops, software’s, servers, and networks devices.
+8.11.3. POLICY STATEMENTS
+Clause 1: All server, desktop, and laptop systems, including all hardware and software components, must be accurately listed in the IT Department asset inventory to aid in patching efforts.
+Clause 2: Vulnerability scanning of systems shall be done on timely basis. 
+Clause 3: SLA to apply patches. 
+o Critical security patches are applied within 1 week of them being released by vendors.
+o Important security patches are applied within 4 weeks of them being release by vendors.
+Clause 4: Endpoint systems must be restarted following installation, to ensure security patches have been fully installed.
+Clause 5: Where possible, it is recommended that Endpoint devices are set to auto-update their security patch levels, and restart if necessary to complete the installation It is mandatory to restart the endpoint devices at-least once a week / month to successfully apply the pending patches and flush the cache in the endpoint devices [ Desktop / Laptops] 
+Clause 6: All patches must be downloaded from the relevant system vendor or other trusted sources. Each patch’s source must be authenticated, and the integrity of the patch verified. All patches must be submitted to an anti-virus scan upon download.
+Clause 7: New servers and desktops must be fully patched before coming on-line to limit the introduction of risks.
+Clause 8: A rollback plan that allows safe restoration of systems to their pre-patch state must be devised prior to any patch rollout if the patch has unforeseen effects.
+Clause 9: All configuration and inventory documentation must be immediately updated to reflect applied patches.

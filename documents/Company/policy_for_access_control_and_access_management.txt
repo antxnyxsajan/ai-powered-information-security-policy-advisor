@@ -1,0 +1,26 @@
+8.8. POLICY FOR ACCESS CONTROL AND ACCESS MANAGEMENT
+8.8.1. PURPOSE
+
+Protecting access to IT systems and applications is critical to keep the integrity of RSET technology and information and prevent unauthorized access to such resources. Access to RSET’s systems must be restricted to only authorized users or processes, based on the principle of least privilege.
+
+The goal of this policy is to ensure adequate controls are in place to restrict access to systems and data.
+
+8.8.2. SCOPE
+All staffs and organization work directly or indirectly with RSET includes employees, contractors, temporary employees, and vendors.
+8.8.3. POLICY STATEMENTS
+Clause 1: Authentication policies, procedures and processes must be distributed to all users when required.
+Clause 2: Access control to the systems must be in place on all system components and must be configured to enforce privileges assigned to individuals based on job classification, function and need to know principle.
+Clause 3: Access control to the systems must be configured with a default “deny-all” setting.
+Clause 4: Group and shared IDs shall not be used for authentication and authorization purposes. 
+Clause 5: Authorization of access:
+o Access is given through the establishment of a unique account in accordance with account request procedures. 
+o Access shall be provided to users after approval from the asset owner. Approval Matrix shall be maintained.
+o Asset custodian shall be responsible for assigning/ revoking access.
+o Access is based on individual personnel’s job classification, function and need to know principle.
+Clause 6: Multifactor Authentication shall be used for accessing critical systems.
+Clause 7: Only authorized users shall be granted access to production systems and applications with formal approval from respective asset owners/ functional heads or Leadership.
+Clause 8: User’s access to systems shall be removed before their exit process is completed by HR on the last day of the staff leaving RSET. 
+Clause 9: Any vendor or contractor that requires remote access to RSET Systems for support, maintenance or administrative reasons must designate a person to be the Point of Contact (POC). Access should be created specifically in the name of the person and should be removed immediately after the support or at the time of change of person.
+Clause 10: User Access in systems shall be reviewed once in a year.
+Clause 11: Record of Identity Assignment and revoke shall be maintained, especially in cases where the audit trail of access management is not available in the system.
+Clause 12: If any users who require special rights to perform specific duties, such access shall be approved by Asset Owner and member of Top Management. Such access shall be removed once the intended objectives are met,

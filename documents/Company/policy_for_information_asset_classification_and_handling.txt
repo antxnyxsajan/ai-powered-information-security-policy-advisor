@@ -1,0 +1,49 @@
+8.9. POLICY FOR INFORMATION ASSET CLASSIFICATION AND HANDLING
+8.9.1. PURPOSE
+Information Asset classification, in the context of Information Security, is based on its level of sensitivity and the impact to RSET. Any information asset should not be disclosed, altered, or destroyed without authorisation. The classification of Information assets helps to determine what baseline Security Controls are appropriate for safeguarding that Information. All Information assets should be classified into one of three sensitivity tiers namely Confidential, Internal, Public.
+The purpose of this policy is to ensure that confidential information is protected from unauthorized use and disclosure. This policy helps to facilitate the identification of information assets to support routine disclosure and active dissemination of information. 
+8.9.2. SCOPE
+This policy applies to all Permanent and Temporary employees of RSET, all contractors, consultants, and vendors who have access to RSET Information asset.
+8.9.3. POLICY STATEMENTS
+Clause 1: IT Team must identify asset owners and ensure maintenance of the appropriate controls.
+Clause 2: Responsibility for implementing and managing controls may be delegated, although accountability must remain with the nominated owner of the asset. 
+Clause 3: Depending on the classification of information assets, electronic transmission/copying/ distribution, shall require prior approval from identified authorities.
+Clause 4: Post classification of assets, Confidential information must be stored with proper security.
+Clause 6: Appropriate access restrictions shall be applied to prevent access from unauthorized personnel.
+Clause 7: A formal record of the authorized recipients of data shall be maintained.
+Clause 8: The distribution of data shall be based on “need to know” and “need to use” principles.
+Clause 9: Distribution lists and lists of authorized recipients shall be reviewed at regular intervals.
+Clause 10: A process and procedure for recording, maintaining, and updating inventory of all information assets (i.e., asset register) owned and managed by RSET shall be maintained. 
+Clause 11: The inventory shall be categorized into various types like hardware, software, information etc. All information assets should be catalogued. At a minimum, following details should be captured.
+o Source of information asset
+o Use of information asset
+o Business process dependent on Information asset
+o Users/ group of users of information asset	
+
+Clause 12: Information Assets classification shall be done based on three principles of security: 1) confidentiality, 2) integrity, and 3) availability. 
+
+Clause 13: All Information should be classified as public, internal, or confidential following guidance below:
+o Public Information – information accessible under Freedom of Information Law is available to any person, notwithstanding individual status, or interest.
+o Internal Information – information, which is not public information, but can be disclosed or used by RSET’s representatives to carry out their duties if there is no legal prohibition to disclosure.
+o Confidential Information – information which if disclosed would cause harm to RSET or is protected by law or Company Authority
+Clause 14: All information and outputs from systems handling classified data should consider labelling in terms of its sensitivity and include the following aspects:
+o Classification of Information may often cease to be sensitive or critical after a certain period.
+o Over-classification can lead to an unnecessary additional business expense.  
+o Overly complex schemes may become cumbersome and uneconomic to use or prove impractical.
+o Care should be taken in interpreting classification labels on documents, which may have different definitions for the same or similarly named labels.
+Clause 15: Information Asset Owner shall be responsible for defining the classification, i.e., for a document, data record, data file or data storages. The classification shall be periodically reviewed.
+Clause 16: Handling Removable Media
+* By default, access to removable media shall be restricted to employee devices.
+* If any employee, require access for business purposes that shall be provided after approval of Top Management
+* Employees are responsible for ensuring that any data transferred to or from removable media is compliant with applicable laws, regulations, and organizational policies.
+* All sensitive data stored on or transferred through removable media must be encrypted using approved encryption methods.
+* Encryption keys or passwords should be securely managed and not stored on the same media.
+* Removable media devices must be scanned for malware and viruses using approved antivirus software before being connected to organizational systems.
+* Removable media should be stored in secure locations when not in use to prevent unauthorized access or theft.
+* Employees must report lost or stolen media promptly to the IT department and their supervisor.
+* Critical data stored on removable media should also be backed up on organizational servers or cloud storage to prevent data loss in case of device failure or loss.
+* When removable media devices are no longer needed or are at the end of their lifecycle, they must be securely wiped or physically destroyed to prevent data leakage. 
+* Life cycle of Removable media shall be maintained in asset register.
+Clause 16: Maintenance of Information Assets
+* All information assets shall be properly maintained to ensure the high availability and performance.
+* All preventive maintenance shall be recorded and follow proper change management procedure.

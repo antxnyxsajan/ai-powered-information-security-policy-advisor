@@ -1,0 +1,17 @@
+8.14. POLICY FOR CHANGE MANAGEMENT
+8.14.1. PURPOSE
+The purpose of this policy is to establish management direction and high-level objectives for change management and control. This policy will ensure the implementation of change management and control strategies to mitigate associated risks such as:
+* Information being corrupted and/or destroyed.
+* Computer performance being disrupted and/or degraded.
+* Productivity losses being incurred and
+* Exposure to reputation risk.
+
+8.14.2. SCOPE
+This policy applies to all information systems managed by RSET. All RSET staff members who manage the information systems must adhere to the policy.
+8.14.3. POLICY STATEMENTS
+Clause 1: All changes to the IT environment will be managed under a structured IT Change Management process.
+Clause 2: A current inventory of the components of the information system along with its baseline configuration must be documented and maintained.
+Clause 3: It is the responsibility of the asset owner to communicate a change as per the IT Change Management process.
+Clause 4: All Changes to the production environment should be made after communication to the affected stakeholders, within agreed Change windows.  
+Clause 5: Impact Analysis should be done before implementation of changes and changes must be tested before deployment.
+Clause 6: Roll back plan should be created to move system back to its previous state.

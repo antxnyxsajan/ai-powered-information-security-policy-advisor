@@ -1,0 +1,23 @@
+8.19. POLICY FOR THIRD PARTY SUPPLIER SECURITY
+8.19.1. PURPOSE
+This Third-Party Supplier Security Policy outlines the security requirements and expectations for third-party suppliers and vendors who have access to RSET's systems, data, or facilities. It is designed to ensure that third-party relationships do not compromise the security, confidentiality, or integrity of our information assets.
+
+8.19.2. SCOPE
+This policy applies to all third-party suppliers, contractors, consultants, and vendors engaged by RSET who have access to RSET's or its client’s information, systems, or physical facilities. 
+8.19.3. POLICY STATEMENTS
+Clause 1: Prior to engaging with a third-party supplier a comprehensive security assessment, including but not limited to security audits, risk assessments, and due diligence checks shall be conducted.
+
+Clause 2: Suppliers must meet minimum security requirements specified by the organization before being granted access to information assets.
+
+Clause 3: All contracts with third-party suppliers shall include clauses specifying security and privacy obligations, compliance with relevant laws and regulations, and the right to audit the supplier's security controls. Contractual agreements should cover RSET rights to review and update these contractual agreements as necessary to ensure they align with evolving security standards.
+
+Clause 4: Access to systems, data, and facilities will be granted to third-party suppliers on a need-to-know and least privilege basis.
+
+Clause 5: Authentication and authorization controls shall be enforced to ensure that suppliers only access resources necessary for their specific responsibilities.
+
+Clause 6: Regular monitoring and annual auditing of third-party suppliers' security controls shall be conducted to verify compliance with this policy and contractual obligations.
+
+Clause 7: Risk associated with outsourcing of specific service shall be evaluated and risk management plan shall be developed.
+Clause 8: Business Continuity and disaster recovery process of the Service Provider shall be evaluated before engaging in Managed Service Model viz: Infrastructure as a Service (IaaS), Platform as a Service (PaaS), Software as a Service (SaaS).
+Clause 9: Information on measures taken at its platform to ensure adequate information security, data security and confidentiality, including but not limited to forms of protection available against unauthorized access and incident management process in cases of data breach or data loss shall be collected from the service provider and evaluated.
+Clause 10: When any system development is outsourced to service provider, they shall adhere to the Secured Software Development practices.

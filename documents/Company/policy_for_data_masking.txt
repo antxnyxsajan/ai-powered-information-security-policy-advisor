@@ -1,0 +1,16 @@
+8.27. POLICY FOR DATA MASKING 
+8.27.1. PURPOSE
+The purpose of this data masking policy is to protect sensitive data by implementing appropriate data masking techniques. This may include replacing identifiable information with fictitious or random values while preserving the data's usability for production or non-production environments. This policy aims to minimize the risk of unauthorized access, data breaches, and privacy violations.
+8.27.2. SCOPE
+This policy applies to all employees, contractors, and third-party entities who have access to RSET Information systems.
+8.27.3. POLICY STATEMENTS
+Clause 1: Sensitive data is any information that, if accessed or disclosed, could result in harm to individuals, the organization, or its stakeholders. Sensitive data categories that require masking may include, but are not limited to, 
+1. personally identifiable information (PII), 
+2. protected health information (PHI), 
+3. financial information, 
+4. intellectual property, and 
+5. any data subject to privacy laws or industry regulations.
+6. Business critical information.
+Data owners should identify and classify sensitive data elements based on their sensitivity level (e.g., high, medium, low). Reference for determination of the sensitivity levels can be local privacy regulations or customer contractual requirements. This classification will help determine the appropriate level of data masking.
+Clause 2: RSET shall use the masking methods to mask sensitive data, such as substitution, shuffling, encryption, tokenization, or data truncation.
+Clause 3: Some data elements may be exempt from masking in production or non-production environments if there is a valid business need or legal requirement. Exceptions must be justified, approved by data owners, and adequately documented.

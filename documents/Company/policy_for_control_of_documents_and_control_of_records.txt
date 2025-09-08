@@ -1,0 +1,27 @@
+8.22. POLICY FOR CONTROL OF DOCUMENTS AND CONTROL OF RECORDS
+8.22.1. PURPOSE
+The purpose of this policy is to set out a guideline to ensure that all documented information and records created as part of the various processes and are:
+* Readily identifiable and available
+* Dated and authorized by designated person.
+* Maintained under version controlled and available to all people responsible.
+* Properly withdrawn when obsolete
+8.22.2. SCOPE
+The scope of this policy covers all documented information. including all documents of internal & external origin, is controlled with respect to approval, distribution, change, etc.
+8.22.3. POLICY STATEMENTS
+Clause 1: A Master list of all Information Security Management System (ISMS) documents shall be maintained with latest version and date of publishing.
+Clause 2: All documented information, including all documents of internal and external origin shall be managed as per for the document control Information.
+Clause 3: All policies, procedures and templates associated with ISMS shall be maintained, controlled and easily accessible to relevant staff for their usage.
+Clause 4: All ISMS Documents shall undergo review by authorized competent personnel before baselining and distributed for usage.
+Clause 5: Documents shall be developed following the documentation standards defined by RSET.
+Clause 6:  Quality records shall be maintained as per the defined procedure to demonstrate evidence of performing certain activities as defined. These records shall be created and maintained with
+•	Using the templates defined by RSET
+•	Record number
+•	Date of creating the record
+Clause 7: Documents and records shall be maintained according to the Change Management, Archive and Backup and Restore policies.
+Clause 8: Changes to the document will be monitored and controlled through a version control numbering system. The file name of manual when released in the electronic repository shall bear the version number as V’X.Y’ (where X represents major version and Y represents minor version). 
+(a) Policies:
+Major -> Addition, Deletion or Modification of existing policies, Minor -> Correction in documentation 
+(b) Procedure
+Major - > Addition of new Procedures, Minor -> Changes in steps of existing procedures.
+(c) Templates
+Changes in templates will be considered as Major.

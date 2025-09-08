@@ -1,0 +1,19 @@
+8.2. POLICY FOR INFORMATION SECURITY AWARENESS AND TRAINING
+8.2.1. PURPOSE
+The objective of this policy is to ensure that all RSET staffs are aware on how to be secured to protect “the organization information” from any data leakage or any internal or external vulnerabilities.
+The Information Security In charge shall coordinate with HR Team to ensure that all staffs (Permanent and Temporary employees, contractors, vendor staff etc.) of RSET receive training in the regulatory guidelines and laws governing customer information security along with information security policies and procedures, as appropriate to their position at RSET and job responsibilities. 
+
+8.2.2. SCOPE
+All permanent and temporary employees of RSET, Vendor and Contracted resources who access information of RSET and/or its clients. 
+
+8.2.3. POLICY STATEMENTS
+* Clause 1: The Information Security in Charge shall ensure that the training systems are in place to address:
+o Initial training for new hires.
+o Continuing refresher sessions for existing staffs.
+* Clause 2: The information security awareness program should ensure that all staff has basic level of understanding of information security matters, such as general obligations under various information security policies, standards, procedures, guidelines, laws, regulations, contractual terms and generally held standards of ethics and acceptable behavior. 
+* Clause 3: The information security training shall cover various policies that staffs need to be aware.
+* Clause 4: Awareness program shall cover better practices in information security, controls to be implemented to avoid incidents etc.
+* Clause 5: Additional training as needed should be conducted for staffs with specific obligations towards information security that are not satisfied by basic security awareness, for example Security Administrators, IT/Network Operations personnel. Such training requirements must be documented in the staff personal training plans and funded accordingly. The training requirements shall reflect staff’s relevant prior experience, training and/or professional qualifications, as well as expected job needs. 
+* Clause 6: Security awareness and training activities should start within a week of the staff joining, for instance through attending information security induction/orientation classes. The awareness activities should continue a regular basis thereafter to ensure a reasonably consistent level of awareness. 
+* Clause 7: All staffs shall undergo refresher training once in a year.
+* Clause 8: Role based training shall be conducted for IS Team, IT Team, Asset/ Data owners etc.

@@ -1,0 +1,24 @@
+8.1. POLICY FOR CYBER AND INFORMATION SECURITY
+8.1.1. PURPOSE
+The Information and Cybersecurity Policy establishes a comprehensive framework of safeguarding measures that must be consistently implemented throughout RSET, ensuring a secure operational environment for all business activities. "The Organization" recognizes the significance of its customer information, internal data, IT infrastructure, operational procedures, and personnel involved in the generation, storage, and retrieval of information as vital assets. Preserving the confidentiality, integrity, and availability of this information is crucial for upholding customer satisfaction, maintaining a competitive advantage, complying with legal and contractual requirements, and upholding the organization's esteemed reputation.
+This Information and Cyber Security Policy addresses the requirements of Confidentiality, Integrity & Availability along with other security requirements such as Safety, Authenticity, Non-repudiation, Identification, Authorization, Accountability, and Auditability is also addressed in this policy.
+8.1.2. SCOPE
+* All permanent and temporary employees of RSET, vendors, customers and interns who access information of RSET. 
+* All systems, automated and manual, for which RSET has administrative responsibility, including systems managed or hosted by third parties on behalf of RSET. 
+* It addresses all information, created, or used in support of business activities regardless of the form.
+8.1.3. POLICY STATEMENTS
+* Clause 1: RSET leadership team must appoint CISO who would be responsible for implementing information security initiatives across the organization.
+* Clause 2: Management shall provide the necessary resources and support for its implementation.
+* Clause 3: A set of policies for information security must be defined, approved by CISO, published, and communicated to all staffs and relevant external stakeholders.
+* Clause 4: At RSET, management shall convey its expectations from all users of RSET information resources by stressing the principle of zero tolerance for unacceptable behaviour relating to information security, rewarding good behaviour, recognising, and rewarding people for good work towards risk management, and constantly reminding everyone “Information Security is Everyone’s responsibility, and it is incomplete without you”.
+* Clause 5: Staffs must ensure the accuracy, integrity, security, and confidentiality of customer information received, processed, and maintained by RSET. 
+* Clause 6: Controls must be in place to protect against unauthorized access to or use of customer and proprietary information that might result in substantial harm or inconvenience to any customer and/or to RSET. 
+* Clause 7: “Principle of least privileges” and “need to know” access must be enforced to RSET information assets. 
+* Clause 8: Process must be put in place for safeguarding RSET’s proprietary information by comprehensive identification/ assessment of risks and vulnerabilities that may threaten the security or integrity customer. 
+* Clause 9: Documented Policy standards shall be in place for managing and controlling identified risks. 
+* Clause 10: Policies and procedures shall be developed to follow all relevant regulations, common law, explicit agreements, or conventions that mandate the security and confidentiality of customer information. 
+* Clause 11: All employees must receive information security training and awareness programs to enhance their understanding of information security risks and their responsibilities as per the “Policy for Information Security awareness and Training”.
+* Clause 12: Staff shall be encouraged to take part in information security initiatives and challenge the current information security practices to continuously improve as part of the overall security awareness program.
+* Clause 13: Risk assessments shall be conducted annually to find, assess, and treat information security risks. Risk treatment plans will be developed and implemented to address identified risks. “Policy for Risk Management” shall be adhered to implement the same.
+* Clause 13: This Information Security Policy will be reviewed annually or as needed to ensure its effectiveness and relevance to the organization.
+* Clause 14: Information Security Team shall conduct information security audit annually to ensure compliance with this policy and related security procedures. Non-compliance shall be addressed promptly, and corrective actions shall be taken.

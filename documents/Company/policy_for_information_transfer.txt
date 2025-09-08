@@ -1,0 +1,19 @@
+8.7. POLICY FOR INFORMATION TRANSFER
+8.7.1. PURPOSE
+At RSET, information transfer policy is defined to control the flow of information in a secure manner between RSET and internal/external entities. This policy has defined to ensure that these transfers take place via authorized mechanisms and that sensitive data is secured from unauthorized access or disclosure.
+8.7.2. SCOPE
+All staffs work directly or indirectly with RSET which includes its employees, contractors, temporary employees, and vendors.
+8.7.3. POLICY STATEMENTS
+Clause 1: The sender must understand the security classification of information (Confidential, Internal, or Public) before sharing it.
+Clause 2: It is Sender’s responsibility to assess risks in what they are intending to send and ensure that all associated risks are adequately understood and covered, and that the transfer is properly authorized.
+Clause 3: Staff shall not assume that because someone asks for information, they are authorized or legally entitled to have it. If in doubt, staff shall check with their supervisor/manager or the Information Security Office
+Clause 4: Information transfer methods, including but not limited to email, file sharing, physical media, and cloud-based services, must employ encryption and other appropriate security measures to protect data in transit.
+Clause 5: Electronic mail should be used according to “Email Usage Policy” which can be found in the IT Policies.
+Clause 6: When sharing information with third-party vendors, contractors, or partners, written agreements shall be established to define security requirements and responsibilities for information protection during transfer.
+Clause 7: RSET shall implement data loss prevention (DLP) technologies and procedures to monitor and prevent unauthorized or accidental transfers of sensitive data.
+Clause 8: Employees must report any potential data breaches or unauthorized transfers promptly to the designated incident response team.
+Clause 9: Any removable devices used for information transfer should be scanned for viruses and malware and used within the acceptable policy and security guidelines.
+Clause 10: Before transfer of confidential information, Information shall be protected with password and this password should be communicated to recipient using separate channel.
+Clause 11: Transferring information to online public is strictly prohibited, exception approval for case-by-case basis can be provided based on the Information Security Office recommendations.
+Clause 12: IT team shall periodically review information transfer activities to ensure compliance with this policy.
+Clause 13: Information Security awareness program shall cover information transfer to reinforce the importance of the same.

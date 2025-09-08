@@ -1,0 +1,18 @@
+8.23. POLICY FOR INFORMATION SECURITY AUDIT
+8.23.1. PURPOSE
+The purpose of this policy is to set out a framework for objective and independent assurance and advice to the leadership team that ISMS framework is defined, implemented, and followed effectively.
+8.23.2. SCOPE
+The scope of this policy covers all aspects of Information and Cyber Security framework, policies and procedures defined at RSET. This includes, but is not limited to, the assessment of systems, processes, controls, information, and operations relating to the following:
+* IT Systems and Services
+* Risk management and assessment
+* Physical security
+* Third party relationships and activities that impact information security.
+* Software development
+8.23.3. POLICY STATEMENTS
+Clause 1: RSET shall conduct internal audit in accordance with the internal audit plan of the year.
+Clause 2: Internal audit shall be performed by qualified internal team or by an external entity. All documented information, including all documents of internal and external origin shall be managed as per for the document control Information.
+Clause 3: CISO shall be responsible for oversight the Internal Audit process. 
+Clause 4: Scope of each audit shall be documented along with criteria used to include or exclude.
+Clause 5:  All Documents and Records created during audit shall be maintained as evidence.
+Clause 6: Audit reports shall be presented to Management team with analysis of non-conformities, root cause and plan to prevent the same.
+Clause 7: The responsible department shall create the action plan to close the Non-Conformance within 1 week and close them with in 4 weeks of reporting the same,

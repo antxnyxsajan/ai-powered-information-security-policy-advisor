@@ -1,0 +1,41 @@
+8.20. POLICY FOR NETWORK SECURITY
+8.20.1. PURPOSE
+This Network Security Policy outlines the principles and standards for RSET's network infrastructure, data, and information systems. The goal is to protect against unauthorized access, data breaches, and other network-related security threats.
+8.20.2. SCOPE
+This policy applies to all employees, contractors, third-party vendors, and any other individuals or devices that connect to RSET's network resources.
+8.20.3. POLICY STATEMENTS
+(A) General
+Clause 1: The network design shall be prepared considering the security requirements, including firewalls, intrusion detection/prevention systems, and access controls.
+Clause 2: Access to the network shall be granted based on the principle of least privilege, ensuring that individuals have access only to the resources necessary for their roles.
+Clause 3: Strong authentication mechanisms, such as multi-factor authentication (MFA), shall be employed where applicable.
+Clause 4: All network devices and systems shall be kept up to date with security patches and updates.
+Clause 5: A documented process for patch management shall be followed to minimize vulnerabilities.
+Clause 6: Logs of network activities will be maintained, and logs will be regularly reviewed for security incidents.
+Clause 7: Network shall be segregated based on access requirements and restrictions.
+Clause 8: Vulnerability Assessment and Penetration testing shall be conducted once in a year on systems, applications, and network devices to verify the robustness of the security controls in place.
+Clause 9: All incidents reported shall be managed by following policy for “Incident Management”.
+(B) VPN Policy
+Clause 1: VPN access must require multi factor authentication by user.
+Clause 2: All traffic must be encrypted using standard protocols. 
+Clause 3: All authentication attempts shall be logged.
+Clause 4: It is the responsibility of the user with VPN privilege to ensure that unauthorized users are not allowed access.
+Clause 5: VPN access shall be provided to users with an approved business case. Business Manager shall approve the VPN access request.  
+Clause 6: Users are required to install the VPN client software as directed by RSET IT team to activate their VPN access.
+Clause 7: All systems connected to RSET internal networks via RSET must use properly configured,
+up-to-date anti-virus software, Users of computers that are not RSET owned must configure as per policies set by RSET IT team.
+Clause 8: VPN access shall be removed at the end of the project, contract closure, employee exit etc.
+(C) Firewall Policy
+Clause 1: All firewalls and their network components shall be operated, managed, and maintained by the Information Technology Department.
+Clause 2: All changes to the external network connections, firewall, switches, and router configurations must be approved by head of IT & head of Information Security Office and tested prior to implementing the change.
+Clause 3: The following services/ports are necessary for business purposes and will be allowed through the firewall. If any other protocols are to be used, justification for the same shall be documented.
+o HTTPS (TCP/443)
+o SSH (TCP/22)
+o SMTP (TCP/25)
+o VPN
+Clause 4: Firewall configurations shall be reviewed annually. 
+Clause 5: Before a firewall rule set is created, a risk analysis should be performed to develop a list of the types of traffic needed by “RSET” and categorize how they must be secured—including which types of traffic can pass through a firewall under what circumstances.
+Clause 5: The approach adopted to define firewall rule set is “least privilege” that all services are denied by default in the firewall unless expressly permitted in this policy.
+Clause 7: When implementing firewalls, IT team must employ a high availability design to ensure uninterrupted access to network resources. 
+Clause 8: Access to external websites shall be controlled to reduce exposure to malicious content.
+Clause 9: Firewall rules shall be defined and implemented after CISO approval.
+Clause 10: Firewall logs should be reviewed periodically to monitor any unauthorized access from external networks.

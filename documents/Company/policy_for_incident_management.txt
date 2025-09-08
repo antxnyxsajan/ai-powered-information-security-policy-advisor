@@ -1,0 +1,41 @@
+8.10. POLICY FOR INCIDENT MANAGEMENT
+8.10.1. PURPOSE
+The purpose of the Incident management policy is to define a framework to enable RSET to responds to an incident or disaster by implementing a plan to restore the critical business functions. The number of computer security incidents and the resulting cost of business disruption and service restoration rise with the increase in dependence on IT-enabled processes. Implementation of sound security policies, blocking of unnecessary access to networks and computers, improvement in user security awareness, and early detection and mitigation of security incidents are some of the actions that can be taken to reduce such risks and decrease the cost of security incidents.
+Objectives of the policy is to
+* The ability to be prepared and rapidly recover from technology and business disruption caused by Cyber Security attacks. 
+* Establish and keep the minimum efforts needed for an effective Cyber Security incident response.
+* To be able to include other departments such as the Human Resources to advice on the related disciplinary actions. 
+* Link the people, processes, and technology elements in dealing with Cyber Security incidents.
+* Establish and follow a risk-based approach to prioritize the incidents response efforts. 
+* Protect the business from Cyber Security attacks through lessons learned. 
+8.10.2. SCOPE
+This policy applies to all staffs of RSET including contract staffs. The policy is also applicable to organization who manages information assets of RSET. 
+8.10.3. POLICY STATEMENTS
+Clause 1: All Incidents shall be detected as soon as possible and properly documented. Incidents shall be classified based on its severity and tracked against defined SLA’s.
+Clause 2: Incidents shall be handled by appropriate authorized personnel.
+Clause 3: Root cause analysis shall be done to prevent similar incidents from recurring. Any weaknesses in procedures or policies are identified and addressed. Learning from the incidents shall be recorded.
+Clause 4: All internal and Cyber Security incidents impacting RSET services must be managed in an efficient and effective manner to ensure the impact is contained and the risk is mitigated. 
+Clause 5: Proper monitoring mechanisms must be in place to detect and recognize Cyber Security incidents such as the following:
+o Monitoring the network and infrastructure services. 
+o Monitoring the website 
+o Monitoring external to internal gateways including the e-mail.
+o Monitoring the user’s devices and end-points protection.
+o Monitoring the digital assets and the Cyber space.
+Clause 7: The following Six pillars of Cyber Resiliency are used to continuously improve the incident response capabilities and minimize the Cyber Risks:
+o Predict: Employ the necessary technologies and practices to predict Cyber Security attacks.
+o Prepare/ Identify: Identify sensitive/vital information processes, controls, and their associated Cyber threats. Prepare the employees through Cyber-aware programs. 
+o Protect: Develop and implement safeguards for critical infrastructure and services to limit and/or contain the impact of an attack against the information assets.
+o Detect: Develop and implement the appropriate mechanisms and activities to rapidly identify a potential threat and/or attack to ensure a timely response. 
+o Respond: Consists of different type of activities that can accelerate time for remediation and contain the impact of the attack once it is detected. 
+o Recover: Develop and implement the appropriate systems and plans to restore any data and/or services that may have been impacted during a Cyber-attack. This can range from restoring from backup to activating the business continuity plan.
+Clause 8: If there is any cyber security incident, it should be addressed following the phases below: 
+o  Preparation 
+o Identification
+o Assessment
+o Containment
+o Eradication
+o Recovery
+o Follow up.
+Clause 9: All evidence of the incident should be preserved.
+Clause 10: Lesson learned shall be documented by the team of resources involved in resolving the incident.
+Clause 11: The security incidents referred under Cert-In notification shall be reported to Cert-In within 6 hours from the time, RSET has information about it.

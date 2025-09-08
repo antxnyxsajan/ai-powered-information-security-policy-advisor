@@ -1,0 +1,140 @@
+8.4. POLICY FOR ACCEPTABLE USAGE
+8.4.1. PURPOSE
+The objective of this policy is to outline the acceptable use of IT Assets at RSET. These rules are in place to protect the employee and the organization. Inappropriate use exposes the organization to risks including virus attacks, compromise of network systems & services, and legal Issues.
+This policy is covers:
+(a) Computing Devices Usage Policy
+(b) Email Usage Policy
+(c) Internet and Social Media Usage Policy
+8.4.2. SCOPE
+All permanent and temporary employees of RSET, vendors, customers and interns who access information of RSET. 
+8.4.3. POLICY STATEMENTS
+Clause 1: All staffs shall go through acceptable usage policy and accept it within a week of joining.
+Clause 2: Devices and information systems are provided to users in performing their official duties only. It shall not be used for any personal purpose.
+Clause 3: IT team may monitor devices and information systems provided to staff by company, system usage logs and the data stored for security, administration, and compliance purposes at any time without prior notice to the staff. 
+Clause 4: Users shall not engage in any activity that is illegal and not accepted by RSET on devices and information systems issued to them by RSET.
+Clause 5: Personnel’s accessing RSET’s IT assets, as per their contract (employment contract, vendor contract etc.), shall not reveal any proprietary information, trade secrets, procurement details or any other material classified by the Organization as confidential or internal.
+Clause 6: All staff must adhere to Computing devices usage policy, email usage policy, and internet usage policy.
+Clause 7: Unacceptable use of IT resources
+• Engage in activity that is illegal under applicable laws of the country.
+• Engage in any activities that may cause embarrassment, loss of reputation, or other harm to RSET. 
+• Engage in activities that cause disruption to the workplace environment or create a hostile workplace.
+• Disseminate defamatory, discriminatory, vilifying, sexist, racist, abusive, rude, annoying, insulting, threatening, obscene or otherwise inappropriate messages or media. 
+• Engage in activities that cause an invasion of privacy, unauthorized collection, use or disclosure of personal information.
+• Access or attempt to access systems that the staff is not authorized to perform any of the following: port scanning, security scanning, network sniffing, keystroke logging, or other IT information gathering techniques when not part of the user’s job function.
+• Reveal personal, system or network passwords to others including, but not limited to, co-workers, family, or friends.
+• Introduce any viruses or malware, or maliciously tamper with any resources.
+• Engage in copyright infringement, install, or distribute unlicensed or “pirated” software or any software not approved by the Information Technology Department.
+
+(A) Acceptable usage of Computing Devices
+Clause 1: Physical security control of Laptops
+The physical security of devices issued by RSET to its staff is personal responsibility of the staff and they shall adhere to following best practices.
+* Laptop shall be kept in possession and within sight whenever possible. Be extra careful in public places.
+* While you leave office, store laptop in a strong cupboard, filing cabinet or safe. 
+* If it is lost or stolen, notify the IT Team immediately.
+
+Clause 2: Installing Software
+* Administrative rights shall not be provided to staffs to their systems.
+* IT Administrators shall do all software installations.
+* IT team shall maintain list of approved software. If any user has a business purpose to install software outside the list, IT team shall perform due diligence and get management approval. 
+
+Clause 3: Unauthorised storage of material
+* Users shall not store or access any inappropriate materials such as pornographic, racist, defamatory, or harassing files, pictures, videos, or email messages that might cause offense or embarrassment using the devices issued by RSET. 
+* Users shall not store personal confidential information inside the system.
+
+Clause 4: Controls against unauthorised access
+* Systems are provided for official use by authorized staff. Do not loan the system or allow it to be used by others such as family members or friends.
+* All the external storage media are blocked by default and shall be allowed after obtaining the approval from IT Manager
+
+Clause 5: Access to visitors in RSET’s network.
+* Visitor’s system should not be allowed to connect to the internal network.
+* Storage media like USBs, CDs etc shall be checked in systems not connected to network before using internally.
+
+Clause 6: Virus protection
+* Staff shall ensure that virus-scan is done before any files are downloaded to the computer from any source.
+
+
+
+Clause 7: Reporting Incidents
+* If staff suspect any security incidents (such as virus attack, ransomware) in their system, it shall be removed from the network and stop using it. System must be hand over to IT team to check the issue and minimize the damage.
+
+Clause 8: Backups 
+* Staff must take their own backups for their Desktop/Laptops to “One Drive” to their respective folders.
+* Personal media/documents should not be placed in the backup location.
+
+Clause 9: Monitoring 
+IT staff of RSET can monitor the data inside systems issued: they will report serious/repeated offenders and any illegal materials directly to management, and disciplinary processes will be initiated. If you receive inappropriate material by email or other means, delete it immediately. 
+(B) Acceptable usage of email
+
+Clause 1: All employees of RSET shall be allocated email ID in “RSET.com” domain.
+Clause 2: Employees shall use only their RSET email for all business correspondence.
+Clause 3: All RSET information contained within an e-mail message or attachment is considered corporate asset, thus all information security policies are applicable on the same.
+Clause 4: E-mail is always subject to monitoring and logging. Releasing company’s confidential, private, or sensitive information through e-mail is prohibited without prior authorization.
+Clause 5:  RSET applies resilient infrastructure practices to ensure the e-mail service is available to the employees. To avoid service degradation by sending large attachments and to avoid significant delay in the delivery of corporate e-mails, the transmission of attachments size is limited to 20 MB by IT team.
+Clause 6:  Email servers shall have anti-spam and anti-spoofing controls. 
+Clause 7: Managing Email account of resigned employees:
+* Email account of resigned staff and trainees shall be removed before completing HR relieving process and mail should be archived.
+*  In cases where employee email account needs to be retained for a longer period for business purposes, it shall be done only after the management approval. IT team shall change the password of such users.
+* IT team shall maintain list of such email accounts, along with details of the person responsible for managing it.
+Clause 8:  Appropriate Use of Email
+Appropriate use of RSET email system includes generating and sending emails regarding:
+* Use the e-mail service primarily for RSET’s business related purposes consistently following the “Organization’s” policies and procedures with ethical conduct. 
+* Communicate with work colleague to enhance work productivity and collaboration. 
+* Communicate with current or prospective customers and business partners of RSET.
+* Access to the e-mail service only by the authorized account owner through the electronic provided equipment of RSET, outlook web access and mobile configured e-mail services.
+* Sign up for newsletters, journals and other online genuine services that are work related and will contribute to the employee’s professional growth. 
+* Check the e-mail and names of unknown senders to ensure they are legitimate before establishing any e-mail communication.
+* Do not open attachments containing executable file, upgrades or patches that are received via e-mail.
+* Avoid opening unknown links and attachments that might be malicious. If any suspicious email received, please contact the IT team immediately. 
+* For all mail from external sources, look for e-mail inconsistencies or style to identify spams and unwanted e-mail communications.
+* Use strong passwords and do not disclose your password or account information.
+* E-mail messages received shall not be altered and forwarded without the original sender's permission.
+Clause 9: Inappropriate Use of Email
+* Email which would be likely to harass, insult or discriminate based on age, sex, race, religion, national origin, sexual orientation, political beliefs, disability, or any other criteria. Users need to be aware that email may render them and/or RSET liable for harassment or discrimination claims, and defamation actions. 
+* Junk or chain mail. 
+* The distribution of information which infringes copyright laws. 
+* As a mean to personal business and non-business activities. 
+* To encourage any illegal activity. 
+* To provoke any activity involving breach of the employee’s terms and conditions mentioned in the employment contract. 
+* Sending emails so they appear to be from another person. 
+* Distribution of confidential information to third parties without authorization.
+* Send or forward email that is likely to contain computer viruses.
+* Employees should not use their personal emails to share and transmit data related to RSET and its clients or vendors.
+Clause 8: Mail Archiving and Retention
+As a policy RSET will not archive the employee email. If there is any specific need to archive mail of an employee, request shall be sent to IT team with management approval. 
+Clause 9: Configuring Mailboxes in Mobile devices.
+Users shall configure the mailboxes on their mobile device only after:
+o IT Department review and approval. 
+o Enforcement of the mobile security policies. 
+o User acknowledgement of terms and conditions of the service.
+
+
+
+(C) Internet and Social Media Usage Policy
+Clause 1: Eligibility for Internet access
+* All Employees will be granted Internet access. =
+Clause 2: Authorised Browser Platforms 
+* To standardize and ease the patching process, the authorized internet browser platform is Microsoft Edge and Google Chrome. Any usage of other internet browsing platform is prohibited and require special approval by IT Department. 
+Clause 3: Monitoring Internet Traffic
+* RSET shall deploy content filtering mechanisms for Internet traffic for detecting security breaches. The main function of these mechanisms is to monitor network traffic to and from the Internet for the detection of unusual behaviour and specific attack scenarios that can potentially constitute signs of security breaches. Moreover, these mechanisms log certain Internet traffic data (example, destination), which is necessary for intrusion detection purposes and the investigation of security incidents.
+* Only authorized personnel shall administer monitoring mechanisms and ensure that employee’s personal data is kept confidential and protected.
+Clause 4: Acceptable usage of Internet
+* Staff of RSET are encouraged to use internet for performing day to day business operations which include:
+o Communicating with fellow employees, business partners and clients, within the context of an individual’s assigned responsibilities.
+o Using the internet for work related purposes in support to the “Organization’s” objectives.
+o Participating in educational or professional development activities.
+Clause 5: In appropriate usage of Internet
+* Distributing harassing, violent, discriminating, or hateful messages and imagery by the means of company equipment/ internet.
+* Utilizing the Internet and computers at the working place to commit any illegal activity, including piracy of music, movies, and other content.
+* Distributing confidential information of RSET.
+* Employees must not intercept, disclose, or assist in the interception and disclosure of information sent to/from the Internet. 
+* Sending information via the Internet is not allowed for information classified as “CONFIDENTIAL,” unless authorization is granted, and adequate security mechanisms are implemented. The IT Department monitors the flow of information to detect and record any data breaches.
+* Employees must be extremely cautious when publishing information or questions on the Internet (e.g., via mailing lists, newsgroups, social media, etc.) in order not to damage, even unintentionally, RSET’s competitiveness and/or image. 
+
+
+
+Clause 6: Social Media Usage
+* Employees should be aware that RSET may observe content and information made available by employees through social media. Employees should use their best judgment in posting material that is neither inappropriate nor harmful to RSET, its employees, or any other stake holders.
+* Employees should not publish, post, or release any information that is confidential or not public.
+* Protect confidential and proprietary information: Do not post confidential or proprietary information about the RSET employees and its customers / any other stakeholders. 
+* Respect copyright and fair use: When posting, be aware of the copyright and intellectual property rights of others and RSET. 
+* Social media networks, blogs and other types of online content sometimes generate press and media attention or legal questions. Employees should refer these inquiries to RSET’s Management.

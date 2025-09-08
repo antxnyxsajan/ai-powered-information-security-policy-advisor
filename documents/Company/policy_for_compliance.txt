@@ -1,0 +1,30 @@
+8.29. POLICY FOR COMPLIANCE
+8.29.1. PURPOSE
+The purpose of this policy is to mitigate the risk of breaches of any criminal or civil law, and statutory, regulatory, or contractual obligations pertaining to information security, and of any security policies; to ensure compliance of information processing systems with the security policy and standards; and to minimize interference to business operations from system audit process by appropriate planning.
+8.29.2. SCOPE
+This policy applies to employees, temporary staff and third-party contractors working for RSET. This policy is also applicable to all information assets within the ISMS scope and boundaries.
+8.29.3. POLICY STATEMENTS
+Clause 1: Identification of applicable Legal, Compliance & Contractual requirements.
+* All relevant regulatory requirements shall be identified and reviewed by respective functions and reported to Top Management.
+* Project specific contractual requirements shall be identified, evaluated and documented,
+* All identified legal, compliance & contractual requirements shall be recorded along with the approach to compliance with the same. This shall be reviewed by Information Security Department.
+Clause 2: Monitoring Implementation
+* Information Security Team shall review the effectiveness of implementation at least once in a year or during the contractual tern.
+Clause 3: Intellectual Property Rights
+* No employee or contractor shall reproduce any intellectual capital work in violation to its copyright. This applies to any intellectual capital work protected by copyright law.
+* Information stored on RSET system and network shall remain the property of RSET and all employees and contractors are bound by the information security compliance policy.
+* If a work is copyrighted, explicit written permission to reproduce the work shall be taken from the copyright holder. Copyrighted works include but not limited to policy documents, images (e.g. photographs), graphics (e.g. logos) or software programs. The following materials are not considered copyrighted materials: ideas, facts, process, methods, systems, government works and works in the public domain.
+* Employees shall report all the instances of actual or suspected copyright infringement to the ISMS Core Team through Incident Management process.
+* RSET organization has initiated various steps towards Intellectual Properties Rights Protection. The following guidelines should be considered to protect any material that may be considered intellectual property:
+o Acquiring software only through known and reputable sources, top ensure that copyright is not violated.
+o Maintaining awareness of policies to protect intellectual property rights and giving notice of the intent to take disciplinary action against personnel breaching them.
+o Maintaining appropriate asset registers and identifying all assets with requirements to protect intellectual property rights.
+o Maintaining proof and evidence of ownership of licenses, master disks, manuals, etc.
+o Implementing controls to ensure that any maximum number of users permitted is not exceeded.
+o Carrying out checks that only authorized software and licensed products are installed.
+
+
+Clause 4: Privacy and Protection of PII (Personally Identifiable Information)
+* RSET collects, uses, and discloses personal information in accordance with all applicable laws pertaining to the land where it operates.
+* Personal information is information about an identifiable individual, recorded in any form and includes, but is not limited to, such things as race, ethnic origin, age, marital status, religion, education, medical, criminal, employment or financial information, address and telephone number or numerical identifiers such as a Aadhaar number. PII does not include the name, title, business address or business telephone number of an employee of an organization.
+* Agreements shall be put in place with vendors such as Insurance Companies, Background Verification Institutions to manage the employee information shared to them confidentially and destroy the same at the end of project or contract.

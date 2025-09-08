@@ -1,0 +1,20 @@
+8.5. POLICY FOR CLEAR DESK AND CLEAR SCREEN
+8.5.1. PURPOSE
+The objective of this policy is to establish a culture of security and trust for all employees at RSET and to ensure that all paper and electronic media containing personal identifiable information, or any other confidential/ sensitive information (including corporate or commercially sensitive information) is suitably secured when not in use, and not left unattended or left visible on a desk overnight. 
+With the implementation of the clean desk policy, RSET want to achieve the following objectives: 
+1. It protects RSET from unauthorized view and disclosure of information.
+2. It reduces the threat of security as confidential information gets locked away.
+8.5.2. SCOPE
+This policy applies to all Permanent and Temporary staffs at RSET.
+8.5.3. POLICY STATEMENTS
+Clause 1: When users are at their desk, they should keep only those items which are currently being used and required to perform the job duties. 
+Clause 2: When users leave their desk temporarily to attend meetings, they should make a quick check if there is any sensitive information on the desk to be kept away before leaving the desk. All Confidential and internal use of information must be removed from the desk and locked in a drawer or file cabinet when the desk is unattended and at the end of the working day.
+Clause 3: File cabinets containing confidential or internal information must be locked when not in use or when it is unattended. Keys used to access confidential or internal information must be kept in a secured location and not be left unattended. 
+Clause 4: Passwords must not be written, posted on, or kept under the computer, or in any other accessible location.
+Clause 5: Copies of documents containing confidential or internal information must be immediately removed from printers or scanners and not to keep unattended.
+Clause 6: Confidential information should not be left on desks or in filing trays or in public view, i.e., walls, desks, or computers. This always applies whether offices are locked or there are staffs on the premises. Consider scanning paper items and filing them electronically in the Document Management System (DMS) provided by IT department viz: File Server, One Drive etc. to reduce physical copies and maintain stronger security measures. 
+Clause 7: Treat mass storage devices such as CDROM, DVD or USB drives as sensitive and secure them with encrypted passwords where possible in a locked drawer. 
+Clause 8: Documents with confidential or internal information should not be kept unattended in meeting rooms.
+Clause 9: Whiteboards used in meeting room shall be cleaned after meetings.
+Clause 10: Users must lock or log off their computer or laptop devices when their desk is unattended. Screen will be locked automatically if no action is taken for over 5 minutes.
+Clause 11: Users should not save the confidential files in systems desktop.

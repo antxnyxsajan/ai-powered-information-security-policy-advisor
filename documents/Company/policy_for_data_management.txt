@@ -1,0 +1,53 @@
+8.3. POLICY FOR DATA MANAGEMENT
+8.3.1. PURPOSE
+The objective of this policy is to provide a framework for data protection and data retention to meet the legal, contractual and compliance requirements. This policy covers:
+(a) Policy for Data collection and use
+(b) Policy for Data protection
+(c) Policy for Data retention
+(d) Policy for Data backup
+(e) Policy for Data disposal 
+8.3.2. SCOPE
+All permanent and temporary employees of RSET, vendors, interns who access information of RSET and or its customer information.
+8.3.3. POLICY STATEMENTS
+(A) Policy for Data collection and use
+Clause 1: Data shall only be collected for specified, explicit, and legitimate purposes, and it shall not be used for purposes that are incompatible with those original purposes.
+Clause 2: Data collected shall be retained only for the specified period.
+Clause 3: Client data shall be collected as part of the project initiation and requirements gathering process.
+(B) Policy for Data Loss and Prevention
+Clause 1: Data owner shall classify data based on its criticality using Confidentiality (as confidential, for Internal use and public), Integrity and Availability, determine access rights, and ensure data protection measures are implemented.
+Clause 2: Employees shall follow data protection policies, report incidents, and participate in data protection training and awareness programs.
+Clause 3: Data must be handled, stored, transmitted, and disposed of securely, in accordance with established procedures. 
+Clause 4: Access to data must be controlled through authentication, authorization, and encryption mechanisms.
+Clause 5: Risk assessments shall be conducted to identify and mitigate potential threats, vulnerabilities, and risks to data. Risk treatment plans will be developed and implemented as necessary.
+Clause 6: Third-party vendors and partners shall be evaluated for their information security practices and adherence to data protection standards. Contracts with third parties must include data protection clauses.
+Clause 7: Client data shall be handled in a manner that guarantees its security and confidentiality, and only individuals with a genuine project-related necessity shall be granted access to it.
+Clause 8: Sensitive and confidential data shall be transferred outside the organisation upon proper approval and using appropriate security measures.
+Clause 9: Proper mechanism like encryption using industrial best practices shall be used to protect the “data at rest” and “data in motion.”
+Clause 10: Employees should not have admin access in the system, and they should not have access to copy content from the systems to any storage devices.
+(C) Policy for Data Retention
+Clause 1: Asset Owner is responsible for maintaining information assets and enforcing Retention in accordance with this Policy.
+Clause 2: Asset Owner shall establish and maintain a data retention schedule that specifies the periods for which different categories of data to be retained after considering legal, regulatory, compliance and contractual requirements.
+Clause 3: Information assets must be maintained as per the legal, regulatory, compliance and contractual requirements. 
+Clause 4: Legal, regulatory, compliance and contractual requirements for data retention must be defined in asset register.
+Clause 5: All archived data must be safeguarded from unauthorised access to avoid data breaches.
+Clause 6: Backups for electronic records shall be maintained.
+Clause 7: Data shall be reviewed annually, and any data that is no longer necessary for the purpose it was collected shall be securely disposed.
+(D) Policy for Data Backup
+Clause 1: Data Owner along with IT team shall develop the Data backup plan considering criticality of data. Backup plan shall cover frequency of backup.
+Clause 2: Staff should ensure that the backup of critical / official data residing on their desktop/laptop is backed up onto “OneDrive” provided by the IT department. They may seek help from IT team for any support required for facilitating the same.
+Clause 3: The frequency and extent of backups must be in accordance with the importance of the information and the acceptable risk as determined by the data owner. This shall be documented in asset register.
+Clause 4: If any data is maintained in backup media, IT teams shall periodically test the backup media to ensure that data stored are recoverable.
+Clause 5: The backup media shall be stored with sufficient protection from unauthorized access and proper environmental conditions in an offsite location.
+Clause 6: The Information Resources backup and recovery process for each system must be documented and periodically reviewed.
+Clause 7: Backup media must be physically destroyed in a secure manner.
+(E) Policy for Data Sanitization
+This Data Sanitization Policy outlines the policies for the proper disposal and destruction of data to prevent unauthorized access and ensure compliance with relevant data protection regulations.
+Clause 1: All electronic storage media including laptops, desktops etc should be sanitized when it is transferred to another resource or no longer necessary for business use.
+Clause 2: All electronic storage media should be sanitized prior to sale, donation, or transfer of ownership. 
+Clause 3: Assets used to process or store Confidential data and information must be sanitized at the end of the Data Life Cycle. 
+(F) Policy for Media and Data Disposal
+Clause 1: All Data, whether held electronically or on paper, should be reviewed on a regular basis (For projects, it shall be done at the end of project contract) to decide whether to destroy or delete any Data in accordance with the designated retention period.
+Clause 2: Process owner shall be responsible for identifying the data to be disposed. IT will be responsible for disposal of data following this policy of disposal and relevant procedures.
+Clause 3: IT Department shall maintain traceability of media disposed to ensure the items were properly disposed, which should at a minimum contain following information, who performed the procedure, when, and what method was used.
+Clause 4: Data deletion may be performed using secure deletion software to permanently delete information to help ensure information cannot be recovered by using specialist recovery or forensic tools.
+Clause 5: RSET may use services of the external data disposal service providers.

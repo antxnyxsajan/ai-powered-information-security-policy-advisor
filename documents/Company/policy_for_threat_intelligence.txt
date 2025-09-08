@@ -1,0 +1,14 @@
+8.26. POLICY FOR THREAT INTELLIGENCE 
+8.26.1. PURPOSE
+The purpose of this Threat Intelligence Policy is to establish guidelines and procedures for the collection, analysis, dissemination, and utilization of threat intelligence to enhance the organization's cybersecurity posture, proactively mitigate risks, and safeguard critical information assets.
+8.26.2. SCOPE
+This policy applies to all employees, contractors, and third-party entities who have access to RSET Information systems.
+8.26.3. POLICY STATEMENTS
+Clause 1: RSET shall actively monitor and gather threat intelligence from various sources, including but not limited to the following – 
+1. Government cybersecurity agencies like NASSCOM, CERT-In etc. 
+2. Industry-specific agencies like ISACA
+3. Open-source intelligence (OSINT)
+4. Commercial threat intelligence providers
+5. Internal network and system monitoring tools
+Clause 2: RSET shall collect and analyse threat intelligence data to identify emerging threats, vulnerabilities, attack vectors, and trends. The analysis shall be performed regularly and in a timely manner.
+Clause 3: RSET shall utilise the threat intelligence to improve the existing security controls and measures.

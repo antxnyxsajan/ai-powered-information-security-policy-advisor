@@ -1,0 +1,36 @@
+8.28. POLICY FOR SUPPLIER RELATIONSHIP
+8.28.1. PURPOSE
+The purpose of Supplier Relationship Policy serves as a vital tool for organizations to manage their supplier relationships in a strategic, risk-aware, and value-driven manner. It focuses on improved operational efficiency, risk mitigation, quality assurance, and ethical conduct while fostering long-term, mutually beneficial relationships with suppliers.
+8.28.2. SCOPE
+This policy applies to all suppliers, vendors associated with RSET.
+8.28.3. POLICY STATEMENTS
+Clause 1: When a supplier is involved, the administration shall ensure the proper communication of RSET ’s information security policy and information security requirements to the supplier at the time of engagement.
+Clause 2: Admin  and Legal team shall ensure that Non-Disclosure & Service Agreement shall be signed by supplier before starting engagement with them.
+Clause 3: Access to supplier shall be provided on a need-to-know basis.
+Clause 4: . The supplier agreement shall address the following but not limited information security requirements based on the services provided by the service provider.
+* Data: Any information, whether in electronic or physical form, provided to or accessed by Supplier in connection with the services provided to Company.
+* Information Security: Measures and controls designed to protect the confidentiality, integrity, and availability of Data, including but not limited to access controls, encryption, monitoring, confidentiality of Intellectual Property and incident response procedures.
+* Third-Party Compliance: Supplier shall ensure that any subcontractors or third parties involved in the handling of Data comply with the terms of the Agreement and applicable information security requirements.
+* Audits and Assessments: The agreement may address based on the services provided by the vendor, the need for audit to assess service provider’s ISMS related to the product and services offered to the organisation.
+* Clause 5: Background Verification Records shall be obtained from the supplier based on the criticallity on the data accessed by the vendor or any other contractual requirment. The responsibility of performing the background verification shall be decided on case to case basis.
+Clause 5: Due Deligence of the supplier information security practice shall be done before availing maanaged PaaS (Platform as a Service), IaaS (Infrastructure as a Service) or SaaS (Software as a Service). CISO shall review and approve the Due Deligence report for awarding contract to the supplier,
+Clause 6: Incident Reporting at Supplier Infrastructure and System
+Contractually supplier should to made bound to report all information security related incidents in their environment with in 8 hrs from the time of identifying such incudent,
+Clause 7:  Monitoring and Review of Supplier Services
+* The suppliers or vendors shall be monitored and reviewed annually by the Admin/ Information Security Team.
+* Based on interal risk assessment RSET may conduct annal audit on supplier services provided.
+
+Clause 8: Managing changes to supplier Services
+Any changes to supplier services shall be communicated to the Top Management/CISO and approval shall be taken on the change. Such changes may include, but not limited to:
+1. Enhancements to the current services offered.
+2. Modification or updates of the organization’s policies and procedures; and
+3. New controls to resolve information security incidents and to improve security,
+4. Changes and enhancements to networks.
+5. Use of new technologies.
+6. Adoption of new products or newer versions/releases.
+7. New development tools and environments.
+8. Changes to physical location of service facilities
+Clause 9: Access Management of Supplier Resources
+* Separate RSET account shall be created for vendor resources accessing RSET information systems.
+* Account shall be revoked as soon as supplier changes the resource or contract with the supplier ends.
+* Separate vendor access card shall be provided to supplier resources accessing RSET environment,

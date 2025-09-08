@@ -1,0 +1,24 @@
+8.18. POLICY FOR REMOTE WORKING
+8.18.1. PURPOSE
+As a strategy, RSET promote remote working. This policy outlines framework followed by RSET to ensure secure remote access to its systems and services.
+
+8.18.2. SCOPE
+All staffs and organization work directly or indirectly with RSET includes employees, contractors, temporary employees, and vendors.
+8.18.3. POLICY STATEMENTS
+Clause 1: Remote work arrangements are based on job role suitability and performance history. Remote working shall be allowed after considering project requirements and HR Policies. 
+
+Clause 2: The staff should adhere Acceptable usage, Clear Desk and Clear Screen Policy while working from remote location.
+
+Clause 3: Home networks must be secure, with strong passwords and encryption. Employees must not use public Wi-Fi networks for company work.
+
+Clause 4: Remote employees must adhere to their regular work hours or work hours stipulated by projects.
+
+Clause 5: Employees should ensure that they have reliable network with good performance to perform their duties.
+
+Clause 6: Employees should establish clear communication channels with their managers and team members, using approved tools and platforms.
+
+Clause 7: Managers are responsible for setting clear expectations and deliverables for remote employees and monitoring their progress.
+
+Clause 8: If there are any IT incidents which cannot be resolved by IT personnel remotely, employee shall visit the nearest office. 
+
+Clause 9: Employees shall not user their personal systems to perform work.

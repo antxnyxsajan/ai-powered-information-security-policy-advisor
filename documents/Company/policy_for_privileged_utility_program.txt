@@ -1,0 +1,12 @@
+8.30. POLICY FOR PRIVILEGED UTILITY PROGRAM
+8.30.1. PURPOSE
+The Privileged Utility Programs Policy outlines the guidelines and procedures for the responsible use and management of privileged utility programs within RSET Privileged utility programs are powerful tools that can access and manipulate critical system components and data. This policy is designed to ensure their controlled and secure use to protect the organization's IT infrastructure and data assets.
+8.30.2. SCOPE
+This policy applies to all employees, contractors, and third-party entities who have access and use Privileged Utility Programs to RSET Information systems.
+8.30.3. POLICY STATEMENTS
+Clause 1: Only authorized personnel with a legitimate business need should have access to and use privileged utility programs. Access rights should be clearly defined and documented,
+Clause 2: Inventory of all privileged utility programs in use within the organization shall be maintained.
+Clause 3: Prior to installation and use of privileged utility programs approval must be obtained from IT department and top management.
+Clause 4: Privileged utility programs should not be used to access or manipulate sensitive data unless explicitly required for authorized tasks.
+Clause 5: Implement logging and monitoring of privileged utility program usage to detect any suspicious or unauthorized activities.
+Clause 6: All changes to privileged utility programs, including installations, updates, and removals, must follow the organization's change management process.

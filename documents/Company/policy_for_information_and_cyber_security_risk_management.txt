@@ -1,0 +1,23 @@
+8.12. POLICY FOR INFORMATION AND CYBER SECURITY RISK MANAGEMENT
+8.12.1. PURPOSE
+Information that is collected, analysed, stored, communicated, and reported upon may be subject to theft, misuse, loss. and corruption. Risk management is a critical component of RSET’s information security strategy. It helps to ensure that any risk to confidentiality, integrity, and availability is identified, analysed, and maintained within acceptable levels. Risk assessments allow management to prioritize and focus on areas that pose the greatest impact to critical and sensitive information assets.
+This policy sets out the principles that users shall adopt, to identify, assess and manage information risk, to support the achievement of its planned objectives, and aligns with the RSET’s risk management framework and approach.
+The goal of this policy is to empower Information Security and Information Technology team to perform timely risk assessments (RA’s) in compliance with Security policies, standards, and procedures for determining areas of vulnerability, risk and to initiate appropriate remediation.
+8.12.2. SCOPE
+This policy applies to all RSET staffs, including Permanent and Temporary employees, contractors, consultants, suppliers, and other third parties.
+8.12.3. POLICY STATEMENTS
+Clause 1: Information Security In charge along with IT team and Asset Owner who are responsible for system/ information shall perform annual risk assessment which covers:
+o Identification of assets.
+o Identification of legal and business requirements associated with assets.
+o Valuation of assets.
+o Identification and assessment of threats and vulnerabilities.
+o Assess the likelihood of occurrence.
+o Impact of harm from the unauthorized access, use, disclosure, disruption, modification, or destruction of the information system and the information it processes, stores, or transmits.
+o Evaluation of risk.
+o Calculation of risk.
+o Assessment against a pre-determined scale.
+o Risk owner and accountability. 
+Clause 2: Risk treatment strategy shall be defined and implemented if risk associated with any information system/ assets is above threshold. 
+Clause 3: Update the risk assessment on yearly basis or whenever there are significant changes to the information system or environment of operation (including the identification of new threats and vulnerabilities), or other conditions that may impact the security state of the system.
+Clause 4: The execution, development and implementation of remediation programs is the joint responsibility of “Information Security in Charge”, Information Technology team and the department responsible for the systems are being assessed in scope. Employees are expected to cooperate fully with any Risk Assessment being conducted on systems for which they are held accountable. Employees are further expected to work with the IT Team in the development of a treatment plan. 
+Clause 5: The Business owners in coordination with the Information Security In charge of RSET shall determine and implement appropriate course of action that include risk acceptance, risk avoidance, risk mitigation/ reduction, risk transfer/ sharing depends on the cost / benefit analysis information.
