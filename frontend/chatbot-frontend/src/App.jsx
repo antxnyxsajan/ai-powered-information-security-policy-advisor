@@ -1,6 +1,24 @@
 import { useState, useEffect, useRef } from 'react';
 import './App.css';
 
+// --- NEW: Component to parse and render bold markdown ---
+function FormattedMessage({ text }) {
+  // This function finds **text** and replaces it with <strong>text</strong>
+  const formatText = (rawText) => {
+    // Also handles potential bullet points that start with * or -
+    let formatted = rawText.replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>');
+    formatted = formatted.replace(/^\s*[\*-]\s/gm, '<br>• ');
+    return formatted;
+  };
+
+  return (
+    <div
+      dangerouslySetInnerHTML={{ __html: formatText(text) }}
+    />
+  );
+}
+
+
 const UserAvatar = () => (
   <div className="avatar">
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
@@ -18,7 +36,8 @@ const BotAvatar = () => (
 );
 
 const SendIcon = () => (
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#121212" width="24px" height="24px">
+  // Corrected fill color to be visible on the blue button
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" width="24px" height="24px">
     <path d="M3.478 2.405a.75.75 0 00-.926.94l2.432 7.905H13.5a.75.75 0 010 1.5H4.984l-2.432 7.905a.75.75 0 00.926.94 60.519 60.519 0 0018.445-8.986.75.75 0 000-1.218A60.517 60.517 0 003.478 2.405z" />
   </svg>
 );
@@ -78,7 +97,10 @@ function App() {
             {msg.sender === 'bot' ? (
               <>
                 <BotAvatar />
-                <div className="message-bubble">{msg.text}</div>
+                <div className="message-bubble">
+                  {/* --- CHANGE: Use the FormattedMessage component for bot messages --- */}
+                  <FormattedMessage text={msg.text} />
+                </div>
               </>
             ) : (
               <>
