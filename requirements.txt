@@ -24,4 +24,5 @@ uvicorn main:app --reload
 #If no venv was used:
 python -m uvicorn main:app --reload
 
-#After backend is online open frontend/index.htmnl in a browser
+#After backend is online open frontend/chatbot-frontend/ and run this command:
+npm run dev
