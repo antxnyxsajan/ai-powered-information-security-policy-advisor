@@ -14,10 +14,10 @@ from langchain.prompts import ChatPromptTemplate
 
 #for testing
 
-llm = ChatCohere(model="command-r")
+llm = ChatCohere(model="command-a-03-2025")
 embeddings = CohereEmbeddings(model="embed-english-v3.0")
 vectorstore = PineconeVectorStore(index_name="security-advisor-index", embedding=embeddings)
-
+ 
 company_retriever = vectorstore.as_retriever(search_kwargs={'namespace': 'company-xyz-policy'})
 standards_retriever = vectorstore.as_retriever(search_kwargs={'namespace': 'iso-nist-standards'})
 
