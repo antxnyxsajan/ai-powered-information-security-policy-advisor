@@ -6,8 +6,7 @@ from langchain_community.document_loaders import TextLoader
 from langchain_cohere import CohereEmbeddings
 from langchain_pinecone import PineconeVectorStore
 
-
-
+load_dotenv()
 
 PINECONE_INDEX_NAME = "security-advisor-index"
 STANDARDS_NAMESPACE = "iso-nist-standards" 

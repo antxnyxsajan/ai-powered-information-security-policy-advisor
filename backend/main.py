@@ -11,8 +11,8 @@ from langchain_cohere import CohereEmbeddings
 from langchain.prompts import ChatPromptTemplate
 
 # Securely load API keys from your .env file
-#load_dotenv()
-check env file next time i think its working
+load_dotenv()
+
 # --- Initialize Models and Retrievers ---
 llm = ChatCohere(model="command-a-03-2025")
 embeddings = CohereEmbeddings(model="embed-english-v3.0")
