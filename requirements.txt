@@ -10,7 +10,7 @@ pip install fastapi "uvicorn[standard]" python-dotenv langchain langchain-cohere
 #Next time onwards, in project directory before running:
 .\venv\Scripts\activate
 
-
+#create a .env(just '.env' no file names like 'key.env' or anything like that) file in the current directory
 #Sample .env:
 COHERE_API_KEY="your_cohere_api_here"
 PINECONE_API_KEY="your_pinecone_api_here"
