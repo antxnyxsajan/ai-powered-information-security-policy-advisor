@@ -75,28 +75,44 @@ class ChatRequest(BaseModel):
 def chat_handler(request: ChatRequest):
     print(f"Received question: {request.question}")
 
-    # --- Handle small talk ---
     lowered_question = request.question.lower().strip()
     greetings = ["hello", "hi", "hey", "yo", "hai"]
     if lowered_question in greetings:
         print("Handling as a simple greeting.")
         return {"answer": "Hello! How can I help you with your policy questions today?", "source": ""}
     
-    # --- RAG Logic ---
     print("\n--- Checking Company Policy Docs ---")
     
     company_docs_with_scores = vectorstore.similarity_search_with_score(
         request.question, 
         namespace='company-internal-docs',
-        k=4 
+        k=5
     )
     
     for doc, score in company_docs_with_scores:
-        print(f"Company Doc Score: {score:.4f}")
+        print(f"Initial Company Doc Score: {score:.4f}")
 
     score_threshold = 0.55
-    company_docs = [doc for doc, score in company_docs_with_scores if score >= score_threshold]
+    company_docs = []
     
+    high_score_docs = [doc for doc, score in company_docs_with_scores if score >= score_threshold]
+
+    if high_score_docs:
+        print(f"\nFound {len(high_score_docs)} docs above score threshold.")
+        company_docs = high_score_docs
+    else:
+        print(f"\nNo docs found above threshold. Checking for keywords in lower-scoring docs.")
+        priority_keywords = ["company", "policy", "standard", "general", "internal"]
+        keyword_boosted_docs = []
+        for doc, score in company_docs_with_scores:
+            doc_text_lower = doc.page_content.lower()
+            if any(keyword in doc_text_lower for keyword in priority_keywords):
+                print(f"Found keyword in doc with score {score:.4f}. Boosting it.")
+                keyword_boosted_docs.append(doc)
+        
+        if keyword_boosted_docs:
+            company_docs = keyword_boosted_docs
+
     if company_docs:
         print(f"\nFound {len(company_docs)} relevant docs in Company Policy. Using company chain.")
         context = "\n\n".join([doc.page_content for doc in company_docs])
@@ -120,17 +136,14 @@ def chat_handler(request: ChatRequest):
         for doc, score in standards_docs_with_scores:
             print(f"Standard Doc Score: {score:.4f}")
             
-        # --- NEW LOGIC: Check score before setting the source ---
         source = "General Standards"
         fallback_threshold = 0.45
         
-        # Check the score of the single best document found
         best_fallback_score = standards_docs_with_scores[0][1]
         if best_fallback_score < fallback_threshold:
             print(f"Best fallback score ({best_fallback_score:.4f}) is below threshold {fallback_threshold}. Clearing source.")
             source = ""
             
-        # Proceed with all found documents regardless of score
         standards_docs = [doc for doc, score in standards_docs_with_scores]
         
         print(f"Found {len(standards_docs)} docs in Standards. Using standards chain.")

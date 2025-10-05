@@ -16,7 +16,27 @@ function App() {
   const chatWindowRef = useRef(null);
   const API_URL = "http://127.0.0.1:8000/chat";
 
-  useEffect(() => { if (chatWindowRef.current) { chatWindowRef.current.scrollTop = chatWindowRef.current.scrollHeight; } }, [messages, isLoading]);
+   useEffect(() => {
+    if (chatWindowRef.current) {
+      const lastMessage = messages[messages.length - 1];
+
+      if (lastMessage && lastMessage.sender === 'user') {
+        // Full scroll to bottom for user's message
+        chatWindowRef.current.scrollTo({
+            top: chatWindowRef.current.scrollHeight,
+            behavior: 'smooth'
+        });
+      } else {
+        // Half-page scroll for AI's response
+        const windowHeight = chatWindowRef.current.clientHeight;
+        const scrollToPosition = chatWindowRef.current.scrollTop + (windowHeight / 2);
+        chatWindowRef.current.scrollTo({
+            top: scrollToPosition,
+            behavior: 'smooth'
+        });
+      }
+    }
+  }, [messages, isLoading]);
 
   const handleSubmit = async (e) => {
     e.preventDefault();

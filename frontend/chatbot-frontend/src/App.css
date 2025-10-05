@@ -237,3 +237,12 @@ body {
   margin-block-start: 0;
   margin-block-end: 0;
 }
+
+.message-bubble h1,
+.message-bubble h2,
+.message-bubble h3,
+.message-bubble h4,
+.message-bubble h5,
+.message-bubble h6 {
+  margin-top: 0;
+}
