@@ -10,17 +10,12 @@ from langchain_pinecone import PineconeVectorStore
 from langchain_cohere import CohereEmbeddings
 from langchain.prompts import ChatPromptTemplate
 
-# Securely load API keys from your .env file
 load_dotenv()
 
-# --- Initialize Models and Retrievers ---
 llm = ChatCohere(model="command-a-03-2025")
 embeddings = CohereEmbeddings(model="embed-english-v3.0")
 vectorstore = PineconeVectorStore(index_name="security-advisor-index", embedding=embeddings)
 
-# --- THE FIX: Update Retriever to use a score threshold ---
-# This only returns documents that have a similarity score above 0.5.
-# This makes the fallback logic work correctly.
 company_retriever = vectorstore.as_retriever(
     search_type="similarity_score_threshold", 
     search_kwargs={'score_threshold': 0.5, 'namespace': 'company-internal-docs'}
@@ -42,7 +37,6 @@ Answer the user's question based ONLY on the context provided below.
 - If the context does not contain the answer, you MUST say: "I could not find information on that topic in the provided documents."
 - Dont over crowd responses keep it short if possible but without risking necessary information.
 - Interpret if the queryt is a question or a simple chat and answer appropriately dont include rule 5 if the query is a chat prompt and not necessarily a question regarding policy or company.
-
 
 Context:
 {context}
@@ -66,10 +60,6 @@ app.add_middleware(
 
 class ChatRequest(BaseModel):
     question: str
-
-# In backend/main.py, replace the entire @app.post("/chat") function
-
-# In backend/main.py, replace the entire @app.post("/chat") function
 
 @app.post("/chat")
 def chat_handler(request: ChatRequest):
@@ -153,7 +143,7 @@ def chat_handler(request: ChatRequest):
             source = "General Standards"
             if best_fallback_score < fallback_threshold and query_has_standard_keyword:
                  print(f"Boosting standards docs due to keyword. Best score was {best_fallback_score:.4f}")
-                 source = "" # Clear source for low-score keyword boost
+                 source = ""
             
             standards_docs = [doc for doc, score in standards_docs_with_scores]
             
