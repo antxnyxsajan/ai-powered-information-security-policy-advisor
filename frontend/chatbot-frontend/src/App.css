@@ -21,9 +21,8 @@ body {
     width: 100vw;
     height: 100vh;
     display: flex;
-    justify-content: center; /* Horizontally center */
-    align-items: center;     /* Vertically center */
-
+    justify-content: center;
+    align-items: center;
     color: var(--text-primary);
     overflow: hidden;
 }

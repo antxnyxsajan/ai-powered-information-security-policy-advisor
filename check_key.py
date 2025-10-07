@@ -4,7 +4,7 @@ from dotenv import load_dotenv
 env_path = '../.env'
 print(f"Attempting to load environment variables from: {os.path.abspath(env_path)}")
 
-load_dotenv(dotenv_path=env_path)
+load_dotenv()
 
 cohere_key = os.getenv("COHERE_API_KEY")
 pinecone_key = os.getenv("PINECONE_API_KEY")
