@@ -93,14 +93,12 @@ def chat_handler(request: ChatRequest):
     source = ""
     
     print("\n--- Checking Company Policy Docs ---")
-    # Using similarity_search_with_score to see the scores
     company_docs_with_scores = vectorstore.similarity_search_with_score(
         request.question, 
         namespace='company-internal-docs',
         k=4
     )
     
-    # Print scores for debugging
     for doc, score in company_docs_with_scores:
         print(f"Company Doc Score: {score:.4f}")
 
@@ -120,7 +118,6 @@ def chat_handler(request: ChatRequest):
             k=4
         )
         
-        # Print scores for debugging
         for doc, score in standards_docs_with_scores:
             print(f"Standard Doc Score: {score:.4f}")
         
