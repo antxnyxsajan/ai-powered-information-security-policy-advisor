@@ -1,2 +1,4 @@
 key.txt
 .env
+*.pyc
+backend/__pycache__/main.cpython-313.pyc
