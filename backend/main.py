@@ -1,10 +1,11 @@
 import os
-import time  # <-- Import the time module
+import time
 from dotenv import load_dotenv
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
-from starlette.requests import Request  # <-- Import Request for middleware
+from starlette.requests import Request
+from typing import List, Dict, Tuple  # <-- Import List, Dict, and Tuple
 
 from langchain_cohere import ChatCohere
 from langchain_pinecone import PineconeVectorStore
@@ -61,6 +62,31 @@ chat_prompt = ChatPromptTemplate.from_template(chat_prompt_template)
 
 
 app = FastAPI()
+
+# --- NEW: Helper function to calculate averages ---
+def _calculate_avg(times_list: List[float]) -> Tuple[float, int]:
+    """Calculates the average and count from a list of times."""
+    count = len(times_list)
+    if count == 0:
+        return 0.0, 0
+    avg = sum(times_list) / count
+    return avg, count
+# --- End new ---
+
+
+# --- MODIFIED: App startup event to initialize all metrics ---
+@app.on_event("startup")
+async def startup_event():
+    """On server startup, create a dictionary of lists to store all metric times."""
+    app.state.metrics: Dict[str, List[float]] = {
+        "total": [],
+        "vdb1": [],
+        "vdb2": [],
+        "llm": []
+    }
+# --- End modified ---
+
+
 app.add_middleware(
     CORSMiddleware,
     allow_origins=["*"],
@@ -69,31 +95,70 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-# --- NEW: Performance Logging Middleware ---
+# --- MODIFIED: Performance Logging Middleware ---
 @app.middleware("http")
-async def add_process_time_header(request: Request, call_next):
+async def log_performance_metrics(request: Request, call_next):
     """
-    This middleware logs the total time taken to process each request.
-    This has a negligible performance impact.
+    This middleware now handles all performance logging to avoid duplicates
+    and calculates the runtime average for ALL tracked metrics.
     """
     start_time = time.time()
+    
+    # Process the request
     response = await call_next(request)
+    
+    # Calculate total time
     process_time = time.time() - start_time
-    # You can also add this to the response headers if you want
-    # response.headers["X-Process-Time"] = str(process_time)
-    print(f"--- Total Request Time: {process_time:.4f} seconds ---")
+    
+    # Only log stats for the /chat endpoint
+    if request.url.path == "/chat":
+        # Add current total time
+        app.state.metrics["total"].append(process_time)
+        
+        print("\n--- PERFORMANCE ANALYSIS ---")
+        
+        # --- VDB 1 ---
+        if hasattr(request.state, "vdb_time_1"):
+            app.state.metrics["vdb1"].append(request.state.vdb_time_1)
+            vdb1_avg, vdb1_count = _calculate_avg(app.state.metrics["vdb1"])
+            print(f"[VDB 1 (Company)] Current: {request.state.vdb_time_1:<7.4f}s | Average ({vdb1_count} reqs): {vdb1_avg:.4f}s")
+        
+        # --- VDB 2 (Fallback) ---
+        if hasattr(request.state, "vdb_time_2"):
+            app.state.metrics["vdb2"].append(request.state.vdb_time_2)
+        
+        # Only show VDB 2 average if it has ever run
+        vdb2_avg, vdb2_count = _calculate_avg(app.state.metrics["vdb2"])
+        if vdb2_count > 0:
+            current_vdb2 = f"{request.state.vdb_time_2:<7.4f}s" if hasattr(request.state, "vdb_time_2") else " " * 7
+            print(f"[VDB 2 (Standards)] Current: {current_vdb2} | Average ({vdb2_count} reqs): {vdb2_avg:.4f}s")
+
+        # --- LLM Generation ---
+        if hasattr(request.state, "llm_time"):
+            app.state.metrics["llm"].append(request.state.llm_time)
+            llm_avg, llm_count = _calculate_avg(app.state.metrics["llm"])
+            print(f"[LLM Generation]  Current: {request.state.llm_time:<7.4f}s | Average ({llm_count} reqs): {llm_avg:.4f}s")
+        
+        print("---------------------------------")
+        # --- Total Runtime ---
+        total_avg, total_count = _calculate_avg(app.state.metrics["total"])
+        print(f"[Total Runtime]     Current: {process_time:<7.4f}s | Average ({total_count} reqs): {total_avg:.4f}s")
+        print("---------------------------------\n")
+    
     return response
-# --- End of new middleware ---
+# --- End of modified middleware ---
 
 
 class ChatRequest(BaseModel):
     question: str
 
+# --- MODIFIED: chat_handler ---
+# We add 'request: Request' so we can pass state to the middleware
 @app.post("/chat")
-def chat_handler(request: ChatRequest):
-    print(f"Received question: {request.question}")
+def chat_handler(chat_request: ChatRequest, request: Request):
+    print(f"Received question: {chat_request.question}")
 
-    lowered_question = request.question.lower().strip()
+    lowered_question = chat_request.question.lower().strip()
     conversational_phrases = [
         "hello", "hi", "hey", "yo", "hai",
         "how are you", "how are you doing", "what's up",
@@ -103,28 +168,29 @@ def chat_handler(request: ChatRequest):
 
     if lowered_question in conversational_phrases:
         print("Handling as a conversational query. Using chat prompt.")
+        
+        llm_start = time.time() # Timer for LLM call
         chat_chain = chat_prompt | llm
-        response = chat_chain.invoke({"question": request.question})
+        response = chat_chain.invoke({"question": chat_request.question})
+        request.state.llm_time = time.time() - llm_start # Store in request.state
+        
         return {"answer": response.content, "source": ""}
     
     print("Handling as a policy question. Using RAG chain.")
-    
-    # --- NEW: Granular Performance Timers ---
-    rag_start_time = time.time()
     
     context = ""
     source = ""
     
     print("\n--- Checking Company Policy Docs ---")
     
-    vdb_start_1 = time.time()  # Timer for VDB search 1
+    vdb_start_1 = time.time()
     company_docs_with_scores = vectorstore.similarity_search_with_score(
-        request.question, 
+        chat_request.question,
         namespace='company-internal-docs',
         k=4
     )
     vdb_time_1 = time.time() - vdb_start_1
-    print(f"[PERF] VDB Search 1 (Company) took: {vdb_time_1:.4f}s")
+    request.state.vdb_time_1 = vdb_time_1  # Store in request.state
     
     for doc, score in company_docs_with_scores:
         print(f"Company Doc Score: {score:.4f}")
@@ -139,14 +205,14 @@ def chat_handler(request: ChatRequest):
     else:
         print(f"\nNo relevant company docs found. Falling back to standards.")
         
-        vdb_start_2 = time.time()  # Timer for VDB search 2
+        vdb_start_2 = time.time()
         standards_docs_with_scores = vectorstore.similarity_search_with_score(
-            request.question,
+            chat_request.question,
             namespace='iso-nist-standards',
             k=4
         )
         vdb_time_2 = time.time() - vdb_start_2
-        print(f"[PERF] VDB Search 2 (Standards) took: {vdb_time_2:.4f}s")
+        request.state.vdb_time_2 = vdb_time_2  # Store in request.state
         
         for doc, score in standards_docs_with_scores:
             print(f"Standard Doc Score: {score:.4f}")
@@ -163,18 +229,13 @@ def chat_handler(request: ChatRequest):
 
     print(f"Final context length: {len(context)}, Source: '{source}'")
     
-    llm_start = time.time()  # Timer for LLM call
+    llm_start = time.time()
     rag_chain = rag_prompt | llm
-    response = rag_chain.invoke({"context": context, "question": request.question})
+    response = rag_chain.invoke({"context": context, "question": chat_request.question})
     llm_time = time.time() - llm_start
-    print(f"[PERF] LLM Generation took: {llm_time:.4f}s")
-
+    request.state.llm_time = llm_time  # Store in request.state
     
     if "I could not find information" in response.content:
         source = ""
     
-    rag_total_time = time.time() - rag_start_time
-    print(f"[PERF] Total RAG processing (VDB + LLM) took: {rag_total_time:.4f}s")
-    # --- End of new timers ---
-
     return {"answer": response.content, "source": source}
