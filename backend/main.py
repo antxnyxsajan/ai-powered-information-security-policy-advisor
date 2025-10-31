@@ -1,11 +1,12 @@
 import os
 import time
+import psutil  # <-- NEW: Import for memory usage
 from dotenv import load_dotenv
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
 from starlette.requests import Request
-from typing import List, Dict, Tuple  # <-- Import List, Dict, and Tuple
+from typing import List, Dict, Tuple, Any
 
 from langchain_cohere import ChatCohere
 from langchain_pinecone import PineconeVectorStore
@@ -13,6 +14,10 @@ from langchain_cohere import CohereEmbeddings
 from langchain.prompts import ChatPromptTemplate
 
 load_dotenv()
+
+# --- NEW: Get process for memory tracking ---
+PROCESS = psutil.Process(os.getpid())
+# --- End new ---
 
 llm = ChatCohere(model="command-a-03-2025")
 embeddings = CohereEmbeddings(model="embed-english-v3.0")
@@ -63,7 +68,7 @@ chat_prompt = ChatPromptTemplate.from_template(chat_prompt_template)
 
 app = FastAPI()
 
-# --- NEW: Helper function to calculate averages ---
+# --- Helper function to calculate averages ---
 def _calculate_avg(times_list: List[float]) -> Tuple[float, int]:
     """Calculates the average and count from a list of times."""
     count = len(times_list)
@@ -71,18 +76,26 @@ def _calculate_avg(times_list: List[float]) -> Tuple[float, int]:
         return 0.0, 0
     avg = sum(times_list) / count
     return avg, count
-# --- End new ---
+# --- End ---
 
 
 # --- MODIFIED: App startup event to initialize all metrics ---
 @app.on_event("startup")
 async def startup_event():
     """On server startup, create a dictionary of lists to store all metric times."""
-    app.state.metrics: Dict[str, List[float]] = {
+    app.state.metrics: Dict[str, Any] = {
+        # Performance metrics
         "total": [],
         "vdb1": [],
         "vdb2": [],
-        "llm": []
+        "llm": [],
+        # RAG Quality metrics
+        "scores": [],
+        "doc_counts": [],
+        "context_lengths": [],
+        "hits_company": 0,
+        "hits_standards": 0,
+        "hits_none": 0
     }
 # --- End modified ---
 
@@ -112,7 +125,7 @@ async def log_performance_metrics(request: Request, call_next):
     
     # Only log stats for the /chat endpoint
     if request.url.path == "/chat":
-        # Add current total time
+        # === PERFORMANCE ===
         app.state.metrics["total"].append(process_time)
         
         print("\n--- PERFORMANCE ANALYSIS ---")
@@ -127,7 +140,6 @@ async def log_performance_metrics(request: Request, call_next):
         if hasattr(request.state, "vdb_time_2"):
             app.state.metrics["vdb2"].append(request.state.vdb_time_2)
         
-        # Only show VDB 2 average if it has ever run
         vdb2_avg, vdb2_count = _calculate_avg(app.state.metrics["vdb2"])
         if vdb2_count > 0:
             current_vdb2 = f"{request.state.vdb_time_2:<7.4f}s" if hasattr(request.state, "vdb_time_2") else " " * 7
@@ -143,6 +155,44 @@ async def log_performance_metrics(request: Request, call_next):
         # --- Total Runtime ---
         total_avg, total_count = _calculate_avg(app.state.metrics["total"])
         print(f"[Total Runtime]     Current: {process_time:<7.4f}s | Average ({total_count} reqs): {total_avg:.4f}s")
+
+        # === RAG QUALITY (Only if it was a RAG query) ===
+        if hasattr(request.state, "hit_type"):
+            # --- Handle Hit Counters ---
+            if request.state.hit_type == "company":
+                app.state.metrics["hits_company"] += 1
+            elif request.state.hit_type == "standards":
+                app.state.metrics["hits_standards"] += 1
+            elif request.state.hit_type == "none":
+                app.state.metrics["hits_none"] += 1
+            
+            # --- Append other RAG stats ---
+            app.state.metrics["scores"].append(request.state.retrieval_score)
+            app.state.metrics["doc_counts"].append(request.state.doc_count)
+            app.state.metrics["context_lengths"].append(request.state.context_length)
+
+            # --- Calculate Averages ---
+            score_avg, score_count = _calculate_avg(app.state.metrics["scores"])
+            docs_avg, docs_count = _calculate_avg(app.state.metrics["doc_counts"])
+            len_avg, len_count = _calculate_avg(app.state.metrics["context_lengths"])
+            
+            # --- Get Current Values ---
+            current_score = request.state.retrieval_score
+            current_docs = request.state.doc_count
+            current_len = request.state.context_length
+            current_mem_mb = PROCESS.memory_info().rss / (1024 * 1024)
+            
+            # --- Print RAG Dashboard ---
+            print("\n--- RAG QUALITY & RESOURCES ---")
+            hits_c = app.state.metrics["hits_company"]
+            hits_s = app.state.metrics["hits_standards"]
+            hits_n = app.state.metrics["hits_none"]
+            print(f"[Retrieval Hits]  Company: {hits_c} | Standards: {hits_s} | None: {hits_n}")
+            print(f"[Retrieval Score] Current: {current_score:<7.4f}  | Average ({score_count} reqs): {score_avg:.4f}")
+            print(f"[Docs Retrieved]  Current: {current_docs:<7} | Average ({docs_count} reqs): {docs_avg:.2f}")
+            print(f"[Context Length]  Current: {current_len:<7} | Average ({len_count} reqs): {len_avg:.0f} chars")
+            print(f"[Memory Usage]    Current: {current_mem_mb:.2f} MB")
+        
         print("---------------------------------\n")
     
     return response
@@ -152,8 +202,6 @@ async def log_performance_metrics(request: Request, call_next):
 class ChatRequest(BaseModel):
     question: str
 
-# --- MODIFIED: chat_handler ---
-# We add 'request: Request' so we can pass state to the middleware
 @app.post("/chat")
 def chat_handler(chat_request: ChatRequest, request: Request):
     print(f"Received question: {chat_request.question}")
@@ -169,10 +217,10 @@ def chat_handler(chat_request: ChatRequest, request: Request):
     if lowered_question in conversational_phrases:
         print("Handling as a conversational query. Using chat prompt.")
         
-        llm_start = time.time() # Timer for LLM call
+        llm_start = time.time()
         chat_chain = chat_prompt | llm
         response = chat_chain.invoke({"question": chat_request.question})
-        request.state.llm_time = time.time() - llm_start # Store in request.state
+        request.state.llm_time = time.time() - llm_start
         
         return {"answer": response.content, "source": ""}
     
@@ -190,7 +238,7 @@ def chat_handler(chat_request: ChatRequest, request: Request):
         k=4
     )
     vdb_time_1 = time.time() - vdb_start_1
-    request.state.vdb_time_1 = vdb_time_1  # Store in request.state
+    request.state.vdb_time_1 = vdb_time_1
     
     for doc, score in company_docs_with_scores:
         print(f"Company Doc Score: {score:.4f}")
@@ -202,6 +250,13 @@ def chat_handler(chat_request: ChatRequest, request: Request):
         print(f"\nFound {len(company_docs)} relevant docs in Company Policy.")
         context = "\n\n".join([doc.page_content for doc in company_docs])
         source = "Company Policy"
+        
+        # --- NEW: Set RAG stats for middleware ---
+        request.state.hit_type = "company"
+        request.state.retrieval_score = company_docs_with_scores[0][1] # Get top score
+        request.state.doc_count = len(company_docs)
+        # --- End new ---
+        
     else:
         print(f"\nNo relevant company docs found. Falling back to standards.")
         
@@ -212,7 +267,7 @@ def chat_handler(chat_request: ChatRequest, request: Request):
             k=4
         )
         vdb_time_2 = time.time() - vdb_start_2
-        request.state.vdb_time_2 = vdb_time_2  # Store in request.state
+        request.state.vdb_time_2 = vdb_time_2
         
         for doc, score in standards_docs_with_scores:
             print(f"Standard Doc Score: {score:.4f}")
@@ -224,8 +279,25 @@ def chat_handler(chat_request: ChatRequest, request: Request):
             print(f"Found {len(standards_docs)} relevant docs in Standards.")
             context = "\n\n".join([doc.page_content for doc in standards_docs])
             source = "General Standards"
+
+            # --- NEW: Set RAG stats for middleware ---
+            request.state.hit_type = "standards"
+            request.state.retrieval_score = standards_docs_with_scores[0][1] # Get top score
+            request.state.doc_count = len(standards_docs)
+            # --- End new ---
+
         else:
             print("No relevant docs found in Standards either.")
+            
+            # --- NEW: Set RAG stats for middleware ---
+            request.state.hit_type = "none"
+            request.state.retrieval_score = 0.0
+            request.state.doc_count = 0
+            # --- End new ---
+
+    # --- NEW: Set context length for middleware ---
+    request.state.context_length = len(context)
+    # --- End new ---
 
     print(f"Final context length: {len(context)}, Source: '{source}'")
     
@@ -233,7 +305,7 @@ def chat_handler(chat_request: ChatRequest, request: Request):
     rag_chain = rag_prompt | llm
     response = rag_chain.invoke({"context": context, "question": chat_request.question})
     llm_time = time.time() - llm_start
-    request.state.llm_time = llm_time  # Store in request.state
+    request.state.llm_time = llm_time
     
     if "I could not find information" in response.content:
         source = ""

@@ -5,7 +5,7 @@ Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope Process
 #Run in cmd:
 python -m venv venv
 .\venv\Scripts\activate
-pip install fastapi "uvicorn[standard]" python-dotenv langchain langchain-cohere langchain-pinecone langchain_community pypdf TextLoader
+pip install fastapi "uvicorn[standard]" python-dotenv langchain langchain-cohere langchain-pinecone langchain_community pypdf TextLoader psutil
 npm install react-markdown
 
 #Next time onwards, in project directory before running:
