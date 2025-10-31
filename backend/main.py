@@ -1,8 +1,10 @@
 import os
+import time  # <-- Import the time module
 from dotenv import load_dotenv
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
+from starlette.requests import Request  # <-- Import Request for middleware
 
 from langchain_cohere import ChatCohere
 from langchain_pinecone import PineconeVectorStore
@@ -67,6 +69,23 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
+# --- NEW: Performance Logging Middleware ---
+@app.middleware("http")
+async def add_process_time_header(request: Request, call_next):
+    """
+    This middleware logs the total time taken to process each request.
+    This has a negligible performance impact.
+    """
+    start_time = time.time()
+    response = await call_next(request)
+    process_time = time.time() - start_time
+    # You can also add this to the response headers if you want
+    # response.headers["X-Process-Time"] = str(process_time)
+    print(f"--- Total Request Time: {process_time:.4f} seconds ---")
+    return response
+# --- End of new middleware ---
+
+
 class ChatRequest(BaseModel):
     question: str
 
@@ -89,15 +108,23 @@ def chat_handler(request: ChatRequest):
         return {"answer": response.content, "source": ""}
     
     print("Handling as a policy question. Using RAG chain.")
+    
+    # --- NEW: Granular Performance Timers ---
+    rag_start_time = time.time()
+    
     context = ""
     source = ""
     
     print("\n--- Checking Company Policy Docs ---")
+    
+    vdb_start_1 = time.time()  # Timer for VDB search 1
     company_docs_with_scores = vectorstore.similarity_search_with_score(
         request.question, 
         namespace='company-internal-docs',
         k=4
     )
+    vdb_time_1 = time.time() - vdb_start_1
+    print(f"[PERF] VDB Search 1 (Company) took: {vdb_time_1:.4f}s")
     
     for doc, score in company_docs_with_scores:
         print(f"Company Doc Score: {score:.4f}")
@@ -112,11 +139,14 @@ def chat_handler(request: ChatRequest):
     else:
         print(f"\nNo relevant company docs found. Falling back to standards.")
         
+        vdb_start_2 = time.time()  # Timer for VDB search 2
         standards_docs_with_scores = vectorstore.similarity_search_with_score(
             request.question,
             namespace='iso-nist-standards',
             k=4
         )
+        vdb_time_2 = time.time() - vdb_start_2
+        print(f"[PERF] VDB Search 2 (Standards) took: {vdb_time_2:.4f}s")
         
         for doc, score in standards_docs_with_scores:
             print(f"Standard Doc Score: {score:.4f}")
@@ -132,10 +162,19 @@ def chat_handler(request: ChatRequest):
             print("No relevant docs found in Standards either.")
 
     print(f"Final context length: {len(context)}, Source: '{source}'")
+    
+    llm_start = time.time()  # Timer for LLM call
     rag_chain = rag_prompt | llm
     response = rag_chain.invoke({"context": context, "question": request.question})
+    llm_time = time.time() - llm_start
+    print(f"[PERF] LLM Generation took: {llm_time:.4f}s")
+
     
     if "I could not find information" in response.content:
         source = ""
     
+    rag_total_time = time.time() - rag_start_time
+    print(f"[PERF] Total RAG processing (VDB + LLM) took: {rag_total_time:.4f}s")
+    # --- End of new timers ---
+
     return {"answer": response.content, "source": source}
