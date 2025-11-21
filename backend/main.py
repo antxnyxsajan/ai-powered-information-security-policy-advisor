@@ -25,17 +25,21 @@ vectorstore = PineconeVectorStore(index_name="security-advisor-index", embedding
 
 company_retriever = vectorstore.as_retriever(
     search_type="similarity_score_threshold", 
-    search_kwargs={'score_threshold': 0.55, 'namespace': 'company-internal-docs'}
+    search_kwargs={'score_threshold': 0.45, 'namespace': 'company-internal-docs'}
 )
 standards_retriever = vectorstore.as_retriever(
     search_type="similarity_score_threshold",
-    search_kwargs={'score_threshold': 0.45, 'namespace': 'iso-nist-standards'}
+    search_kwargs={'score_threshold': 0.35, 'namespace': 'iso-nist-standards'}
 )
 
 # --- PROMPT 1: For detailed RAG questions ---
 rag_prompt_template = """
 You are an AI assistant for company employees. Your tone should be helpful, professional, and clear.
 Answer the user's question based ONLY on the context provided below.
+
+**CRITICAL BEFORE SENDING QUERY TO VECTORDB:**
+-Correct all spelling mistakes, if any.
+- 
 
 **CRITICAL INSTRUCTIONS FOR FORMATTING YOUR RESPONSE:**
 - If the context is empty, you MUST politely state that you couldn't find a specific policy related to the user's question and ask them to rephrase or ask about another topic. Do not mention the word "context".
@@ -61,10 +65,20 @@ If they are thanking you, acknowledge it warmly. If they are greeting you, greet
 User's message:
 {question}
 """
+# --- PROMPT 3: For correcting user queries (Fixes typos like 'psswrd') ---
+query_refinement_template = """
+You are a query refinement tool. Your job is to correct spelling and grammatical errors in the user's question to ensure the best search results.
+Do not answer the question. Do not add new topics.
+Return ONLY the corrected version of the question.
+
+Original: {question}
+Corrected:
+"""
+
 
 rag_prompt = ChatPromptTemplate.from_template(rag_prompt_template)
 chat_prompt = ChatPromptTemplate.from_template(chat_prompt_template)
-
+query_refinement_prompt = ChatPromptTemplate.from_template(query_refinement_template)
 
 app = FastAPI()
 
@@ -206,6 +220,7 @@ class ChatRequest(BaseModel):
 def chat_handler(chat_request: ChatRequest, request: Request):
     print(f"Received question: {chat_request.question}")
 
+    # 1. Handle Conversational Greetings First (No change here)
     lowered_question = chat_request.question.lower().strip()
     conversational_phrases = [
         "hello", "hi", "hey", "yo", "hai",
@@ -216,15 +231,29 @@ def chat_handler(chat_request: ChatRequest, request: Request):
 
     if lowered_question in conversational_phrases:
         print("Handling as a conversational query. Using chat prompt.")
-        
         llm_start = time.time()
         chat_chain = chat_prompt | llm
         response = chat_chain.invoke({"question": chat_request.question})
         request.state.llm_time = time.time() - llm_start
-        
         return {"answer": response.content, "source": ""}
     
-    print("Handling as a policy question. Using RAG chain.")
+    # --- NEW CODE START: Query Refinement ---
+    print("Handling as a policy question. Refining query first...")
+    
+    # Use LLM to fix typos ("psswrd" -> "password")
+    refine_start = time.time()
+    refinement_chain = query_refinement_prompt | llm
+    refined_response = refinement_chain.invoke({"question": chat_request.question})
+    
+    # Get the cleaned question
+    search_query = refined_response.content.strip()
+    print(f"Original: '{chat_request.question}' -> Refined: '{search_query}'")
+    
+    # (Optional) Log refinement time effectively or add to LLM time
+    # request.state.refinement_time = time.time() - refine_start 
+    # --- NEW CODE END ---
+
+    print(f"Using refined query for RAG: {search_query}")
     
     context = ""
     source = ""
@@ -232,8 +261,9 @@ def chat_handler(chat_request: ChatRequest, request: Request):
     print("\n--- Checking Company Policy Docs ---")
     
     vdb_start_1 = time.time()
+    # CHANGED: Use `search_query` instead of `chat_request.question`
     company_docs_with_scores = vectorstore.similarity_search_with_score(
-        chat_request.question,
+        search_query, 
         namespace='company-internal-docs',
         k=4
     )
@@ -243,6 +273,8 @@ def chat_handler(chat_request: ChatRequest, request: Request):
     for doc, score in company_docs_with_scores:
         print(f"Company Doc Score: {score:.4f}")
 
+    # ... (The rest of your function remains mostly the same) ...
+
     score_threshold = 0.45
     company_docs = [doc for doc, score in company_docs_with_scores if score >= score_threshold]
 
@@ -251,18 +283,17 @@ def chat_handler(chat_request: ChatRequest, request: Request):
         context = "\n\n".join([doc.page_content for doc in company_docs])
         source = "Company Policy"
         
-        # --- NEW: Set RAG stats for middleware ---
         request.state.hit_type = "company"
-        request.state.retrieval_score = company_docs_with_scores[0][1] # Get top score
+        request.state.retrieval_score = company_docs_with_scores[0][1]
         request.state.doc_count = len(company_docs)
-        # --- End new ---
         
     else:
         print(f"\nNo relevant company docs found. Falling back to standards.")
         
         vdb_start_2 = time.time()
+        # CHANGED: Use `search_query` here as well
         standards_docs_with_scores = vectorstore.similarity_search_with_score(
-            chat_request.question,
+            search_query,
             namespace='iso-nist-standards',
             k=4
         )
@@ -280,30 +311,24 @@ def chat_handler(chat_request: ChatRequest, request: Request):
             context = "\n\n".join([doc.page_content for doc in standards_docs])
             source = "General Standards"
 
-            # --- NEW: Set RAG stats for middleware ---
             request.state.hit_type = "standards"
-            request.state.retrieval_score = standards_docs_with_scores[0][1] # Get top score
+            request.state.retrieval_score = standards_docs_with_scores[0][1]
             request.state.doc_count = len(standards_docs)
-            # --- End new ---
 
         else:
             print("No relevant docs found in Standards either.")
-            
-            # --- NEW: Set RAG stats for middleware ---
             request.state.hit_type = "none"
             request.state.retrieval_score = 0.0
             request.state.doc_count = 0
-            # --- End new ---
 
-    # --- NEW: Set context length for middleware ---
     request.state.context_length = len(context)
-    # --- End new ---
 
     print(f"Final context length: {len(context)}, Source: '{source}'")
     
     llm_start = time.time()
     rag_chain = rag_prompt | llm
-    response = rag_chain.invoke({"context": context, "question": chat_request.question})
+    # CHANGED: Pass `search_query` to the final answer generation too
+    response = rag_chain.invoke({"context": context, "question": search_query})
     llm_time = time.time() - llm_start
     request.state.llm_time = llm_time
     
