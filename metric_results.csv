@@ -1,0 +1,43 @@
+Question,Std_Correct,Std_Hallucinated,RAG_Correct,RAG_Hallucinated
+What is the maximum size limit for email attachments?,1,1,1,0
+How many days is the password expiry ageing limit set to?,0,1,1,0
+What is the retention period for CCTV surveillance footage?,0,1,1,0
+After how many minutes of inactivity will the screen lock automatically?,1,0,1,0
+Within what timeframe must critical security patches be applied?,0,0,1,0
+What is the account lockout threshold for invalid login attempts?,0,0,1,0
+What is the reporting timeframe for Cert-In security incidents?,1,0,1,0
+What is the maximum time allowed for suppliers to report security incidents?,0,0,0,0
+How often must the leadership team conduct management review meetings?,1,1,1,0
+Which specific internet browsers are authorized for use?,1,1,1,0
+How many pillars of Cyber Resiliency are defined in the incident policy?,0,1,1,0
+What are the three defined tiers for information asset classification?,1,1,1,0
+How many building blocks are defined in the Information Security strategy?,0,0,0,0
+What is the guiding principle for information security awareness?,0,0,0,0
+Who is responsible for appointing the CISO?,1,1,0,0
+Who is responsible for the classification of information assets?,0,0,1,0
+Which specific locations are covered in the ISMS Scope?,0,0,0,0
+How soon must new staff start security awareness training?,0,0,1,0
+What is the frequency of refresher training for all staff?,0,1,0,0
+Which specific cloud service is mandated for user data backup?,0,0,1,0
+What must be done to whiteboards in meeting rooms after use?,0,0,1,0
+Are visitors allowed to connect to the internal network?,1,1,0,0
+What is the default setting for access control systems?,0,0,0,0
+How often must user access in systems be reviewed?,0,0,1,0
+What is the SLA for applying 'Important' security patches?,0,0,1,0
+How often is it mandatory to restart endpoint devices?,1,1,1,0
+"To prevent flood risk, where should the office be located?",0,0,1,0
+Who must authorize taking information assets off premises?,0,0,1,0
+Are smart phones allowed inside the clean room?,0,0,1,0
+How often must firewall configurations be reviewed?,1,1,1,0
+Can remote employees use public Wi-Fi networks?,0,0,1,0
+What specific agreement must be signed by a supplier before engagement?,0,1,1,0
+Does PII include the business telephone number of an employee?,0,0,1,0
+Name one specific agency listed for threat intelligence sources.,0,0,0,0
+What is the minimum character length for passwords?,1,0,1,0
+How often must penetration testing be conducted?,0,0,0,0
+What specific plan must be created before any patch rollout?,1,0,1,0
+Who must approve any distribution of private documents outside the company?,0,1,0,0
+What is the specific channel for publishing the ISMS document?,0,1,0,0
+What is the current version number of the ISMS Policy?,0,0,0,0
+On what date was the 'Computing and Mobile devices usage' amended (Version 1.1)?,0,0,0,0
+Which two browsers are authorized for use?,0,0,1,0
